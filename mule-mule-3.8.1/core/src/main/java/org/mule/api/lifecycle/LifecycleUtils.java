@@ -143,7 +143,7 @@ public class LifecycleUtils
     /**
      * For each item in the {@code objects} collection, it invokes {@link Disposable#dispose()}
      * if it implements the {@link Disposable} interface.
-     * <p/>
+     * <p>
      * Per each dispose operation that fails, the exception will be silently logged using the
      * provided {@code logger}
      *

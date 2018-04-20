@@ -8,6 +8,13 @@ package org.mule.config.spring;
 
 import static org.apache.commons.lang.StringUtils.EMPTY;
 import static org.mule.config.i18n.MessageFactory.createStaticMessage;
+
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.atomic.AtomicBoolean;
+
 import org.mule.api.Injector;
 import org.mule.api.MuleContext;
 import org.mule.api.MuleException;
@@ -18,23 +25,16 @@ import org.mule.api.registry.LifecycleRegistry;
 import org.mule.api.registry.RegistrationException;
 import org.mule.api.registry.TransformerResolver;
 import org.mule.api.transformer.Converter;
+import org.mule.config.spring.beans.factory.support.MuleDefaultListableBeanFactory;
 import org.mule.config.spring.processors.PostRegistrationActionsPostProcessor;
 import org.mule.lifecycle.RegistryLifecycleManager;
 import org.mule.lifecycle.phases.NotInLifecyclePhase;
 import org.mule.registry.AbstractRegistry;
 import org.mule.util.StringUtils;
-
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.concurrent.atomic.AtomicBoolean;
-
 import org.springframework.beans.FatalBeanException;
 import org.springframework.beans.factory.BeanFactoryUtils;
 import org.springframework.beans.factory.NoSuchBeanDefinitionException;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
-import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ConfigurableApplicationContext;
 
@@ -435,7 +435,7 @@ public class SpringRegistry extends AbstractRegistry implements LifecycleRegistr
                 ((BeanDefinitionRegistry) applicationContext.getBeanFactory()).removeBeanDefinition(key);
             }
 
-            ((DefaultListableBeanFactory) applicationContext.getBeanFactory()).destroySingleton(key);
+            ((MuleDefaultListableBeanFactory) applicationContext.getBeanFactory()).destroySingleton(key);
 
             return object;
         }

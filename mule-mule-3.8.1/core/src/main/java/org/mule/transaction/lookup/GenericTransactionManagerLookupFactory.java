@@ -24,7 +24,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 /**
- * A factory performing a JNDI lookup for TransactionManager. <p/> NOTE: Java EE 1.4
+ * A factory performing a JNDI lookup for TransactionManager. <p> NOTE: Java EE 1.4
  * specification does not mandate application server vendors to expose a
  * TransactionManager for direct use, nor does it name the standard way to locate it.
  * For some servers the TransactionManager is not even available in the global JNDI

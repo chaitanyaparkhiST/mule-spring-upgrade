@@ -15,7 +15,7 @@ import java.util.List;
 
 /**
  * A immutable implementation of {@link MultipleValidationResult}.
- * <p/>
+ * <p>
  * Instances are to be created using the {@link #of(Iterable)} factory method
  *
  * @since 3.7.0

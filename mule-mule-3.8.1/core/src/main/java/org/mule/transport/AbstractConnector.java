@@ -113,7 +113,7 @@ import org.apache.commons.pool.impl.GenericKeyedObjectPool;
  * <code>AbstractConnector</code> provides base functionality for all connectors
  * provided with Mule. Connectors are the mechanism used to connect to external
  * systems and protocols in order to send and receive data.
- * <p/>
+ * <p>
  * The <code>AbstractConnector</code> provides getter and setter methods for endpoint
  * name, transport name and protocol. It also provides methods to stop and start
  * connectors and sets up a dispatcher threadpool which allows deriving connectors
@@ -684,7 +684,7 @@ public abstract class AbstractConnector extends AbstractAnnotatedObject implemen
      * Create a {@link MuleMessageFactory} from this connector's configuration,
      * typically through the transport descriptor.
      * </p>
-     * <p/>
+     * <p>
      * <b>Attention!</b> This method is not meant to be used by client code directly.
      * It is only publicly available to service message receivers which should be
      * used as <em>real</em> factories to create {@link MuleMessage} instances.
@@ -2564,13 +2564,13 @@ public abstract class AbstractConnector extends AbstractAnnotatedObject implemen
      * the expense of a potential slight performance hit (when a test connection is
      * made) or be very lightweight in other cases (like sending a hearbeat ping to
      * the server).
-     * <p/>
+     * <p>
      * Disable to obtain slight performance gain or if you are absolutely sure of the
      * server availability.
-     * <p/>
+     * <p>
      * It is up to the transport implementatin to support such validation, thus it
      * should be considered a hint only.
-     * <p/>
+     * <p>
      * The default value is <code>true</code>
      */
     public void setValidateConnections(final boolean validateConnections)

@@ -29,12 +29,12 @@ import javax.xml.namespace.QName;
 /**
  * memberTypes attribute must be non-empty or there must be
  * at least one simpleType child
- * <p/>
- * <p/>
+ * <p>
+ * <p>
  * <p>Java class for anonymous complex type.
- * <p/>
+ * <p>
  * <p>The following schema fragment specifies the expected content contained within this class.
- * <p/>
+ * <p>
  * <pre>
  * &lt;complexType>
  *   &lt;complexContent>
@@ -67,21 +67,21 @@ public class Union extends Annotated
 
     /**
      * Gets the value of the simpleType property.
-     * <p/>
-     * <p/>
+     * <p>
+     * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the simpleType property.
-     * <p/>
-     * <p/>
+     * <p>
+     * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getSimpleType().add(newItem);
      * </pre>
-     * <p/>
-     * <p/>
-     * <p/>
+     * <p>
+     * <p>
+     * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link LocalSimpleType }
      */
@@ -96,21 +96,21 @@ public class Union extends Annotated
 
     /**
      * Gets the value of the memberTypes property.
-     * <p/>
-     * <p/>
+     * <p>
+     * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the memberTypes property.
-     * <p/>
-     * <p/>
+     * <p>
+     * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getMemberTypes().add(newItem);
      * </pre>
-     * <p/>
-     * <p/>
-     * <p/>
+     * <p>
+     * <p>
+     * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link QName }
      */

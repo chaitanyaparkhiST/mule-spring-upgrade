@@ -70,7 +70,7 @@ public interface MuleConfiguration
      * Try to guess if we're embedded. If "mule.home" JVM property has been set, then we've been
      * started via Mule script and can assume we're running standalone. Otherwise (no property set), Mule
      * has been started via a different mechanism.
-     * <p/>
+     * <p>
      * A standalone Mule is always considered running in 'container' mode.
      *
      * @see #isContainerMode()
@@ -101,7 +101,7 @@ public interface MuleConfiguration
     /**
      * Returns the default instance of {@link ObjectSerializer} to be
      * used. This instance will be accessible through {@link MuleContext#getObjectSerializer()}.
-     * <p/>
+     * <p>
      * If not provided, if defaults to an instance of {@link ObjectSerializer}
      *
      * @return a {@link ObjectSerializer}

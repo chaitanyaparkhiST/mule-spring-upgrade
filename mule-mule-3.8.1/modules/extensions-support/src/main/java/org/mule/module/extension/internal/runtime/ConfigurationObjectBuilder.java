@@ -27,7 +27,7 @@ import java.util.List;
 /**
  * Implementation of {@link ObjectBuilder} to create instances that
  * implement a given {@link Configuration}.
- * <p/>
+ * <p>
  * The object instances are created through the {@link Configuration#getInstantiator()#instantiateObject()}
  * method. A {@link ResolverSet} is also used to automatically set this builders
  * properties. The name of the properties in the {@link ResolverSet} must match the

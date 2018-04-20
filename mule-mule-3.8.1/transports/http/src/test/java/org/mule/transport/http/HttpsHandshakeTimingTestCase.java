@@ -38,7 +38,7 @@ import org.mockito.Answers;
  * Test for SSL handshake timeouts. Unfortunately, there is no easy way to blackbox-test this
  * as it would require a SSLSocket implementation that could actually add arbitrary delays to
  * the SSL handshake.
- * <p/>
+ * <p>
  * The approach chosen here is based on reflection and massive subclassing/stubbing to make things
  * work. Yes, this is hacky and fragile but this seems to be the only reasonable alternative
  * for now.

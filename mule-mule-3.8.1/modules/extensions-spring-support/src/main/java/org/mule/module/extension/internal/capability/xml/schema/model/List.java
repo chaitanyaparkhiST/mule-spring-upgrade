@@ -26,12 +26,12 @@ import javax.xml.namespace.QName;
 /**
  * itemType attribute and simpleType child are mutually
  * exclusive, but one or other is required
- * <p/>
- * <p/>
+ * <p>
+ * <p>
  * <p>Java class for anonymous complex type.
- * <p/>
+ * <p>
  * <p>The following schema fragment specifies the expected content contained within this class.
- * <p/>
+ * <p>
  * <pre>
  * &lt;complexType>
  *   &lt;complexContent>

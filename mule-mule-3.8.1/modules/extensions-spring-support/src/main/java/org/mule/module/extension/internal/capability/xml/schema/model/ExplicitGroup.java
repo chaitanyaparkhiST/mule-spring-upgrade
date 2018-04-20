@@ -24,11 +24,11 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * group type for the three kinds of group
- * <p/>
+ * <p>
  * <p>Java class for explicitGroup complex type.
- * <p/>
+ * <p>
  * <p>The following schema fragment specifies the expected content contained within this class.
- * <p/>
+ * <p>
  * <pre>
  * &lt;complexType name="explicitGroup">
  *   &lt;complexContent>

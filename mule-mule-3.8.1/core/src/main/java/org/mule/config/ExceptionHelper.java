@@ -35,7 +35,7 @@ import org.apache.commons.logging.LogFactory;
 
 /**
  * <code>ExceptionHelper</code> provides a number of helper functions that can be
- * useful for dealing with Mule exceptions. This class has 3 core functions - <p/> 1.
+ * useful for dealing with Mule exceptions. This class has 3 core functions - <p> 1.
  * ErrorCode lookup. A corresponding Mule error code can be found using for a given
  * Mule exception 2. Additional Error information such as Java doc url for a given
  * exception can be resolved using this class 3. Error code mappings can be looked up

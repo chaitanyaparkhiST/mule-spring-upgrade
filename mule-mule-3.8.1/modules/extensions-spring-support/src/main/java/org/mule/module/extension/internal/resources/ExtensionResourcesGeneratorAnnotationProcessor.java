@@ -37,11 +37,11 @@ import javax.tools.Diagnostic;
  * {@link Extension} and use a
  * {@link ResourcesGenerator} to generated
  * the required resources.
- * <p/>
+ * <p>
  * This annotation processor will automatically generate and package into the output jar
  * the XSD schema, spring bundles and extension registration files
  * necessary for mule to work with this extension.
- * <p/>
+ * <p>
  * Depending on the capabilities declared by each extension, some of those resources
  * might or might not be generated
  *

@@ -22,10 +22,10 @@ import java.util.List;
 
 /**
  * Executes a select query on a database
- * <p/>
+ * <p>
  * Accepted queries are select queries or stored procedure queries taking input parameters
  * and returning only a resultSet.
- * <p/>
+ * <p>
  * Both database and queries are resolved, if required, using the {@link org.mule.api.MuleEvent}
  * being processed.
  */

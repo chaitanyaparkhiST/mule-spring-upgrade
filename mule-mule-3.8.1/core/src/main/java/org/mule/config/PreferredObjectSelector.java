@@ -37,7 +37,7 @@ public class PreferredObjectSelector<T>
 
     /**
      * Selects a preferred object from instances returned by an {@link Iterator}.
-     * <p/>
+     * <p>
      * The preferred instance will be the instance annotated with {@link Preferred}
      * annotation with the highest weight attribute if there is any, or a non
      * annotated class otherwise.

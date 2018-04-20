@@ -38,13 +38,13 @@ import org.w3c.dom.Node;
 /**
  * Uses JAXP XPath processing to evaluate xpath expressions against Xml fragments and
  * documents
- * <p/>
+ * <p>
  * Note that the JAXP Expression evaluator differs from the Mule XPATH evaluator
  * slightly since you can set the JAXP return type as a prefix to the expression i.e.
  * <code>
  * xpath2:[type]/foo/bar
  * </code>
- * <p/>
+ * <p>
  * Where the type can either be boolean, string, number, node or nodeset.
  *
  * @deprecated This expression evaluator is deprecated and will be removed in Mule 4. Use {@link XPath3Function} instead

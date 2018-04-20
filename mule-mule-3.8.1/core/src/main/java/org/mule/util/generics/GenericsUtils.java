@@ -19,11 +19,11 @@ import java.util.Map;
 
 /**
  * Helper class for determining element types of collections and maps.
- * <p/>
+ * <p>
  * <p>Mainly intended for usage within the framework, determining the
  * target type of values to be added to a collection or map
  * (to be able to attempt type conversion if appropriate).
- * <p/>
+ * <p>
  * author: Spring
  */
 public class GenericsUtils

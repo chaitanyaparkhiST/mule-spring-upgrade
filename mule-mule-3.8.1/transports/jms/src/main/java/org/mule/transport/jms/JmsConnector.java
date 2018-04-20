@@ -1187,7 +1187,7 @@ public class JmsConnector extends AbstractConnector implements ExceptionListener
      * <li>failure to consume the first message (the rest
      * are fine)
      * </ul>
-     * <p/>
+     * <p>
      *
      * @param eagerConsumer Value to set for property 'eagerConsumer'.
      * @see #eagerConsumer

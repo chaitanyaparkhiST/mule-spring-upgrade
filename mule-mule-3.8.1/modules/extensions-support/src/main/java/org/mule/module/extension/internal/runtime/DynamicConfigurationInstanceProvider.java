@@ -22,7 +22,7 @@ import com.google.common.cache.LoadingCache;
  * A {@link ConfigurationInstanceProvider} which continuously evaluates the same
  * {@link ResolverSet} and then uses the resulting {@link ResolverSetResult}
  * to build an instance of a given type.
- * <p/>
+ * <p>
  * Although each invocation to {@link #get(OperationContext)} is guaranteed to end up in an invocation
  * to {@link #resolverSet#resolve(MuleEvent)}, the resulting {@link ResolverSetResult} might not end up
  * generating a new instance. This is so because {@link ResolverSetResult} instances are put in a cache to

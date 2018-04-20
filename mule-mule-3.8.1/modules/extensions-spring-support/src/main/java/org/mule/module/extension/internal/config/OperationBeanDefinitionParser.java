@@ -41,7 +41,7 @@ import org.w3c.dom.Element;
 /**
  * A {@link BeanDefinitionParser} to parse message processors
  * which execute operations implemented through the extensions API.
- * <p/>
+ * <p>
  * It defines an {@link OperationMessageProcessorFactoryBean} which in turn builds
  * the actual {@link MessageProcessor}
  *

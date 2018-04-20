@@ -42,7 +42,7 @@ import javax.mail.internet.MimeMessage;
 /**
  * Poll a mailbox for messages, remove the messages and route them as events into
  * Mule.
- * <p/>
+ * <p>
  * This contains a reference to a mail folder (and also the endpoint and connector,
  * via superclasses)
  */
@@ -284,7 +284,7 @@ public class RetrieveMessageReceiver extends AbstractPollingMessageReceiver impl
     /**
      * Helper method for testing which stores a copy of the message locally as the
      * POP3
-     * <p/>
+     * <p>
      * message will be deleted from the server
      *
      * @param msg the message to store

@@ -22,9 +22,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for localSimpleType complex type.
- * <p/>
+ * <p>
  * <p>The following schema fragment specifies the expected content contained within this class.
- * <p/>
+ * <p>
  * <pre>
  * &lt;complexType name="localSimpleType">
  *   &lt;complexContent>

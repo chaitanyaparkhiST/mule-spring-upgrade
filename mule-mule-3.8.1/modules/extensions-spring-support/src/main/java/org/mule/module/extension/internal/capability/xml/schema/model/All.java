@@ -22,11 +22,11 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * Only elements allowed inside
- * <p/>
+ * <p>
  * <p>Java class for all complex type.
- * <p/>
+ * <p>
  * <p>The following schema fragment specifies the expected content contained within this class.
- * <p/>
+ * <p>
  * <pre>
  * &lt;complexType name="all">
  *   &lt;complexContent>

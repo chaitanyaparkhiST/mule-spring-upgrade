@@ -11,7 +11,7 @@ import java.util.List;
 
 /**
  * Enables injection of all available {@link MuleCoreExtension}.
- * <p/>
+ * <p>
  * Classes implementing this interface cannot contain methods annotated with
  * {@link MuleCoreExtensionDependency} as that will create an unresolvable dependency on runtime.
  */

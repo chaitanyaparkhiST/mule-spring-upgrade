@@ -34,9 +34,9 @@ import javax.xml.namespace.QName;
 
 /**
  * <p>Java class for restrictionType complex type.
- * <p/>
+ * <p>
  * <p>The following schema fragment specifies the expected content contained within this class.
- * <p/>
+ * <p>
  * <pre>
  * &lt;complexType name="restrictionType">
  *   &lt;complexContent>
@@ -203,21 +203,21 @@ public class RestrictionType extends Annotated {
 
     /**
      * Gets the value of the facets property.
-     * <p/>
-     * <p/>
+     * <p>
+     * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the facets property.
-     * <p/>
-     * <p/>
+     * <p>
+     * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getFacets().add(newItem);
      * </pre>
-     * <p/>
-     * <p/>
-     * <p/>
+     * <p>
+     * <p>
+     * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link JAXBElement }{@code <}{@link NumFacet }{@code >}
      * {@link JAXBElement }{@code <}{@link Facet }{@code >}
@@ -241,21 +241,21 @@ public class RestrictionType extends Annotated {
 
     /**
      * Gets the value of the attributeOrAttributeGroup property.
-     * <p/>
-     * <p/>
+     * <p>
+     * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the attributeOrAttributeGroup property.
-     * <p/>
-     * <p/>
+     * <p>
+     * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getAttributeOrAttributeGroup().add(newItem);
      * </pre>
-     * <p/>
-     * <p/>
-     * <p/>
+     * <p>
+     * <p>
+     * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link AttributeGroupRef }
      * {@link Attribute }

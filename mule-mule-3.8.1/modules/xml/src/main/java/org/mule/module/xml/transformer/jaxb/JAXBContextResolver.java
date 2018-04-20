@@ -16,7 +16,7 @@ import javax.xml.bind.JAXBException;
  * This resolver is used by the transform engine to inject a JAXBContext into a method that requires it.
  * A shared JAXB context can be created for the application and stored in the registry, this will get injected
  * into any transform methods that add {@link javax.xml.bind.JAXBContext} to the method signature.
- * <p/>
+ * <p>
  * IF there is no shared JAXB context one will be created. First this resolver will attempt to create the context from
  * the package of the the annotated class, for this to work either a jaxb.index file must be present or an {@link javax.naming.spi.ObjectFactory}
  * must be in the package.  This allows for JAXB generated classes to be used easily.  If this method fails a context will

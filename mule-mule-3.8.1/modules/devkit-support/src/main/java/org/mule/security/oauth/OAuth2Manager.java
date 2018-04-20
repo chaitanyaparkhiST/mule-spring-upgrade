@@ -24,7 +24,7 @@ import org.apache.commons.pool.KeyedPoolableObjectFactory;
 /**
  * Wrapper around {@code org.mule.api.annotations.oauth.OAuth2} annotated class that
  * will infuse it with access token management capabilities.
- * <p/>
+ * <p>
  * It can receive a {@link org.mule.config.PoolingProfile} which is a configuration
  * object used to define the OAuth access tokens pooling parameters.
  * 

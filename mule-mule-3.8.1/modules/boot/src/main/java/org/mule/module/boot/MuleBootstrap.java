@@ -24,7 +24,7 @@ import org.tanukisoftware.wrapper.WrapperSimpleApp;
  * Determine which is the main class to run and delegate control to the Java Service
  * Wrapper.  If OSGi is not being used to boot with, configure the classpath based on
  * the libraries in $MULE_HOME/lib/*
- * <p/>
+ * <p>
  * Note: this class is intentionally kept free of any external library dependencies and
  * therefore repeats a few utility methods.
  */

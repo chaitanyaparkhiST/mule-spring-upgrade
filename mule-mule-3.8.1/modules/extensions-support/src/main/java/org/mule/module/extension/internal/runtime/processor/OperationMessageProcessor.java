@@ -36,11 +36,11 @@ import org.slf4j.LoggerFactory;
 
 /**
  * A {@link MessageProcessor} capable of executing extension operations.
- * <p/>
+ * <p>
  * It obtains a configuration instance, evaluate all the operation parameters
  * and executes a {@link Operation} by using a {@link #operationExecutor}. This message processor is capable
  * of serving the execution of any {@link Operation} of any {@link Extension}.
- * <p/>
+ * <p>
  * A {@link #operationExecutor} is obtained by invoking {@link Operation#getExecutor()}. That instance
  * will be use to serve all invokations of {@link #process(MuleEvent)} on {@code this} instance but
  * will not be shared with other instances of {@link OperationMessageProcessor}. All the {@link Lifecycle}

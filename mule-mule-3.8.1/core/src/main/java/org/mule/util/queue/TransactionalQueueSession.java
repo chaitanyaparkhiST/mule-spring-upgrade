@@ -21,7 +21,7 @@ import javax.transaction.xa.Xid;
 
 /**
  * A Queue session that is used to manage the transaction context of a Queue.
- * <p/>
+ * <p>
  * This QueueSession can be used for local and xa transactions
  */
 public class TransactionalQueueSession extends AbstractQueueSession implements QueueSession

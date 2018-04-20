@@ -15,7 +15,7 @@ import org.mule.config.endpoint.RegistryBackedAnnotationsParserFactory;
  * Mule registry will automatically be configured. This helper also enables JSR-330
  * injection annotations <code>javax.inject.Inject</code> and
  * <code>javax.inject.Named</code>.
- * <p/>
+ * <p>
  * Internal Implementation note: We could have used a 'registry-bootstrap.properties'
  * file to load the objects necessary to enable annotations however, that method
  * would not allow the annotation processors to be easily overridden when using other

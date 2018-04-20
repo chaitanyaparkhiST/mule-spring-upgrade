@@ -284,10 +284,10 @@ public abstract class AbstractTransportMessageHandler<O> implements Connectable,
     /**
      * This method will start the connectable, calling {@link #connect()} if it is
      * needed.
-     * <p/>
+     * <p>
      * This method is synchronous or not depending on how the {@link #retryTemplate}
      * behaves.
-     * <p/>
+     * <p>
      * This method ensures that {@link #doStart()} will be called at most one time
      * and will return without error if the component is already started.
      */

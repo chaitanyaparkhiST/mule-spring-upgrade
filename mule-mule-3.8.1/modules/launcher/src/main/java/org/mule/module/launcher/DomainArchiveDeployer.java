@@ -26,7 +26,7 @@ import org.apache.commons.logging.LogFactory;
 
 /**
  * Archive deployer for domains.
- * <p/>
+ * <p>
  * Knows how to deploy / undeploy a domain and a domain bundle (zip with domain + domains apps).
  */
 public class DomainArchiveDeployer implements ArchiveDeployer<Domain>
@@ -72,7 +72,7 @@ public class DomainArchiveDeployer implements ArchiveDeployer<Domain>
 
     /**
      * Undeploys a domain.
-     * <p/>
+     * <p>
      * Before undeploying the domain it undeploys the applications
      * associated.
      *

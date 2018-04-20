@@ -219,7 +219,7 @@
         <slf4jVersion>1.7.7</slf4jVersion>
         <smackVersion>3.4.1</smackVersion>
         <springOsgiVersion>1.0.2</springOsgiVersion>
-        <springVersion>4.1.6.RELEASE</springVersion>
+        <springVersion>4.3.6.RELEASE</springVersion>
         <springSecurityVersion>4.0.1.RELEASE</springSecurityVersion>
         <sshCoreVersion>1.0.0</sshCoreVersion>
         <staxUtilsVersion>20080702</staxUtilsVersion>
@@ -1496,6 +1496,9 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-javadoc-plugin</artifactId>
                     <version>${javadocPluginVersion}</version>
+                    <configuration>
+                    		<additionalparam>-Xdoclint:none</additionalparam>
+                    </configuration>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>

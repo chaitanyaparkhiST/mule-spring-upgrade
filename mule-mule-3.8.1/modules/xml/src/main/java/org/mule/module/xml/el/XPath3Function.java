@@ -49,9 +49,9 @@ import org.xml.sax.InputSource;
 /**
  * A MEL function capable of evaluation XPath expressions by delegating into an instance
  * of {@link XPathEvaluator}
- * <p/>
+ * <p>
  * The function will now accept the following arguments (in order):
- * <p/>
+ * <p>
  * <table>
  * <tr>
  * <td><b>expression</b> (required String)</td>
@@ -79,11 +79,11 @@ import org.xml.sax.InputSource;
  * </ul>
  * </tr>
  * </table>
- * <p/>
+ * <p>
  * Input types
- * <p/>
+ * <p>
  * This function supports the following input types:
- * <p/>
+ * <p>
  * <li>
  * <ul>{@link Document}</ul>
  * <ul>{@link Node}</ul>
@@ -94,11 +94,11 @@ import org.xml.sax.InputSource;
  * <ul>{@link XMLStreamReader}</ul>
  * <ul>{@link DelayedResult}</ul>
  * </li>
- * <p/>
- * <p/>
+ * <p>
+ * <p>
  * If the input if not of any of these types, then we'll attempt to use a registered transformer to transform the input into a DOM document or Node.
  * If no such transformer can be found, then an {@link IllegalArgumentException} will be thrown.
- * <p/>
+ * <p>
  * This function will verify if the input is a consumable type (streams, readers, etc). Because evaluating the expression over a consumable input
  * will cause that source to be exhausted, in the cases in which the input value was the actual message payload
  * (no matter if it was given explicitly or by default), it will update the output message payload with the result obtained from consuming the input.

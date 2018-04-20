@@ -14,10 +14,10 @@ import org.mule.util.ClassUtils;
  * Will resolver entry point methods on a service service that accept a single array.
  * i.e.
  * <code>public Object eat(Fruit[] fruit)</code>
- * <p/>
+ * <p>
  * This resolver will NOT resolve method entry points such as -
  * <code>public Object eat(Fruit[] fruit, Banana banana)</code>
- * <p/>
+ * <p>
  * If you require to mix an array type with complex types you need to specify an inbound transformer that return a
  * multi-dimensional array of arguments i.e.
  * <code>new Object[]{new Fruit[]{new Apple(), new Orange()}, new Banana()};</code>

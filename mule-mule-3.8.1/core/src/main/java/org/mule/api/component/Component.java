@@ -14,7 +14,7 @@ import org.mule.management.stats.ComponentStatistics;
 /**
  * A <code>Component</code> component processes a {@link MuleEvent} by invoking the
  * component instance that has been configured, optionally returning a result.
- * <p/>
+ * <p>
  * Implementations of <code>Component</code> can use different types of component
  * implementation, implement component instance pooling or implement
  * <em>bindings</em> which allow for service composition.

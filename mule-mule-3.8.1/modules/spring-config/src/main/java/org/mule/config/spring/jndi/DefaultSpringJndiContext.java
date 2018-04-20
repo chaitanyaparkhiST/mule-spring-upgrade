@@ -32,7 +32,7 @@ import javax.naming.spi.NamingManager;
 
 /**
  * A simple spring based JNDI context which is mutable
- * <p/>
+ * <p>
  * Borrowed from the XBean (xbean.codehaus.org) project. Thanks guys!
  */
 public class DefaultSpringJndiContext implements Context, Serializable

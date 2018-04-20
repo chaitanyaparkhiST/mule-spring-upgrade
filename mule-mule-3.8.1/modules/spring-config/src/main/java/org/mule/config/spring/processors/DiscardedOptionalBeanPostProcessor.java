@@ -6,10 +6,10 @@
  */
 package org.mule.config.spring.processors;
 
-import org.mule.config.spring.OptionalObjectsController;
-
 import java.beans.PropertyDescriptor;
 
+import org.mule.config.spring.OptionalObjectsController;
+import org.mule.config.spring.beans.factory.support.MuleDefaultListableBeanFactory;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.PropertyValues;
 import org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessor;
@@ -25,12 +25,12 @@ public class DiscardedOptionalBeanPostProcessor implements InstantiationAwareBea
 {
 
     private final OptionalObjectsController optionalObjectsController;
-    private final DefaultListableBeanFactory beanFactory;
+    private final MuleDefaultListableBeanFactory beanFactory;
 
     public DiscardedOptionalBeanPostProcessor(OptionalObjectsController optionalObjectsController, DefaultListableBeanFactory beanFactory)
     {
         this.optionalObjectsController = optionalObjectsController;
-        this.beanFactory = beanFactory;
+        this.beanFactory = (MuleDefaultListableBeanFactory) beanFactory;
     }
 
     @Override

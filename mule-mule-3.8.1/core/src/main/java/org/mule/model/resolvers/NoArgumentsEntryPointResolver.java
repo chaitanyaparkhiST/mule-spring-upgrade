@@ -13,7 +13,7 @@ import org.mule.util.ClassUtils;
 /**
  * Allows for arguments with no parameters to be called. Regardless of the payload of the current
  * event, this resolver will always only look for No-Arg servic methods.
- * <p/>
+ * <p>
  * Note that the {@link org.mule.model.resolvers.ReflectionEntryPointResolver} supports the resolution
  * of no-arg service methods if the event payload received is of type {@link org.mule.transport.NullPayload}.
  *

@@ -40,7 +40,7 @@ public interface XmlMetadataAnnotations
 
     /**
      * @return the reconstruction of the declaration of the element in its source xml file.
-     *         <p/>
+     *         <p>
      *         Note that the order of the elements may be different, and any implicit attributes with default values
      *         will be included.
      */

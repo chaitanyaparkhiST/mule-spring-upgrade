@@ -8,7 +8,7 @@ package org.mule.api.callback;
 
 /**
  * Callback returned by methods that are annotated with @Source
- * <p/>
+ * <p>
  * It will be executed when the MessageSource is being stopped.
  */
 public interface StopSourceCallback

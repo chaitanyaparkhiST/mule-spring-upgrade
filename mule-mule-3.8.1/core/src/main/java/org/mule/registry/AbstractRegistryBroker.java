@@ -146,7 +146,7 @@ public abstract class AbstractRegistryBroker implements RegistryBroker, Registry
      * find the first one which is an instance of
      * {@link LifecycleRegistry}. When found, it returns
      * the result of {@link LifecycleRegistry#lookupObject(String, boolean)}.
-     * <p/>
+     * <p>
      * If none of the available registries is of that type, then it
      * fallbacks to {@link #lookupObject(String)}
      *

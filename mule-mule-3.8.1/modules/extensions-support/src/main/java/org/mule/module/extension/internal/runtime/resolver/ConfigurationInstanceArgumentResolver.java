@@ -11,7 +11,7 @@ import org.mule.extension.runtime.OperationContext;
 /**
  * An implementation of {@link ArgumentResolver} which
  * returns the value obtained through {@link OperationContext#getConfigurationInstance()}
- * <p/>
+ * <p>
  * Because this {@link ArgumentResolver} is stateless and thread-safe,
  * it is exposed as a singleton
  *

@@ -19,7 +19,7 @@ public interface RequestResponseFlowProcessingPhaseTemplate extends FlowProcessi
 
     /**
      * Template method to send a response after processing the message.
-     * <p/>
+     * <p>
      * This method is executed within the flow so if it fails it will trigger the exception strategy.
      *
      * @param muleEvent the event with the content of the response to be sent.

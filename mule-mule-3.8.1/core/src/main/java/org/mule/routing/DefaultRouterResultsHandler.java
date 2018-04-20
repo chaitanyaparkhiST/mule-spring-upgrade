@@ -26,7 +26,7 @@ import org.apache.commons.collections.Predicate;
  * 'results' param contains a single {@link org.mule.api.MuleMessage}, than that message is returned. If the
  * 'results' param contains more than one message a {@link org.mule.api.MuleMessageCollection} instance is
  * returned.
- * <p/>
+ * <p>
  * Note that right now (as of Mule 2.0.1) this SPI is not pluggable and this implementation is the default and
  * only implementation.
  *

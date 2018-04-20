@@ -23,7 +23,7 @@ package org.mule.api;
  *
  * One easy way of supporting non-blocking if a components needs to do response processing is to extend
  * {@link org.mule.processor.AbstractRequestResponseMessageProcessor}
- * <p/>
+ * <p>
  * Note: All standard {@link org.mule.api.processor.MessageProcessor}
  * implementations that aren't one of the two types mentioned above are implicitly supported.
  *

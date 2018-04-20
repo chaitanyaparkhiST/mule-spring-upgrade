@@ -16,7 +16,7 @@ import java.sql.SQLException;
 
 /**
  * Processes a {@link ResultSet} returning an iterator of maps.
- * <p/>
+ * <p>
  * The {@link ResultSet} backing the returned {@link ResultSetIterator} will be closed when the connection it came from
  * is closed.
  */

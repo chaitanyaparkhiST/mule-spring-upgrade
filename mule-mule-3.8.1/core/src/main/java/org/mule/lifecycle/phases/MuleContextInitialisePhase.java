@@ -34,7 +34,7 @@ import javax.annotation.PostConstruct;
 /**
  * The MuleContextInitialisePhase defines the lifecycle behaviour when the Mule context is initialised.  The MuleContext is associated
  * with one or more registries that inherit the lifecycle of the MuleContext.
- * <p/>
+ * <p>
  * This phase is responsible for initialising objects. Any object that implements {@link org.mule.api.lifecycle.Initialisable} will
  * have its {@link org.mule.api.lifecycle.Initialisable#initialise()} method called.  Objects are initialised in the order based on type:
  * {@link org.mule.api.transport.Connector}, {@link org.mule.api.agent.Agent}, {@link org.mule.api.model.Model}, {@link org.mule.api.service.Service}, followed

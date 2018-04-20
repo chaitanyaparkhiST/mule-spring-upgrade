@@ -26,9 +26,9 @@ import static org.mule.util.ClassUtils.hash;
  * more than one property you can use the logic filters for And, Or and Not
  * expressions. By default the comparison is case sensitive; you can set the
  * <i>caseSensitive</i> property to override this.
- * <p/>
+ * <p>
  * Since 3.0.0 its possible to set the property value as a wildcard expression i.e.
- * <p/>
+ * <p>
  * <pre>fooHeader = *foo*</pre>
  */
 public class MessagePropertyFilter implements Filter

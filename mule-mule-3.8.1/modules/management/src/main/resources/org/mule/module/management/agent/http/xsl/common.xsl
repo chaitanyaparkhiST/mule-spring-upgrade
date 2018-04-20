@@ -48,7 +48,7 @@
          <tr>
             <td class="topheading">
                <xsl:call-template name="productDescription"/>
-               <br/>
+               <br>
                <div class="subtitle">
                   <xsl:call-template name="str">
                      <xsl:with-param name="id">common.subtitle</xsl:with-param>
@@ -89,7 +89,7 @@
          </tr>
       </table>
 
-      <br/>
+      <br>
    </xsl:template>
 
    <!-- Common bottom template -->

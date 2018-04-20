@@ -9,7 +9,7 @@ package org.mule.api;
 import java.util.Map;
 
 /**
- * Callback interface used by message processors methods. <p/>
+ * Callback interface used by message processors methods. <p>
  * The method parameters of type {@link NestedProcessor} will be able to receive other
  * message processors.
  */

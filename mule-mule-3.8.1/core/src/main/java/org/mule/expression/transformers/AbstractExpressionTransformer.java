@@ -19,7 +19,7 @@ import java.util.List;
  * This transformer will evaluate one or more expressions on the current message and return the
  * results as an Array. If only one expression is defined it will return the object returned from
  * the expression.
- * <p/>
+ * <p>
  * You can use expressions to extract
  * <ul>
  * <li>headers (single, map or list)</li>
@@ -30,7 +30,7 @@ import java.util.List;
  * <li>bean</li>
  * </ul>
  * and more.
- * <p/>
+ * <p>
  * This transformer provides a very powerful way to pull different bits of information from the
  * message and pass them to the service.
  */

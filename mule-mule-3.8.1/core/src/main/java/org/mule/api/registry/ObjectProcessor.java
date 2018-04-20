@@ -11,7 +11,7 @@ import org.mule.registry.TransientRegistry;
 /**
  * The parent interface for all object processors. Object processors can be registered in the Mule registry and fired
  * at the correct time.
- * <p/>
+ * <p>
  * Developers must not implement this interface directly. Instead use either {@link org.mule.api.registry.InjectProcessor} or
  * {@link org.mule.api.registry.PreInitProcessor}.
  *

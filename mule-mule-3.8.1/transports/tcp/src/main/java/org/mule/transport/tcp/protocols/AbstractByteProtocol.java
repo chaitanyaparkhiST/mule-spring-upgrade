@@ -33,7 +33,7 @@ import org.slf4j.LoggerFactory;
  * protocols that had only a single write method taking just an array of bytes as a
  * parameter) to inherit from since they will all behave the same, i.e. if the object
  * is serializable, serialize it into an array of bytes and send it.
- * <p/>
+ * <p>
  * <p>Note that the raw write method has changed name from <code>write</code> to
  * <code>writeByteArray</code>.  This is to remove ambiguity from the code.  In almost
  * all cases it is possible to call {@link #write(java.io.OutputStream, Object)} which

@@ -16,7 +16,7 @@ import org.mule.module.extension.internal.runtime.ObjectBuilder;
  * A {@link ValueResolver} which wraps an {@link ObjectBuilder}
  * and calls {@link ObjectBuilder#build(MuleEvent)} on each
  * {@link #resolve(MuleEvent)}.
- * <p/>
+ * <p>
  * It implements {@link Lifecycle} and propagates all lifecycle events to
  * the underlying {@code builder}
  *

@@ -17,7 +17,7 @@ import org.apache.commons.collections.Factory;
 /**
  * Will wrap a provided object store or a newly created one with the provided factory, with the provided having
  * precedence if present.
- * <p/>
+ * <p>
  * In the case the factory is used and a fresh object store is created, its lifecycle management will be delegated by
  * this wrapper.
  */

@@ -477,7 +477,7 @@ public class FtpConnector extends AbstractConnector
     /**
      * Transfer type is BINARY by default. The value is taken from the connector
      * settings. In case there are any overriding properties set on the endpoint,
-     * those will be used. <p/> The alternative type is ASCII. <p/>
+     * those will be used. <p> The alternative type is ASCII. <p>
      *
      * @see #setBinary(boolean)
      */

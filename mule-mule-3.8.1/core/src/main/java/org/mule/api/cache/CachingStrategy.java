@@ -20,7 +20,7 @@ public interface CachingStrategy
      * Processes a {@link MuleEvent} using a caching schema. Uses a message processor
      * to process the request when it is not found in the cache or when it must
      * be processed without using the cache.
-     * <p/>
+     * <p>
      * Different calls to this method using the same request does not implies
      * that the same instance will be returned. Each implementation could
      * choose to create new instances every time.

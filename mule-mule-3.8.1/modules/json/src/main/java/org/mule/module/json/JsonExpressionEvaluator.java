@@ -28,31 +28,31 @@ import org.codehaus.jackson.node.ValueNode;
  * <code>
  * #[json:person/addresses[0]/postcode]
  * </code>
- * <p/>
+ * <p>
  * See the {@link org.mule.module.json.JsonData} object for mor information about the query syntax.
- * <p/>
+ * <p>
  * It is also possible to use this evaluator in {@link org.mule.routing.filters.ExpressionFilter} objects. For example
  * a filter could be defined as -
- * <p/>
+ * <p>
  * <code>
  * #[json:person/registered]
  * </code>
- * <p/>
+ * <p>
  * Where 'registered' is a boolean value.  It is also possible to filter on the existence of a value i.e.
- * <p/>
+ * <p>
  * <code>
  * #[json:person/favouriteColour]
  * </code>
- * <p/>
+ * <p>
  * Which would return true if 'favouriteColour' has been set. This evaluator also dds two logic operators you can use
  * to create more sophisticated boolean expressions; equals and not equals -
- * <p/>
+ * <p>
  * <code>
  * #[json:person/favouriteColour = red]
  * </code>
- * <p/>
+ * <p>
  * or
- * <p/>
+ * <p>
  * <code>
  * #[json:person/favouriteColour != brown]
  * </code>

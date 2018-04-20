@@ -11,12 +11,12 @@ import java.lang.reflect.Method;
 
 /**
  * Interface to discover parameter names for methods and constructors.
- * <p/>
+ * <p>
  * <p>Parameter name discovery is not always possible, but various strategies are
  * available to try, such as looking for debug information that may have been
  * emitted at compile time, and looking for argname annotation values optionally
  * accompanying AspectJ annotated methods.
- * <p/>
+ * <p>
  * author: Spring
  */
 public interface ParameterNameDiscoverer

@@ -38,10 +38,10 @@ public @interface Schedule
      * <tr><td>Day of Week</td><td>YES</td><td>1-7 or SUN-SAT</td><td>, - * ? / L C #</td></tr>
      * <tr><td>Year</td><td>NO</td><td>empty, 1970-2099</td><td>, - * /</td></tr>
      * </table>
-     * <p/>
+     * <p>
      * Cron expressions can be as simple as this: <b>* * * * ? *</b><br></br>
      * or more complex, like this: <b>0 0/5 14,18,3-39,52 ? JAN,MAR,SEP MON-FRI 2002-2010</b>
-     * <p/>
+     * <p>
      * <B>Some examples:</b>
      * <ul>
      * <li>0 0 12 * * ?     Fire at 12pm (noon) every day</li>
@@ -52,41 +52,41 @@ public @interface Schedule
      * <li>0 * 14 * * ?     Fire every minute starting at 2pm and ending at 2:59pm, every day</li>
      * <li>0 0/5 14 * * ?     Fire every 5 minutes starting at 2pm and ending at 2:55pm, every day</li>
      * </ul>
-     * <p/>
-     * <p/>
+     * <p>
+     * <p>
      * Individual sub-expressions can contain ranges and/or lists. For example, the day of week field in the previous (which reads "WED") example could be replaces with "MON-FRI", "MON, WED, FRI", or even "MON-WED,SAT".
-     * <p/>
+     * <p>
      * Wild-cards (the '*' character) can be used to say "every" possible value of this field. Therefore the '*' character in the "Month" field of the previous example simply means "every month". A '*' in the Day-Of-Week field would obviously mean "every day of the week".
-     * <p/>
+     * <p>
      * All of the fields have a set of valid values that can be specified. These values should be fairly obvious - such as the numbers 0 to 59 for seconds and minutes, and the values 0 to 23 for hours. Day-of-Month can be any value 0-31, but you need to be careful about how many days are in a given month! Months can be specified as values between 0 and 11, or by using the strings JAN, FEB, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV and DEC. Days-of-Week can be specified as vaules between 1 and 7 (1 = Sunday) or by using the strings SUN, MON, TUE, WED, THU, FRI and SAT.
-     * <p/>
+     * <p>
      * The '/' character can be used to specify increments to values. For example, if you put '0/15' in the Minutes field, it means 'every 15 minutes, starting at minute zero'. If you used '3/20' in the Minutes field, it would mean 'every 20 minutes during the hour, starting at minute three' - or in other words it is the same as specifying '3,23,43' in the Minutes field.
-     * <p/>
+     * <p>
      * The '?' character is allowed for the day-of-month and day-of-week fields. It is used to specify "no specific value". This is useful when you need to specify something in one of the two fields, but not the other. See the examples below (and CronTrigger JavaDoc) for clarification.
-     * <p/>
+     * <p>
      * The 'L' character is allowed for the day-of-month and day-of-week fields. This character is short-hand for "last", but it has different meaning in each of the two fields. For example, the value "L" in the day-of-month field means "the last day of the month" - day 31 for January, day 28 for February on non-leap years. If used in the day-of-week field by itself, it simply means "7" or "SAT". But if used in the day-of-week field after another value, it means "the last xxx day of the month" - for example "6L" or "FRIL" both mean "the last friday of the month". When using the 'L' option, it is important not to specify lists, or ranges of values, as you'll get confusing results.
-     * <p/>
+     * <p>
      * The 'W' is used to specify the weekday (Monday-Friday) nearest the given day. As an example, if you were to specify "15W" as the value for the day-of-month field, the meaning is: "the nearest weekday to the 15th of the month".
-     * <p/>
+     * <p>
      * The '#' is used to specify "the nth" XXX weekday of the month. For example, the value of "6#3" or "FRI#3" in the day-of-week field means "the third Friday of the month".
-     * <p/>
+     * <p>
      * Here are a few more examples of expressions and their meanings - you can find even more in the JavaDoc for CronTrigger
      * Example Cron Expressions
-     * <p/>
+     * <p>
      * CronTrigger Example 1 - an expression to create a trigger that simply fires every 5 minutes
-     * <p/>
+     * <p>
      * "0 0/5 * * * ?"
-     * <p/>
+     * <p>
      * CronTrigger Example 2 - an expression to create a trigger that fires every 5 minutes, at 10 seconds after the minute (i.e. 10:00:10 am, 10:05:10 am, etc.).
-     * <p/>
+     * <p>
      * "10 0/5 * * * ?"
-     * <p/>
+     * <p>
      * CronTrigger Example 3 - an expression to create a trigger that fires at 10:30, 11:30, 12:30, and 13:30, on every Wednesday and Friday.
-     * <p/>
+     * <p>
      * "0 30 10-13 ? * WED,FRI"
-     * <p/>
+     * <p>
      * CronTrigger Example 4 - an expression to create a trigger that fires every half hour between the hours of 8 am and 10 am on the 5th and 20th of every month. Note that the trigger will NOT fire at 10:00 am, just at 8:00, 8:30, 9:00 and 9:30
-     * <p/>
+     * <p>
      * "0 0/30 8-9 5,20 * ?"
      * {html}
      *

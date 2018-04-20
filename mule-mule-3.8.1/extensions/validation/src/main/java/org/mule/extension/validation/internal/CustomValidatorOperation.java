@@ -24,14 +24,14 @@ import com.google.common.cache.LoadingCache;
  * third party. The {@link Validator} can be provided via a {@link ObjectSource}
  * which means that the user could have specified either a classname or a
  * named reference to it.
- * <p/>
+ * <p>
  * If the user provided a classname, then the {@link Class} that it represents
  * is expected to have a default public {@link Descriptor} which can be used to
  * instantiate it.
- * <p/>
+ * <p>
  * If the {@link Validator} is provided via a reference, then a lookup
  * to the {@link MuleRegistry} will be performed.
- * <p/>
+ * <p>
  * In either case, the referenced {@link Validator} is expected to be reusable
  * and thread-safe. If you used a reference, then that reference will most likely
  * always point to the same instance. If you use a class, then an instance will be

@@ -51,7 +51,7 @@ import org.apache.commons.logging.LogFactory;
  * Implementations of <code>AbstractFlowConstuct</code> should implement
  * {@link #validateConstruct()} validate the resulting construct. Validation may 
  * include validation of the type of attributes of the {@link MessageSource}.
- * <p/>
+ * <p>
  * Implementations may also implement {@link #doInitialise()}, {@link #doStart()},
  * {@link #doStop()} and {@link #doDispose()} if they need to perform any action on
  * lifecycle transitions.

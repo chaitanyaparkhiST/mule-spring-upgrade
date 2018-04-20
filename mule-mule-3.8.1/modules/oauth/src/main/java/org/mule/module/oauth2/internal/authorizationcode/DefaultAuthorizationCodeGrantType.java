@@ -30,7 +30,7 @@ import org.apache.commons.lang.StringUtils;
 
 /**
  * Represents the config element for oauth:authentication-code-config.
- * <p/>
+ * <p>
  * This config will:
  * - If the authorization-request is defined then it will create a flow listening for an user call to begin the oauth login.
  * - If the token-request is defined then it will create a flow for listening in the redirect uri so we can get the authentication code and retrieve the access token

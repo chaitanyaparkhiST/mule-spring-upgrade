@@ -421,7 +421,7 @@ public interface MuleMessage extends Serializable
 
     /**
      * Sets a correlationId for this message. The correlation Id can be used by
-     * components in the system to manage message relations <p/> transport protocol.
+     * components in the system to manage message relations <p> transport protocol.
      * As such not all messages will support the notion of a correlationId i.e. tcp
      * or file. In this situation the correlation Id is set as a property of the
      * message where it's up to developer to keep the association with the message.
@@ -434,7 +434,7 @@ public interface MuleMessage extends Serializable
 
     /**
      * Sets a correlationId for this message. The correlation Id can be used by
-     * components in the system to manage message relations. <p/> The correlationId
+     * components in the system to manage message relations. <p> The correlationId
      * is associated with the message using the underlying transport protocol. As
      * such not all messages will support the notion of a correlationId i.e. tcp or
      * file. In this situation the correlation Id is set as a property of the message

@@ -58,7 +58,7 @@ public interface ConfigurableKeyedObjectPool extends KeyedObjectPool
      * an exception when the pool is exhausted and the
      * {@link #setWhenExhaustedAction "when exhausted" action} is
      * {@link #WHEN_EXHAUSTED_BLOCK}.
-     * <p/>
+     * <p>
      * When less than or equal to 0, the {@link #borrowObject} method
      * may block indefinitely.
      */
@@ -70,7 +70,7 @@ public interface ConfigurableKeyedObjectPool extends KeyedObjectPool
      * an exception when the pool is exhausted and the
      * {@link #setWhenExhaustedAction "when exhausted" action} is
      * {@link #WHEN_EXHAUSTED_BLOCK}.
-     * <p/>
+     * <p>
      * When less than or equal to 0, the {@link #borrowObject} method
      * may block indefinitely.
      *

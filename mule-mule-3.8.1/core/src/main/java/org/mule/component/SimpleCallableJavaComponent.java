@@ -31,10 +31,10 @@ import java.util.Collections;
  * Simple {@link JavaComponent} implementation to be used when
  * {@link LifecycleAdapter} is not required because i) the object instance implements
  * {@link Callable} and so entry-point resolution is required and ii) component bindings
- * are not used.<br/> An {@link ObjectFactory} can be set but must return object
+ * are not used.<br> An {@link ObjectFactory} can be set but must return object
  * instances that implement {@link Callable}. If one of the constructors that takes
  * just a Class or the instance itself is used then the
- * {@link SingletonObjectFactory} is used by default. <br/> This implementation
+ * {@link SingletonObjectFactory} is used by default. <br> This implementation
  * replaces and improves on <code>OptimizedComponent</code>/<code>OptimizedMuleProxy</code>
  */
 public class SimpleCallableJavaComponent extends AbstractJavaComponent

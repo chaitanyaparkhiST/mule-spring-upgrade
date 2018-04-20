@@ -67,10 +67,10 @@ import org.apache.commons.logging.LogFactory;
 
 /**
  * Abstract endpoint builder used for externalizing the complex creation logic of
- * endpoints out of the endpoint instance itself. <br/>
+ * endpoints out of the endpoint instance itself. <br>
  * The use of a builder allows i) Endpoints to be configured once and created in a
  * repeatable fashion (global endpoints), ii) Allow for much more extensibility in
- * endpoint creation for transport specific endpoints, streaming endpoints etc.<br/>
+ * endpoint creation for transport specific endpoints, streaming endpoints etc.<br>
  */
 public abstract class AbstractEndpointBuilder extends AbstractAnnotatedObject implements EndpointBuilder
 {

@@ -281,7 +281,7 @@ public abstract class AbstractMuleTestCase extends TestCase implements TestCaseW
     /**
      * Shamelessly copy from Spring's ConditionalTestCase so in MULE-2.0 we can extend
      * this class from ConditionalTestCase.
-     * <p/>
+     * <p>
      * Subclasses can override <code>isDisabledInThisEnvironment</code> to skip a single test.
      */
     @Override

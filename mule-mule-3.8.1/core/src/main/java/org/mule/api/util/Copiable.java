@@ -17,11 +17,11 @@ public interface Copiable<T>
 
     /**
      * Creates a new copy of {@code this} instance.
-     * <p/>
+     * <p>
      * Each invocation to this method is expected to return a different instance. However,
      * no guarantee is offered about the copy being deep or shallow. That's up to each
      * implementation.
-     * <p/>
+     * <p>
      * Implementations are expected to be thread-safe
      *
      * @return A new copy of {@code this} instance

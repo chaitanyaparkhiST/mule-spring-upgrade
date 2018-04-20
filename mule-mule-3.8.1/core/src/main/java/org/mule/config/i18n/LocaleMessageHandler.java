@@ -20,10 +20,10 @@ import org.apache.commons.logging.LogFactory;
  * messages, rather than core system messages. (That's not to say it couldn't
  * eventually replace the latter, however). Note that message codes are Strings
  * here, instead of the ints in Message.
- * <p/>
+ * <p>
  * The LocaleMessageHandler can be called directly, but is really meant to be
  * called by LocaleMessage classes as done in the examples.
- * <p/>
+ * <p>
  * Note that this class assumes the resource bundle is in the format
  * <bundle-name>-messages and is located at the top of the jar or classes
  * directory. We can later add the ability to specify a path prefix.

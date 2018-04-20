@@ -17,7 +17,7 @@ package org.mule.api.schedule;
  * </p>
  * <p>
  * The SchedulerFactoryPostProcessor can be:
- * <p/>
+ * <p>
  * <p>
  * <ol>
  * <li>Registered by Spring bean or mule module extension via mule configuration (xml)</li>

@@ -48,7 +48,7 @@ public interface YourKitProfilerServiceMBean
 
     /**
      * Captures snapshot: write profiling information to file.
-     * <p/>
+     * <p>
      * If some profiling is being performed (e.g. started with
      * {@link #startCPUProfiling(long, String)}, {@link #startMonitorProfiling()} or
      * {@link #startAllocationRecording(long)}, or remotely), it won't stop after the
@@ -225,7 +225,7 @@ public interface YourKitProfilerServiceMBean
      * Get current profiling status. The following code snippet demonstrates how to
      * use this method: <code><pre>
      * long status = controller.getStatus();
-     * <p/>
+     * <p>
      * if ((status & YourKitProfilerServiceMBean.ALLOCATION_RECORDING_ADAPTIVE) != 0) {
      *  System.out.println("Allocation recording is on (adaptive)");
      * }
@@ -235,7 +235,7 @@ public interface YourKitProfilerServiceMBean
      * else {
      *  System.out.println("Allocation recording is off");
      * }
-     * <p/>
+     * <p>
      * if ((status & YourKitProfilerServiceMBean.CPU_TRACING) != 0) {
      *  System.out.println("CPU profiling is on (tracing)");
      * }
@@ -245,7 +245,7 @@ public interface YourKitProfilerServiceMBean
      * else {
      *  System.out.println("CPU profiling is off");
      * }
-     * <p/>
+     * <p>
      * if ((status & YourKitProfilerServiceMBean.MONITOR_PROFILING) != 0) {
      *  System.out.println("Monitor profiling is on");
      * }

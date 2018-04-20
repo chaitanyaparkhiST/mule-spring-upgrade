@@ -24,7 +24,7 @@ import net.sf.saxon.om.NamespaceResolver;
  * Implementation of {@link NamespaceContext} which can be parametrized
  * through a {@link Map} in which the keys are Strings with the custom
  * namespace prefixes and the values are those namespaces' URIs as Strings.
- * <p/>
+ * <p>
  * Besides the namespaces parametrized, this implementation also recognizes.
  * the default XML namespaces (xml, xs, and xsi) and their default URIs. Notice
  * that if the parametrization map contains custom URIs for any of those prefixes,

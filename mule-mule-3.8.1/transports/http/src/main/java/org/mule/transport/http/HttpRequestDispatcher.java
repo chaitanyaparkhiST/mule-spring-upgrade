@@ -30,7 +30,7 @@ import org.apache.commons.logging.LogFactory;
 
 /**
  * Manage a ServerSocket.
- * <p/>
+ * <p>
  * Lookup the right MessageReceiver for each HttpRequest and dispatch the socket to the MessageReceiver for further processing.
  */
 class HttpRequestDispatcher implements Work

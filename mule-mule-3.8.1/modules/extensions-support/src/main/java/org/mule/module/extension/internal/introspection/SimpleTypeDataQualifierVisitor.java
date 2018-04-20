@@ -13,7 +13,7 @@ import org.mule.extension.introspection.DataQualifierVisitor;
  * Base implementation for a {@link DataQualifierVisitor} which adds the new
  * method {@link #onSimpleType()} which is invoked by all the {@link DataQualifier}s
  * which refer to a simple type. Those would be:
- * <p/>
+ * <p>
  * <ul>
  * <li>{@link #onBoolean()}</li>
  * <li>{@link #onInteger()}</li>
@@ -23,7 +23,7 @@ import org.mule.extension.introspection.DataQualifierVisitor;
  * <li>{@link #onLong()}</li>
  * <li>{@link #onEnum()}</li>
  * </ul>
- * <p/>
+ * <p>
  * All other qualifiers delegate into {@link #defaultOperation()} by default, but they
  * can be overridden at will
  *

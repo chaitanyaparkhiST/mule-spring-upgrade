@@ -11,7 +11,7 @@ import org.mule.api.NamedObject;
 /**
  * This interface is the interface implemented for all counter types. A Counter can
  * represent a real counter or a virtual counter that will be computed using one or
- * more other counters.<br/>
+ * more other counters.<br>
  * <h3>Real counters</h3>
  * are counters which represent real values. The user will call methods of such
  * counters to modify the associated value of the counter.

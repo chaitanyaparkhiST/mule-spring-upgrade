@@ -18,7 +18,7 @@ import org.apache.commons.dbutils.BasicRowProcessor;
 /**
  * Processes a row from a {@link ResultSet} using the column labels
  * instead of the column names.
- * <p/>
+ * <p>
  * This is needed because some database drivers return different values for the
  * column name and column label. {@link BasicRowProcessor} uses column names,
  * so in the mentioned cases column aliases are lost and are only available for

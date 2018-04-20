@@ -25,11 +25,11 @@ import java.util.Set;
  * A metadata class that groups a set of parameters together.
  * It caches reflection objects necessary for handling those parameters
  * so that introspection is not executed every time, resulting in a performance gain.
- * <p/>
+ * <p>
  * Because groups can be nested, this class also implements {@link Capable},
  * allowing for this group to have a {@link ParameterGroupCapability} which
  * describes the nested group.
- * <p/>
+ * <p>
  * To decouple this class from the representation model (which depending on the
  * context could be a {@link Declaration} or an actual {@link Parameter}, this class
  * references parameters by name

@@ -27,7 +27,7 @@ import java.util.Iterator;
 
 /**
  * <code>VMConnector</code> A simple endpoint wrapper to allow a Mule service to
- * <p/> be accessed from an endpoint
+ * <p> be accessed from an endpoint
  * 
  */
 public class VMConnector extends AbstractConnector

@@ -13,7 +13,7 @@ import org.mule.transformer.types.TypedValue;
 /**
  * Provides universal access for evaluating expressions embedded in Mule configurations, such as Xml, Java,
  * scripting and annotations.
- * <p/>
+ * <p>
  * Users can register or unregister {@link ExpressionEvaluator} through this interface.
  */
 public interface ExpressionManager
@@ -122,7 +122,7 @@ public interface ExpressionManager
     /**
      * Evaluates the given expression propagating dataType.
      *
-     * <p/>
+     * <p>
      * The expression should be a single expression definition with or without
      * enclosing braces. i.e. "context:serviceName" and "#[context:serviceName]" are both valid. For
      * situations where one or more expressions need to be parsed within a single text, the

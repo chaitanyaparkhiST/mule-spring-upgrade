@@ -29,7 +29,7 @@ import java.util.List;
 /**
  * This is a wrapper helper that can process {@link AnnotatedEndpointData} objects (Annotaiton config data)
  * and turn them into {@link org.mule.api.endpoint.EndpointBuilder} or {@link org.mule.api.endpoint.ImmutableEndpoint} objects.
- * <p/>
+ * <p>
  * THis is an internal class that should only be used by the Annotation parser code.
  */
 public class AnnotatedEndpointHelper

@@ -51,7 +51,7 @@ public class TransportFactory
      * Creates an uninitialied connector from the provided MuleEndpointURI. The
      * scheme is used to determine what kind of connector to create. Any params set
      * on the uri can be used to initialise bean properties on the created connector.
-     * <p/> Note that the initalise method will need to be called on the connector
+     * <p> Note that the initalise method will need to be called on the connector
      * returned. This is so that developers can control when the connector
      * initialisation takes place as this is likely to initialse all connecotr
      * resources.

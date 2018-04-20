@@ -57,7 +57,7 @@ import org.apache.commons.logging.LogFactory;
  * a single class which implements {@link org.mule.transport.jms.integration.JmsVendorConfiguration}.  The implementation
  * of this class is loaded by looking for the classname in a properties file called 'jms-vendor-configs.txt' in the root
  * classpath.
- * <p/>
+ * <p>
  * This test case provides a number of support methods for testing Jms providers with Mule.  This implementation is based
  * around the concept of scenarios.  Scenarios define an action or set of actions and are represented as implementations
  * of {@link org.mule.transport.jms.integration.AbstractJmsFunctionalTestCase.Scenario}.  Scenarios can be combined to create
@@ -67,7 +67,7 @@ import org.apache.commons.logging.LogFactory;
  * {@link org.mule.transport.jms.integration.AbstractJmsFunctionalTestCase.ScenarioCommit}
  * {@link org.mule.transport.jms.integration.AbstractJmsFunctionalTestCase.ScenarioRollback}
  * {@link org.mule.transport.jms.integration.AbstractJmsFunctionalTestCase.NonTransactedScenario}
- * <p/>
+ * <p>
  * This object will also add properties to the registry that can be accessed within XML config files using placeholders.
  * The following properties are made available -
  * <ul>
@@ -79,16 +79,16 @@ import org.apache.commons.logging.LogFactory;
  * <li>${broadcast.destination} - the URI of the broadcast topic (retrieved from an {@link org.mule.transport.jms.integration.JmsVendorConfiguration} implementation)</li>
  * <li>${protocol} - the protocol of the current messaging connector (retrieved from an {@link org.mule.transport.jms.integration.JmsVendorConfiguration} implementation)</li>
  * </ul>
- * <p/>
+ * <p>
  * For each integration test there are 2 configuration files. One is provided by the JMS integration suite and defines the
  * event flow for the test. The other is a vendor-specific config file that defines the connectors and possibly endpoints and
  * transformers for the Jms connector being tested. These configurations are known as 'connector' files, they share the same
  * file name as the generic configuration file prepended with 'connector-'.  The location of these files must be
- * <p/>
+ * <p>
  * <code>integration/&lt;provider_name>/connector-&lt;event_flow_config_name></code>
- * <p/>
+ * <p>
  * The 'provider_name' is obtained from the {@link org.mule.transport.jms.integration.JmsVendorConfiguration} implementation.
- * <p/>
+ * <p>
  * In order to know what objects to define in the 'connector-' files you must copy the connector files from the ActiveMQ (default)
  * test suite and configure the objects to match the configuration in the ActiveMQ tests.  Note that the object names must
  * be consistently the same for things to work.
@@ -195,7 +195,7 @@ public abstract class AbstractJmsFunctionalTestCase extends FunctionalTestCase
 
     /**
      * Adds the following properties to the registry so that the Xml configuration files can reference them.
-     * <p/>
+     * <p>
      * <ul>
      * <li>${inbound.destination} - the URI of the inbound destination (retrieved from an {@link org.mule.transport.jms.integration.JmsVendorConfiguration} implementation)</li>
      * <li>${outbound.destination} - the URI of the outbound destination (retrieved from an {@link org.mule.transport.jms.integration.JmsVendorConfiguration} implementation)</li>
@@ -319,7 +319,7 @@ public abstract class AbstractJmsFunctionalTestCase extends FunctionalTestCase
     /**
      * Returns the {@link #getInboundQueueName()} in the form of an endpoint URI i.e.
      * jms://in.
-     * <p/>
+     * <p>
      * This calls through to {@link JmsVendorConfiguration#getInboundEndpoint()}
      *
      * @return the Inbound JMS endpoint
@@ -333,7 +333,7 @@ public abstract class AbstractJmsFunctionalTestCase extends FunctionalTestCase
     /**
      * Returns the {@link #getOutboundQueueName()} in the form of an endpoint URI i.e.
      * jms://out.
-     * <p/>
+     * <p>
      * This calls through to {@link org.mule.transport.jms.integration.JmsVendorConfiguration#getOutboundEndpoint()}
      *
      * @return the Outbound JMS endpoint
@@ -347,7 +347,7 @@ public abstract class AbstractJmsFunctionalTestCase extends FunctionalTestCase
     /**
      * The test inbound queue name.  For consistency this should always be 'in'. Note that you need to make
      * sure that this queue is available in the the JMS provider being tested.
-     * <p/>
+     * <p>
      * This calls through to {@link org.mule.transport.jms.integration.JmsVendorConfiguration#getInboundDestinationName()}
      *
      * @return The test inbound destination name
@@ -361,7 +361,7 @@ public abstract class AbstractJmsFunctionalTestCase extends FunctionalTestCase
     /**
      * The test dead letter queue name.  For consistency this should always be 'dlq'. Note that you need to make
      * sure that this queue is available in the the JMS provider being tested.
-     * <p/>
+     * <p>
      * This calls through to {@link org.mule.transport.jms.integration.JmsVendorConfiguration#getDeadLetterDestinationName()}
      *
      * @return The test inbound destination name
@@ -375,7 +375,7 @@ public abstract class AbstractJmsFunctionalTestCase extends FunctionalTestCase
     /**
      * The test outbound queue name.  For consistency this should always be 'out'. Note that you need to make
      * sure that this queue is available in the the JMS provider being tested.
-     * <p/>
+     * <p>
      * This calls through to {@link org.mule.transport.jms.integration.JmsVendorConfiguration#getOutboundDestinationName()}
      *
      * @return The test outbound destination name
@@ -389,7 +389,7 @@ public abstract class AbstractJmsFunctionalTestCase extends FunctionalTestCase
     /**
      * Timeout in milliseconds used when checking that a message is NOT present. This is usually 1000-2000ms.
      * It is customizable so that slow connections i.e. over a wAN can be accounted for.
-     * <p/>
+     * <p>
      * This calls through to {@link JmsVendorConfiguration#getSmallTimeout()}
      *
      * @return timeout in milliseconds used when checking that a message is NOT present
@@ -404,7 +404,7 @@ public abstract class AbstractJmsFunctionalTestCase extends FunctionalTestCase
     /**
      * The timeout in milliseconds used when waiting for a message to arrive. This is usually 3000-5000ms.
      * However, it is customizable so that slow connections i.e. over a wAN can be accounted for.
-     * <p/>
+     * <p>
      * This calls through to {@link JmsVendorConfiguration#getTimeout()}
      *
      * @return The timeout used when waiting for a message to arrive
@@ -642,7 +642,7 @@ public abstract class AbstractJmsFunctionalTestCase extends FunctionalTestCase
     /**
      * Purge destinations for clean test setup. Especially applicable to WMQ tests, as messages from
      * other tests may still exist from other tests' runs.
-     * <p/>
+     * <p>
      * Well-behaving tests should drain both inbound and outbound destinations, as well as any intermediary ones.
      * @param destination destination name without any protocol specifics
      */

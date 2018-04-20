@@ -18,7 +18,7 @@ import java.util.Map;
  * Helper class that encapsulates the specification of a method parameter, i.e.
  * a Method or Constructor plus a parameter index and a nested type index for
  * a declared generic type. Useful as a specification object to pass along.
- * <p/>
+ * <p>
  * author: Spring
  */
 public class MethodParameter

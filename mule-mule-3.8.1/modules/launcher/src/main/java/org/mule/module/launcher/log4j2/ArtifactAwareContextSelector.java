@@ -20,11 +20,11 @@ import org.apache.logging.log4j.status.StatusLogger;
  * Implementation of {@link org.apache.logging.log4j.core.selector.ContextSelector}
  * which is used to implement log separation based on provided or current
  * {@link java.lang.ClassLoader}
- * <p/>
+ * <p>
  * This component is responsible for managing the {@link org.apache.logging.log4j.core.LoggerContext}
  * that corresponds to each artifact (aka applications, domains, container), using its classloader as
  * an identifier. The same classloader always gets the same {@link org.apache.logging.log4j.core.LoggerContext}
- * <p/>
+ * <p>
  * This component also overrides log4j2's default algorithm for locating configuration files, although it
  * does it in a way consistent with the replaced behavior:
  * <ul>
@@ -35,10 +35,10 @@ import org.apache.logging.log4j.status.StatusLogger;
  * a child first strategy (artifact - domain - container). Each artifact starts looking in the phase that makes
  * sense for it</li>
  * </ul>
- * <p/>
+ * <p>
  * If the classloader is an artifact one, then it adds a {@link org.mule.module.launcher.artifact.ShutdownListener}
  * to destroy the logging context when the app is undeployed, preventing memory leaks.
- * <p/>
+ * <p>
  * If mule is running in embedded mode, then all of this logic described above is discarded and it simply logs
  * to a file called mule-main.log
  *
@@ -84,11 +84,11 @@ class ArtifactAwareContextSelector implements ContextSelector, Disposable
     /**
      * Given a {@code classLoader}  this method will resolve which is the {@code classLoader}
      * associated with the logger context to use for this {@code classLoader} .
-     * <p/>
+     * <p>
      * When the provided {@code classLoader}  is from an application or a domain it will return
      * the {@code classLoader}  associated with the logger context of the application or domain.
      * So far the artifact (domain or app) {@code classLoader}  will be resolved to it self.
-     * <p/>
+     * <p>
      * If the {@code classLoader} belongs to the container or any other {@code classLoader}  created from a
      * library running outside the context of an artifact then the system {@code classLoader}  will be used.
      *

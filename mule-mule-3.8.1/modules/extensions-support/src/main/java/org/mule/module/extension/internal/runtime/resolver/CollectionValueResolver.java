@@ -25,7 +25,7 @@ import java.util.Set;
  * A {@link ValueResolver} that takes a list of {@link ValueResolver}s
  * and upon invocation of {@link #resolve(MuleEvent)} it return a
  * {@link Collection} of values with the outcome of each original resolver.
- * <p/>
+ * <p>
  * This class implements {@link Lifecycle} and propagates those events to each
  * of the {@code resolvers}
  *

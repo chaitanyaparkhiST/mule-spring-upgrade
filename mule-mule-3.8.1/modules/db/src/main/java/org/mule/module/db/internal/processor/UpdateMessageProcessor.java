@@ -24,10 +24,10 @@ import java.util.List;
 
 /**
  * Executes an update query on a database.
- * <p/>
+ * <p>
  * An update query can be an update, insert or delete query, or a stored procedure
  * taking input parameters only and returning an update count.
- * <p/>
+ * <p>
  * Both database and queries are resolved, if required, using the {@link MuleEvent}
  * being processed.
  */

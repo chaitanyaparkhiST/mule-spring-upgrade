@@ -17,7 +17,7 @@
         <springCglibVersion>3.2.2</springCglibVersion>
     </properties>
 
-    <build>
+    <!-- <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -30,7 +30,7 @@
                             <goal>shade</goal>
                         </goals>
                         <configuration>
-                            <!-- Build a jar with cglib shaded for spring -->
+                            Build a jar with cglib shaded for spring
                             <artifactSet>
                                 <includes>
                                     <include>cglib:cglib</include>
@@ -51,7 +51,7 @@
                 </executions>
             </plugin>        
         </plugins>
-    </build>
+    </build> -->
 
     <dependencies>
         <dependency>

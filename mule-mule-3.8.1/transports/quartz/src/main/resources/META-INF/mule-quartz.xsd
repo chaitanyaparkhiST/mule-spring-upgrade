@@ -329,7 +329,7 @@
                         <tr><td>Year</td><td>NO</td><td>empty, 1970-2099</td><td>, - * /</td></tr>
                     </table>
 
-                    Cron expressions can be as simple as this: <b>* * * * ? *</b><br/>
+                    Cron expressions can be as simple as this: <b>* * * * ? *</b><br>
                     or more complex, like this: <b>0 0/5 14,18,3-39,52 ? JAN,MAR,SEP MON-FRI 2002-2010</b>
 
                     <h4>Some examples:</h4>

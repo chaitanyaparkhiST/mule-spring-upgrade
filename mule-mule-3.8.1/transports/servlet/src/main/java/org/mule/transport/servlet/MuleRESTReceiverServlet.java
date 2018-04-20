@@ -22,18 +22,18 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * <code>MuleRESTReceiverServlet</code> is used for sending and receiving events from
  * the Mule server via a servlet container. The servlet uses the REST style of request
- * processing. <p/>
+ * processing. <p>
  * GET METHOD will do a request from an endpoint if an endpoint parameter is set otherwise 
  * it behaves the same way as POST. You can either specify the endpoint URL REST-style, 
- * e.g., to read from jms://orders.queue <p/>
- * http://www.mycompany.com/rest/jms/orders/queue <p/> or a logical Mule endpoint name, 
- * e.g., this would get the first email message received by the orderEmailInbox endpoint. <p/>
- * http://www.mycompany.com/rest/ordersEmailInbox <p/> 
+ * e.g., to read from jms://orders.queue <p>
+ * http://www.mycompany.com/rest/jms/orders/queue <p> or a logical Mule endpoint name, 
+ * e.g., this would get the first email message received by the orderEmailInbox endpoint. <p>
+ * http://www.mycompany.com/rest/ordersEmailInbox <p> 
  * POST METHOD Do a synchronous call and return a result 
- * http://www.clientapplication.com/service/clientquery?custId=1234 <p/> 
+ * http://www.clientapplication.com/service/clientquery?custId=1234 <p> 
  * PUT METHOD Do an asynchronous call without returning a result (other than an http
  * status code) http://www.clientapplication.com/service/orders?payload=<order>more
- * beer</order> <p/> 
+ * beer</order> <p> 
  * DELETE METHOD Same as GET only without returning a result
  */
 

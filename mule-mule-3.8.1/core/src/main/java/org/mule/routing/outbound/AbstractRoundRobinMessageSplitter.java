@@ -51,7 +51,7 @@ public class AbstractRoundRobinMessageSplitter extends AbstractMessageSplitter
      * Method used just to split the message into parts.  Each part should be an entry in the list.
      * The list can contain either {@link org.mule.api.MuleMessage} objects or just payloads (Mule will
      * automatically convert the payloads into messages).
-     * <p/>
+     * <p>
      * This method can be overridden by custom implementations of splitter router where the distribution of
      * the message parts will be done using either round robin or endpoint filtering.
      *
@@ -74,7 +74,7 @@ public class AbstractRoundRobinMessageSplitter extends AbstractMessageSplitter
 
     /**
      * Retrieves a specific message part for the given endpoint. the message will then be
-     * routed via the provider. <p/> <strong>NOTE:</strong>Implementations must provide
+     * routed via the provider. <p> <strong>NOTE:</strong>Implementations must provide
      * proper synchronization for shared state (payload, properties, etc.)
      *
      * @param message   the current message being processed
@@ -171,7 +171,7 @@ public class AbstractRoundRobinMessageSplitter extends AbstractMessageSplitter
      * the (n modulo number of targets) endpoint.
      * If false then the messages will be distributed equally amongst all
      * targets.
-     * <p/>
+     * <p>
      * The behaviour changes if the targets have filters since the message part will get routed
      * based on the next endpoint that follows the above rule AND passes the endpoint filter.
      *
@@ -189,7 +189,7 @@ public class AbstractRoundRobinMessageSplitter extends AbstractMessageSplitter
      * the (n modulo number of targets) endpoint.
      * If false then the messages will be distributed equally amongst all
      * targets.
-     * <p/>
+     * <p>
      * The behaviour changes if the targets have filters since the message part will get routed
      * based on the next endpoint that follows the above rule AND passes the endpoint filter.
      *

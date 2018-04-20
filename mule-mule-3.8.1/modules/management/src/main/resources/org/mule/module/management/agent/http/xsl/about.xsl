@@ -48,11 +48,11 @@
                                        </xsl:with-param>
                                     </xsl:call-template>
                                  </a>
-                                 <br/>
+                                 <br>
                                  <xsl:call-template name="str">
                                     <xsl:with-param name="id">about.main.mule.title</xsl:with-param>
                                  </xsl:call-template>
-                                 <br/>
+                                 <br>
                                  <xsl:variable name="vendor.url">
                                     <xsl:call-template name="vendorUrl"/>
                                  </xsl:variable>

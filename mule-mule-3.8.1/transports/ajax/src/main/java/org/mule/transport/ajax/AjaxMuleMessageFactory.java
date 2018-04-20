@@ -23,7 +23,7 @@ import org.cometd.Bayeux;
 /**
  * A {@link MuleMessageFactory} implementation for JSON messages. The payload can either be a 
  * {@link Map} or a JSON encoded String.
- * <p/>
+ * <p>
  * If the payload is a {@link Map}, this message factory will recognise the following keys:
  * <ul>
  * <li>data - the object to use a the payload, this can be a JSON encoded string. See {@link Bayeux#DATA_FIELD}</li>

@@ -137,11 +137,11 @@ public class ChainingRouter extends FilteringOutboundRouter
      * Process intermediary result of invocation. The method will be invoked
      * <strong>only</strong> if both local and intermediary results are available
      * (not null).
-     * <p/>
+     * <p>
      * Overriding methods must call <code>super(localResult, intermediaryResult)</code>,
      * unless they are modifying the correlation workflow (if you know what that means,
      * you know what you are doing and when to do it).
-     * <p/>
+     * <p>
      * Default implementation propagates
      * the following properties:
      * <ul>

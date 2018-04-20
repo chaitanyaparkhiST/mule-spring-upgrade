@@ -49,7 +49,7 @@ import org.apache.commons.logging.LogFactory;
 
 /**
  * It's in charge of the whole deployment process.
- * <p/>
+ * <p>
  * It will deploy the applications at the container startup process.
  * It will periodically scan the artifact directories in order to process new deployments,
  * remove artifacts that were previously deployed but the anchor file was removed and redeploy
@@ -121,7 +121,7 @@ public class DeploymentDirectoryWatcher implements Runnable
 
     /**
      * Starts the process of deployment / undeployment of artifact.
-     * <p/>
+     * <p>
      * It wil schedule a task for periodically scan the deployment directories.
      */
     public void start()

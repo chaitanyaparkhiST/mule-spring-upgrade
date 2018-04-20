@@ -38,7 +38,7 @@ public interface ExceptionFactory
     /**
      * Creates an exception of the given {@code exceptionClassName}
      * which represents the given {@code result}.
-     * <p/>
+     * <p>
      * The actual rules about what conditions is the exception {@link Class}
      * expected to meet (e.g: presence of default constructor)
      * are up to the implementations.

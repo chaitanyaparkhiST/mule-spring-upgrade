@@ -46,7 +46,7 @@ import org.apache.logging.log4j.core.util.FileWatcher;
 /**
  * This component grabs a {link MuleLoggerContext} which has just been created reading a configuration file
  * and applies configuration changes to it so that it complies with mule's logging strategy.
- * <p/>
+ * <p>
  * Its basic functions are:
  * <ul>
  * <li>Disable log4j's shutdown hook so that it doesn't collide with mule's {@link org.mule.module.launcher.artifact.ShutdownListener},

@@ -15,7 +15,7 @@ import org.mule.api.exception.MessagingExceptionHandler;
 /**
  * {@link org.mule.api.transport.ReplyToHandler} implementation that uses a {@link org.mule.api.exception
  * .MessagingExceptionHandler} to handle errors before delegating to the delegate ReplyToHandler instance.
- * <p/>
+ * <p>
  * Invocations of {@link #processReplyTo(org.mule.api.MuleEvent, org.mule.api.MuleMessage, Object)} are passed straight
  * through to the delegate ReplyToHandler where as invocations of
  * {@link ReplyToHandler#processExceptionReplyTo(org.mule.api.MessagingException, Object)} may result in a

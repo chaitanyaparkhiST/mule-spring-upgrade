@@ -18,15 +18,15 @@ import java.io.Serializable;
  * serialized object to implement {@link Serializable}. However, some implementations
  * might require that condition and throw {@link IllegalArgumentException} if not
  * met.
- * <p/>
+ * <p>
  * Implementations are also responsible for the correct initialization of classes
  * implementing the {@link DeserializationPostInitialisable}
  * interface.
- * <p/>
- * <p/>
+ * <p>
+ * <p>
  * Unexpected behavior can result of deserializing objects that were generated with
  * a different implementation of {@link ObjectSerializer}.
- * <p/>
+ * <p>
  * Implementations are required to be thread-safe
  *
  * @since 3.7.0
@@ -56,11 +56,11 @@ public interface ObjectSerializer
     /**
      * Deserializes the given bytes. Unexpected behavior can result of deserializing
      * a byte[] that was generated with another implementation.
-     * <p/>
+     * <p>
      * If the obtained object implements {@link DeserializationPostInitialisable}
      * then this serializer will be responsible for properly initializing
      * the object before returning it.
-     * <p/>
+     * <p>
      * Implementation will choose the {@link java.lang.ClassLoader}
      * to use for deserialization.
      *
@@ -73,7 +73,7 @@ public interface ObjectSerializer
 
     /**
      * Deserializes the given bytes.
-     * <p/>
+     * <p>
      * If the obtained object implements {@link DeserializationPostInitialisable}
      * then this serializer will be responsible for properly initializing
      * the object before returning it.
@@ -88,13 +88,13 @@ public interface ObjectSerializer
 
     /**
      * Deserializes the given stream of bytes.
-     * <p/>
+     * <p>
      * Implementation will choose the {@link java.lang.ClassLoader}
      * to use for deserialization.
-     * <p/>
+     * <p>
      * Even if deserialization fails, this method will close the
      * {@code inputStream}
-     * <p/>
+     * <p>
      * If the obtained object implements {@link DeserializationPostInitialisable}
      * then this serializer will be responsible for properly initializing
      * the object before returning it.
@@ -108,10 +108,10 @@ public interface ObjectSerializer
 
     /**
      * Deserializes the given stream of bytes.
-     * <p/>
+     * <p>
      * Even if deserialization fails, this method will close the
      * {@code inputStream}
-     * <p/>
+     * <p>
      * If the obtained object implements {@link DeserializationPostInitialisable}
      * then this serializer will be responsible for properly initializing
      * the object before returning it.

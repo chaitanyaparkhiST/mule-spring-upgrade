@@ -42,16 +42,16 @@ import org.apache.commons.logging.LogFactory;
 
 /**
  * Support for configuring TLS/SSL connections.
- * <p/>
+ * <p>
  * <h2>Introduction</h2>
- * <p/>
+ * <p>
  * This class was introduced to centralise the work of TLS/SSL configuration.  It is intended
  * to be backwards compatible with earlier code (as much as possible) and so is perhaps more
  * complex than would be necessary if starting from zero - the main source of confusion is the
  * distinction between direct and indirect creation of sockets and stores.
- * <p/>
+ * <p>
  * <h2>Configuration</h2>
- * <p/>
+ * <p>
  * The documentation in this class is intended more for programmers than end uses.  If you are
  * configuring a connector the interfaces {@link org.mule.api.security.TlsIndirectTrustStore},
  * {@link TlsDirectTrustStore},
@@ -59,26 +59,26 @@ import org.apache.commons.logging.LogFactory;
  * properties.  In addition you should check the documentation for the specific protocol / connector
  * used and may also need to read the discussion on direct and indirect socket and store creation
  * below (or, more simply, just use whichever key store interface your connector implements!).
- * <p/>
+ * <p>
  * <h2>Programming</h2>
- * <p/>
+ * <p>
  * This class is intended to be used as a delegate as we typically want to add security to an
  * already existing connector (so we inherit from that connector, implement the appropriate
  * interfaces from {@link org.mule.api.security.TlsIndirectTrustStore}, {@link TlsDirectTrustStore},
  * {@link TlsDirectKeyStore} and {@link TlsIndirectKeyStore}, and then forward calls to the
  * interfaces to an instance of this class).
- * <p/>
+ * <p>
  * <p>For setting System properties (and reading them) use {@link TlsPropertiesMapper}.  This
  * can take a "namespace" which can then be used by {@link TlsPropertiesSocketFactory} to
  * construct an appropriate socket factory.  This approach (storing to properties and then
  * retrieving that information later in a socket factory) lets us pass TLS/SSL configuration
  * into libraries that are configured by specifying on the socket factory class.</p>
- * <p/>
+ * <p>
  * <h2>Direct and Indirect Socket and Store Creation</h2>
- * <p/>
+ * <p>
  * For the SSL transport, which historically defined parameters for many different secure
  * transports, the configuration interfaces worked as follows:
- * <p/>
+ * <p>
  * <dl>
  * <dt>{@link TlsDirectTrustStore}</dt><dd>Used to generate trust store directly and indirectly
  * for all TLS/SSL conections via System properties</dd>
@@ -86,7 +86,7 @@ import org.apache.commons.logging.LogFactory;
  * <dt>{@link TlsIndirectKeyStore}</dt><dd>Used to generate key store indirectly for all
  * TLS/SSL conections via System properties</dd>
  * </dl>
- * <p/>
+ * <p>
  * Historically, many other transports relied on the indirect configurations defined above.
  * So they implemented {@link org.mule.api.security.TlsIndirectTrustStore}
  * (a superclass of {@link TlsDirectTrustStore})
@@ -95,7 +95,7 @@ import org.apache.commons.logging.LogFactory;
  * the configurations are now typically (see individual connector/protocol documentation) specific
  * to a protocol or connector.  <em>Note - these interfaces are new, but the original code had
  * those methods, used as described.  The new interfaces only make things explicit.</em>
- * <p/>
+ * <p>
  * <p><em>Note for programmers</em> One way to understand the above is to see that many
  * protocols are handled by libraries that are configured by providing either properties or
  * a socket factory.  In both cases (the latter via {@link TlsPropertiesSocketFactory}) we

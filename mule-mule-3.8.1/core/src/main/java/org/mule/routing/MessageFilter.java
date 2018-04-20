@@ -38,7 +38,7 @@ import org.slf4j.LoggerFactory;
  * continues to the next message processor. If the filter does not accept the message
  * processor and a message processor is configured for handling unaccepted message
  * then this will be invoked, otherwise <code>null</code> will be returned.
- * <p/>
+ * <p>
  * <b>EIP Reference:</b> <a
  * href="http://www.eaipatterns.com/Filter.html">http://www.eaipatterns
  * .com/Filter.html<a/>

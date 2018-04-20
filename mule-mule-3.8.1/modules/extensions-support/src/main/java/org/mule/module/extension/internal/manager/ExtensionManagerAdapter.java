@@ -27,7 +27,7 @@ public interface ExtensionManagerAdapter extends ExtensionManager, Configuration
      * Returns a configuration instance obtained through a {@link ConfigurationInstanceProvider}
      * previously registered using the {@link #registerConfigurationInstanceProvider(Extension, String, ConfigurationInstanceProvider)}
      * under the given {@code configurationInstanceProviderName}.
-     * <p/>
+     * <p>
      * After the {@link ConfigurationInstanceProvider} has been located, an instance is returned by
      * invoking its {@link ConfigurationInstanceProvider#get(OperationContext)} with {@code operationContext}
      * as the argument.

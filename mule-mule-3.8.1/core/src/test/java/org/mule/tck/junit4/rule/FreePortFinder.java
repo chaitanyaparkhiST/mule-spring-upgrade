@@ -63,7 +63,7 @@ public class FreePortFinder
 
     /**
      * Indicates that the port is free from the point of view of the caller.
-     * <p/>
+     * <p>
      * Checks that the port was released, if it was not, then it would be
      * marked as in use, so no other client receives the same port again.
      *

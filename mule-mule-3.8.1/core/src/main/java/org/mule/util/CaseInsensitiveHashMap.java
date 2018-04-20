@@ -16,13 +16,13 @@ import org.apache.commons.collections.map.AbstractHashedMap;
 
 /**
  * A case-insensitive <code>Map</code>.
- * <p/>
+ * <p>
  * As entries are added to the map, keys hash values are lowercase hash codes of the key.  the
  * Real key case is preserved.
- * <p/>
- * <p/>
+ * <p>
+ * <p>
  * The <code>keySet()</code> method returns all keys in their original case
- * <p/>
+ * <p>
  * <strong>Note that CaseInsensitiveMap is not synchronized and is not thread-safe.</strong>
  * If you wish to use this map from multiple threads concurrently, you must use
  * appropriate synchronization. The simplest approach is to wrap this map
@@ -74,7 +74,7 @@ public class CaseInsensitiveHashMap extends AbstractHashedMap implements Seriali
 
     /**
      * Constructor copying elements from another map.
-     * <p/>
+     * <p>
      * Keys will be converted to lower case strings, which may cause
      * some entries to be removed (if string representation of keys differ
      * only by character case).

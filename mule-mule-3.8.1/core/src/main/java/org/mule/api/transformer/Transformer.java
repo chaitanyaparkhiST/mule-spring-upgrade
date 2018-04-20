@@ -126,7 +126,7 @@ public interface Transformer extends MessageProcessor, Initialisable, Disposable
      * Sets the expected return type for the transformed data. If the transformed
      * data is not of this class type a <code>TransformerException</code> will be
      * thrown.
-     * <p/>
+     * <p>
      * This method supersedes {@link #getReturnClass()} because it allows Generics information to be associated with the
      * return type of the transformer
      *
@@ -139,7 +139,7 @@ public interface Transformer extends MessageProcessor, Initialisable, Disposable
      * Specifies the return type of the result after this transformer has been executed. Mule will use this to validate
      * the return type but also allow users to perform automatic transformations based on the source type of the object
      * to transform and this return type.
-     * <p/>
+     * <p>
      * This method supersedes {@link #getReturnClass()} because it allows Generics information to be associated with the
      * return type of the transformer
      *

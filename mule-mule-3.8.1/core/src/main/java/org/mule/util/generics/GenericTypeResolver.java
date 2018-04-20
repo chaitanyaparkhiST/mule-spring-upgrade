@@ -20,10 +20,10 @@ import java.util.WeakHashMap;
 
 /**
  * Helper class for resolving generic types against type variables.
- * <p/>
+ * <p>
  * <p>Mainly intended for usage within the framework, resolving method
  * parameter types even when they are declared generically.
- * <p/>
+ * <p>
  * author: Spring
  */
 public abstract class GenericTypeResolver
@@ -322,7 +322,7 @@ public abstract class GenericTypeResolver
      * public interface Foo<S, T> {
      * ..
      * }
-     * <p/>
+     * <p>
      * public class FooImpl implements Foo<String, Integer> {
      * ..
      * }</pre>

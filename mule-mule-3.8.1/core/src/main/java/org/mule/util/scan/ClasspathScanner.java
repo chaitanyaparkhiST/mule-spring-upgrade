@@ -273,7 +273,7 @@ public class ClasspathScanner
 
     /**
      * Works out the correct scanner based on the class passed in
-     * <p/>
+     * <p>
      * Note that these could be better architected by breaking out filters into strategy objects, but for now this
      * suits my needs
      *

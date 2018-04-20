@@ -25,7 +25,7 @@ import java.util.List;
 
 /**
  * Selects which exception strategy to execute based on filtering.
- * <p/>
+ * <p>
  * Exception listeners must implement {@link org.mule.api.exception.MessagingExceptionHandlerAcceptor} to be part of ChoiceMessagingExceptionStrategy
  */
 public class ChoiceMessagingExceptionStrategy extends AbstractMuleObjectOwner<MessagingExceptionHandlerAcceptor>

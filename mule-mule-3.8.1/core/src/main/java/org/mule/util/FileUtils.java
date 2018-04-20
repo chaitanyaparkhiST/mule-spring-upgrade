@@ -354,7 +354,7 @@ public class FileUtils extends org.apache.commons.io.FileUtils
      * Workaround for JDK bug <a href="http://bugs.sun.com/bugdatabase/view_bug.do;:YfiG?bug_id=4117557">
      * 4117557</a>. More in-context information at
      * <a href="http://mule.mulesoft.org/jira/browse/MULE-1112">MULE-1112</a>
-     * <p/>
+     * <p>
      * Factory methods correspond to constructors of the <code>java.io.File class</code>.
      * No physical file created in this method.
      *
@@ -378,7 +378,7 @@ public class FileUtils extends org.apache.commons.io.FileUtils
      * Workaround for JDK bug <a href="http://bugs.sun.com/bugdatabase/view_bug.do;:YfiG?bug_id=4117557">
      * 4117557</a>. More in-context information at
      * <a href="http://mule.mulesoft.org/jira/browse/MULE-1112">MULE-1112</a>
-     * <p/>
+     * <p>
      * Factory methods correspond to constructors of the <code>java.io.File class</code>.
      * No physical file created in this method.
      *
@@ -402,7 +402,7 @@ public class FileUtils extends org.apache.commons.io.FileUtils
      * Workaround for JDK bug <a href="http://bugs.sun.com/bugdatabase/view_bug.do;:YfiG?bug_id=4117557">
      * 4117557</a>. More in-context information at
      * <a href="http://mule.mulesoft.org/jira/browse/MULE-1112">MULE-1112</a>
-     * <p/>
+     * <p>
      * Factory methods correspond to constructors of the <code>java.io.File class</code>.
      * No physical file created in this method.
      *
@@ -427,7 +427,7 @@ public class FileUtils extends org.apache.commons.io.FileUtils
      * Workaround for JDK bug <a href="http://bugs.sun.com/bugdatabase/view_bug.do;:YfiG?bug_id=4117557">
      * 4117557</a>. More in-context information at
      * <a href="http://mule.mulesoft.org/jira/browse/MULE-1112">MULE-1112</a>
-     * <p/>
+     * <p>
      * Factory methods correspond to constructors of the <code>java.io.File class</code>.
      * No physical file created in this method.
      *

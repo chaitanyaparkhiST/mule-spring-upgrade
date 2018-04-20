@@ -23,7 +23,7 @@ import org.glassfish.grizzly.strategies.AbstractIOStrategy;
 /**
  * Grizzly IO Strategy that will handle each work to an specific {@link java.util.concurrent.Executor}
  * based on the {@link org.mule.module.http.internal.listener.ServerAddress} of a {@link org.glassfish.grizzly.Connection}.
- * <p/>
+ * <p>
  * There's logic from {@link org.glassfish.grizzly.strategies.WorkerThreadIOStrategy} that need to be reused but unfortunately
  * that class cannot be override.
  */

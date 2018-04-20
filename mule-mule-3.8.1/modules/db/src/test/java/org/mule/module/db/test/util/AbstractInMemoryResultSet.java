@@ -33,7 +33,7 @@ import java.util.Map;
 
 /**
  * Base class for in memory implementation of {@link ResultSet} for testing purpose.
- * <p/>
+ * <p>
  * NOTE: partial implementation to cover current test scenarios
  */
 public abstract class AbstractInMemoryResultSet implements ResultSet

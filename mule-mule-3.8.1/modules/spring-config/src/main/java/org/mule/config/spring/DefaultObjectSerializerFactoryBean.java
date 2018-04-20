@@ -17,7 +17,7 @@ import org.springframework.beans.factory.SmartFactoryBean;
  * {@link ObjectSerializer} which got configured as the
  * {@link MuleContext}'s default by invoking
  * {@link MuleContext#getObjectSerializer()}
- * <p/>
+ * <p>
  * Because this class is annotated with the
  * {@link DefaultObjectSerializer} qualified, this factory
  * bean will be used to resolve injections requests for

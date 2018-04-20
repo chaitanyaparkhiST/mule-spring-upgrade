@@ -14,7 +14,7 @@ import org.mule.util.StringUtils;
 /**
  * Provides debug information for an object field.
  *
- * <p/>
+ * <p>
  * Debug information is for informative purposes while debugging a Mule application.
  * Obtaining such information can cause collateral effects, for example when an MEL expression
  * is evaluated to obtain the value and then evaluated again on the real execution.

@@ -18,7 +18,7 @@ import org.apache.commons.logging.LogFactory;
  * Stores JMX info pertinent to the currently intialising Mule manager with
  * JMX management enabled. The info is being kept for the duration of Mule server life,
  * and cleared on manager disposal.
- * <p/>
+ * <p>
  * The main reason for that class is that JmxAgent prepares only the JMX foundation, while
  * the agents following it may require some contextual information about Mule's JMX, such as
  * a currently resolved Mule domain name (if non-clashing JMX domains support is enabled, which

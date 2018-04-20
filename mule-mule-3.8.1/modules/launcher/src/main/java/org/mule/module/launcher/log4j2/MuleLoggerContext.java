@@ -28,14 +28,14 @@ import org.apache.logging.log4j.message.MessageFactory;
 /**
  * Subclass of {@link org.apache.logging.log4j.core.LoggerContext}
  * which adds some information about the mule artifact being logged.
- * <p/>
+ * <p>
  * The most important function of this class though is to override the
  * {@link #reconfigure()} method to to its inherited purpose plus
  * invoking {@link org.mule.module.launcher.log4j2.LoggerContextConfigurer#configure(MuleLoggerContext)}.
- * <p/>
+ * <p>
  * The {@link org.mule.module.launcher.log4j2.LoggerContextConfigurer} needs to be invoked here so
  * that it's invoked each time the configuration is reloaded.
- * <p/>
+ * <p>
  * This class must not hold any reference to a {@link java.lang.ClassLoader} since otherwise
  * {@link org.apache.logging.log4j.core.Logger} instances held on static fields will make
  * that class loader GC unreachable

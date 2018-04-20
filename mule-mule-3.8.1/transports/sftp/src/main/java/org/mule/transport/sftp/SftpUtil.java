@@ -278,7 +278,7 @@ public class SftpUtil
     /**
      * Changes the directory to the temp-dir on the <b>outbound</b> endpoint. Will
      * create the directory if it not already exists.
-     * <p/>
+     * <p>
      * Note, this method is synchronized because it in rare cases can be called from
      * two threads at the same time and thus cause an error.
      * 

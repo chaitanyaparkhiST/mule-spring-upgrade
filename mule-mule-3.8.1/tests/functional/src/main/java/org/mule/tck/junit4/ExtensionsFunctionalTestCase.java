@@ -41,13 +41,13 @@ import org.apache.commons.io.FileUtils;
 /**
  * Base test class for {@link FunctionalTestCase}s
  * that make use of components generated through the extensions API.
- * <p/>
+ * <p>
  * The value added by this class in comparison to a traditional
  * {@link FunctionalTestCase} is that before creating
  * the {@link MuleContext}, it creates a {@link ExtensionManager}
  * and automatically discovers extensions by delegating on
  * {@link ExtensionManager#discoverExtensions(ClassLoader)}.
- * <p/>
+ * <p>
  * By default, standard extension discovery will be
  * performed by invoking {@link ExtensionManager#discoverExtensions(ClassLoader)}.
  * Although this behavior suits most use cases, it can be time consuming because of
@@ -56,15 +56,15 @@ import org.apache.commons.io.FileUtils;
  * the problem gets worst. For those cases,  you can override the {@link #getDescribers()}
  * and specify which describers are to be used to initialise the extensions manager. In that way,
  * extensions discovery is skipped and you only initialise what you need.
- * <p/>
+ * <p>
  * Once extensions are discovered and described,
  * a {@link ResourcesGenerator} is used to automatically
  * generate any backing resources needed (for example, XSD schemas, spring bundles,
  * service registration files, etc).
- * <p/>
+ * <p>
  * In this way, the user experience is greatly simplified when running the test
  * either through an IDE or build tool such as maven or gradle.
- * <p/>
+ * <p>
  * Since this class extends {@link FunctionalTestCase}, a new {@link MuleContext}
  * is created per each test. That also means that a new {@link ExtensionManager}
  * is created per test.

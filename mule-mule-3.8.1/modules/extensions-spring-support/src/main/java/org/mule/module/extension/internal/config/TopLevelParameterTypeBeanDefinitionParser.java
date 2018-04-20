@@ -17,7 +17,7 @@ import org.w3c.dom.Element;
  * An implementation of {@link BaseExtensionBeanDefinitionParser} that parses
  * objects that are to be used as a parameter of a configuration or operation
  * and for which we want support for defining them as top level elementes.
- * <p/>
+ * <p>
  * It produces a {@link TopLevelParameterTypeFactoryBean} which will produce the
  * actual instances. The type of the parameter to produce is represented by
  * a {@link #dataType}

@@ -24,10 +24,10 @@ import java.util.Map;
 
 /**
  * Resolves arguments annotated with {@link ParameterGroup} in a {@link ReflectiveMethodOperationExecutor}.
- * <p/>
+ * <p>
  * An implementation of {@link ArgumentResolver} which creates instances of a given {@link #type} and maps
  * the fields annotated with {@link Parameter} to parameter values of a {@link OperationContext}.
- * <p/>
+ * <p>
  * It also looks for fields annotated with {@link ParameterGroup} and recursively populates them too.
  *
  * @param <T> the generic type of the argument instances that will be resolved

@@ -8,30 +8,30 @@ package org.mule.config.spring.factories;
 
 import static org.mule.config.i18n.CoreMessages.failedToCreate;
 
+import javax.transaction.TransactionManager;
+
 import org.mule.api.MuleContext;
 import org.mule.api.MuleRuntimeException;
 import org.mule.api.context.MuleContextAware;
 import org.mule.api.transaction.TransactionManagerFactory;
-
-import javax.transaction.TransactionManager;
-
 import org.springframework.beans.factory.FactoryBean;
+import org.springframework.beans.factory.SmartFactoryBean;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * {@link FactoryBean} adapter for the configured {@link TransactionManagerFactory}.
- * <p/>
+ * <p>
  * Creates a reference to the TransactionManager configured on the MuleContext. This is useful when you need to inject
  * the TransactionManager into other objects such as XA data Sources.
- * <p/>
+ * <p>
  * This will first look for a single {@link TransactionManagerFactory} and use it to build the
  * {@link TransactionManager}.
- * <p/>
+ * <p>
  * If no {@link TransactionManagerFactory} is found, then it will look for {@link TransactionManager} instances.
  *
  * @since 3.7.4
  */
-public class TransactionManagerFactoryBean implements FactoryBean<TransactionManager>, MuleContextAware
+public class TransactionManagerFactoryBean implements SmartFactoryBean, MuleContextAware
 {
 
     @Autowired(required = false)
@@ -96,4 +96,14 @@ public class TransactionManagerFactoryBean implements FactoryBean<TransactionMan
     {
         this.muleContext = context;
     }
+
+	@Override
+	public boolean isPrototype() {
+		return false;
+	}
+
+	@Override
+	public boolean isEagerInit() {
+		return false;
+	}
 }

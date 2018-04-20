@@ -19,11 +19,11 @@ import org.springframework.core.io.AbstractResource;
 /**
  * Spring 2.x is picky about open/closed input streams, as it requires a closed
  * stream (fully read resource) to enable automatic validation detection (DTD or
- * XSD). Otherwise, a caller has to specify the mode explicitly. <p/> Code relying on
+ * XSD). Otherwise, a caller has to specify the mode explicitly. <p> Code relying on
  * Spring 1.2.x behavior may now break with
  * {@link org.springframework.beans.factory.BeanDefinitionStoreException}. This
  * class is called in to remedy this and should be used instead of, e.g.
- * {@link org.springframework.core.io.InputStreamResource}. <p/> The resource is
+ * {@link org.springframework.core.io.InputStreamResource}. <p> The resource is
  * fully stored in memory.
  */
 public class CachedResource extends AbstractResource

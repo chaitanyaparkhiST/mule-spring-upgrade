@@ -25,8 +25,8 @@ import java.util.Set;
 /**
  * <code>MuleEvent</code> represents any data event occuring in the Mule environment. All data sent or
  * received within the mule environment will be passed between components as an MuleEvent.
- * <p/>
- * <p/>
+ * <p>
+ * <p>
  * The MuleEvent holds a MuleMessage payload and provides helper methods for obtaining the data in a format
  * that the receiving Mule component understands. The event can also maintain any number of properties that
  * can be set and retrieved by Mule components.
@@ -403,7 +403,7 @@ public interface MuleEvent extends Serializable
     /**
      * Events have a stack of executed flows (same as a call stack), so that at any given instant an application
      * developer can determine where this event came from.
-     * <p/>
+     * <p>
      * This will only be enabled if {@link DefaultMuleConfiguration#isFlowTrace()} is {@code true}. If {@code false},
      * the stack will always be empty.
      * 
@@ -416,7 +416,7 @@ public interface MuleEvent extends Serializable
     /**
      * Events have a list of message processor paths it went trough so that the execution path of an event can be
      * reconstructed after it has executed.
-     * <p/>
+     * <p>
      * This will only be enabled if {@link DefaultMuleConfiguration#isFlowTrace()} is {@code true}. If {@code false},
      * the list will always be empty.
      * 

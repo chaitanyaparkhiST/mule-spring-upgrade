@@ -11,7 +11,7 @@ import org.mule.api.MuleEvent;
 /**
  * A component which performs a validation and expresses
  * its result through a {@link ValidationResult} object.
- * <p/>
+ * <p>
  * The {@link #validate(MuleEvent)} method receives a
  * {@link MuleEvent} in order to make it generic and easy to extend.
  * However, that doesn't necessarily mean that all the validation

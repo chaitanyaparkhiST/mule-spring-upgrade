@@ -32,7 +32,7 @@ import java.util.Set;
  * expressions to remove the matching properties from the message and can also set a {@link Map} 
  * of 'addProperties' that will be added to the message and possibly overwrite existing properties
  * with the same name.
- * <p/> 
+ * <p> 
  * <p>
  * If {@link #overwrite} is set to <code>false</code>, and a property 
  * exists on the message (even if the value is <code>null</code>, it will be left intact. The 

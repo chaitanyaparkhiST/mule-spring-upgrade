@@ -9,13 +9,13 @@ package org.mule.api.source;
 /**
  * NonBlockingMessageSource's create instances of MuleEvent that contain a {@link org.mule.api.transport.ReplyToHandler}
  * allowing for a response or error to be returned asynchronously by a different thread freeing up the request thread.
- * <p/>
+ * <p>
  * Implementations must support both blocking and non-blocking and therefore need to test the response {@link org.mule.api.MuleEvent}
  * returned when invoking {@link org.mule.api.processor.MessageProcessor#process(org.mule.api.MuleEvent)} on the listener.
  * If the event returned is an instance of {@link org.mule.NonBlockingVoidMuleEvent} then the {@link MessageSource} should wait for the
  * {@link org.mule.api.transport.ReplyToHandler} to be invoked before sending a response, otherwise the response should be
  * sent immediatly.
- * <p/>
+ * <p>
  * <b>Note:</b> If {@link org.mule.execution.AsyncResponseFlowProcessingPhase} is used then non-blocking will be supported, it is still
  * necessary that the MessageSource implements this interface though.
  *

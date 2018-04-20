@@ -26,7 +26,7 @@ import org.apache.commons.logging.LogFactory;
 /**
  * {@link TransactionalQueueStoreDelegate} implementation using two files for storing the
  * queue data.
- * <p/>
+ * <p>
  * Entries are stored in the queue file until a certain size in the file. After that size is reached a new file is created
  * and used to store new entries until the previous file queue entries are consumed, in which case the file is cleaned and reused
  * for new entries once the second files gets full.

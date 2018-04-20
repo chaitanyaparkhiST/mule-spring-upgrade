@@ -15,7 +15,7 @@ import org.mule.module.extension.internal.introspection.AnnotationsBasedDescribe
  * that is discoverable through SPI for an extension defined
  * through annotations without coupling
  * to mule's mechanism to actually parse those annotations.
- * <p/>
+ * <p>
  * Users simply extend this class and add a default constructor
  * which delegates into {@link #DescriberSupport(Class)}.
  *

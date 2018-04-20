@@ -80,7 +80,7 @@ public class WatermarkPollingTestCase extends FunctionalTestCase
      * No Object store Defined. No Update Expression defined No Key present in the
      * Object Store
      * </p>
-     * <p/>
+     * <p>
      * Result:
      * <p>
      * Executes the default value expression of watermark, registers it as a flow
@@ -155,7 +155,7 @@ public class WatermarkPollingTestCase extends FunctionalTestCase
      * stores that value in the OS at the end of the flow but The key is stored in
      * the object store with the value that the user set in the flow variable.
      * </p>
-     * <p/>
+     * <p>
      * Extra validation. The User uses the watermark value in the poll element.
      */
     @Test
@@ -224,12 +224,12 @@ public class WatermarkPollingTestCase extends FunctionalTestCase
      * present in the Object store
      * </p>
      * Result:
-     * <p/>
+     * <p>
      * Retrieves the key value from the Object store, registers it as a flow var,
      * stores that value in the OS at the end of the flow but The key is stored in
      * the object store with the result of the update expression specified in
      * watermark
-     * <p/>
+     * <p>
      */
     @Test
     public void watermarkWithUpdateExpression() throws Exception
@@ -260,9 +260,9 @@ public class WatermarkPollingTestCase extends FunctionalTestCase
      * present in the Object store The flow fails to execute
      * </p>
      * Result:
-     * <p/>
+     * <p>
      * The watermark is not updated
-     * <p/>
+     * <p>
      */
     @Test
     public void watermarkWithObjectStore() throws Exception
@@ -296,9 +296,9 @@ public class WatermarkPollingTestCase extends FunctionalTestCase
      * present in the Object store The flow fails to execute
      * </p>
      * Result:
-     * <p/>
+     * <p>
      * The watermark is not updated
-     * <p/>
+     * <p>
      */
     @Test
     public void failingFlowWithWatermark() throws Exception
@@ -330,10 +330,10 @@ public class WatermarkPollingTestCase extends FunctionalTestCase
      * catch-exception-strategy
      * </p>
      * Result:
-     * <p/>
+     * <p>
      * The watermark is updated with the value that is set in the catch exception
      * strategy
-     * <p/>
+     * <p>
      */
     @Test
     public void failingFlowWithCatchedExceptionWatermark() throws Exception
@@ -363,9 +363,9 @@ public class WatermarkPollingTestCase extends FunctionalTestCase
      * Watermark is configured in an async flow
      * </p>
      * Result:
-     * <p/>
+     * <p>
      * It fails the execution
-     * <p/>
+     * <p>
      */
     @Test(expected = AssertionError.class)
     public void watermarkWithAsyncProcessing() throws Exception

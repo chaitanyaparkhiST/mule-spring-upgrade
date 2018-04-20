@@ -19,7 +19,7 @@ import java.util.Set;
  * remembered when the key set is retrieved from the map.
  * The backing map used will be an instance of the given class passed to the constructor. This allows to make case
  * insensitive different kinds of Map implementations, particularly a ConcurrentHashMap, used to achieve high concurrence.
- * <p/>
+ * <p>
  * When a key/value pair is put in the map the key case is remembered so when the key set or the entry set is retrieved
  * the correct case is returned. This is useful to store, for example, camel case keys. However, two keys that only
  * differ in their case will be assumed to be the same key and only one value (the last) will be kept.

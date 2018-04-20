@@ -20,10 +20,10 @@ import org.w3c.dom.Element;
  * Implementation of {@link BaseExtensionBeanDefinitionParser} capable of parsing instances
  * which are compliant with the model defined in a {@link Configuration}. The outcome of
  * this parser will be a {@link ConfigurationInstanceProviderFactoryBean}.
- * <p/>
+ * <p>
  * It supports simple attributes, pojos, lists/sets of simple attributes, list/sets of beans,
  * and maps of simple attributes
- * <p/>
+ * <p>
  * It the given config doesn't provide a name, then one will be automatically generated in order to register the config
  * in the {@link Registry}
  *

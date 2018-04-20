@@ -13,7 +13,7 @@ import org.mule.extension.introspection.DataQualifierVisitor;
  * in which all methods are implemented and delegate into {@link #defaultOperation()}. In this way,
  * you can only implement the methods you care about and have a central point to determine which logic
  * to apply on the cases you don't specifically care about
- * <p/>
+ * <p>
  * This default implementation of {@link #defaultOperation()} is a no-op
  *
  * @since 3.7.0

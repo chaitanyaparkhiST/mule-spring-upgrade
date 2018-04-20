@@ -22,7 +22,7 @@ import java.util.Set;
  * there are two implementations of this {@link org.mule.model.resolvers.NoArgumentsEntryPointResolver}, that
  * allows methods with no arguments to be invoked and {@link org.mule.model.resolvers.ArrayEntryPointResolver} that
  * allows for methods that accept an array type to be invoked.
- * <p/>
+ * <p>
  * Users can set explicit method names on this resolver to control which methods are allowed to be called. Also a set of
  * 'ignored' methods are available (and the use can add others) to tell the resolver to not resolve to these methods.
  * The default ones are:
@@ -36,7 +36,7 @@ import java.util.Set;
  * <li>'is*'
  * <li>'get*'.
  * </ul>
- * <p/> Note that wildcard expressions can be used.
+ * <p> Note that wildcard expressions can be used.
  */
 public abstract class AbstractArgumentEntryPointResolver extends ReflectionEntryPointResolver
 {

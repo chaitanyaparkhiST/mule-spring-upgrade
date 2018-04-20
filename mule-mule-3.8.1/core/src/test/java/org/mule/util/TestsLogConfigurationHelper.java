@@ -33,10 +33,10 @@ public class TestsLogConfigurationHelper
      * If found, that logging config file is used, otherwise
      * Log4j2 is allowed to search for the config file using
      * its own logic.
-     * <p/>
+     * <p>
      * A file called {@code log4j2-test.xml} will be searched first.
      * If not found, will try with {@code log4j2.xml}.
-     * <p/>
+     * <p>
      * In either case, this method ends by reconfiguring all
      * loggers in the current {@link LoggerContext}
      *

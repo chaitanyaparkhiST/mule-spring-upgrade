@@ -26,7 +26,7 @@ import java.util.concurrent.ExecutionException;
 
 /**
  * Default implementation of {@link ExceptionFactory}.
- * <p/>
+ * <p>
  * In order to create the {@link Exception} instances, it scans
  * the requested {@link Class}es for a public {@link Constructor}
  * which receives two arguments assignable from {@link ValidationResult}

@@ -26,11 +26,11 @@ import java.util.Set;
  * the event payload type(s) as the argument using reflection. An entry point will try and match for
  * different argument types, so it's possible to have multiple entry points on a
  * single service.
- * <p/>
+ * <p>
  * For multiple parameters the payload of context.getMessage().getPayload() should be an Array of objects.
  * If the message payload is of type {@link org.mule.transport.NullPayload} the resolver will look for a no-argument
  * method to call that doesn't match the set of ignoredMethods on the resolver.
- * <p/>
+ * <p>
  * Also a set of 'ignored' methods are available (and the use can add others) to tell the resolver to not
  * resolve to these methods. The default ones are:
  * <ul>
@@ -45,7 +45,7 @@ import java.util.Set;
  * <li>'get*'.
  * <li>'set*'.
  * </ul>
- * <p/> Note that wildcard expressions can be used.
+ * <p> Note that wildcard expressions can be used.
  */
 public class ReflectionEntryPointResolver extends AbstractEntryPointResolver
 {

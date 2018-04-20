@@ -219,7 +219,7 @@ final class XmlExtensionParserUtils
      * for each {@link Parameter} in the {@code parameters} list, taking as source the given {@code element}
      * an a {@code nestedOperations} {@link Map} which has {@link Parameter} names as keys, and {@link List}s
      * of {@link MessageProcessor} as values.
-     * <p/>
+     * <p>
      * For each {@link Parameter} in the {@code parameters} list, if an entry exists in the {@code nestedOperations}
      * {@link Map}, a {@link ValueResolver} that generates {@link NestedProcessor} instances will be added to the
      * {@link ResolverSet}. Otherwise, a {@link ValueResolver} will be inferred from the given {@code element} just

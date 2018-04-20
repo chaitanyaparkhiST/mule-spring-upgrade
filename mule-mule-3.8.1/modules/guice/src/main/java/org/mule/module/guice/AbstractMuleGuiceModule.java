@@ -17,10 +17,10 @@ import com.google.inject.AbstractModule;
  * A mule specific Guice module that allows users to override the {@link #configureMuleContext(org.mule.api.MuleContext)} method
  * to do any Mule configuration such as register notifications.  Most users will not need to override this method so the
  * {@link com.google.inject.AbstractModule} can be used.
- * <p/>
+ * <p>
  * Note that Mule objects such as Connectors and Agents can be registered in a Guice module too.  To do this create provider methods
  * on a module and mark with the {@link com.google.inject.Provides} annotation.
- * <p/>
+ * <p>
  * Its recommended that you put all your Mule configuration objects in a separate Guice module.
  *
  * @deprecated Guice module is deprecated and will be removed in Mule 4.

@@ -26,7 +26,7 @@ import javax.mail.internet.MimeMessage;
 /**
  * This dispatcher can only be used to receive message (as opposed to listening for them).
  * Trying to send or dispatch will throw an UnsupportedOperationException.
- * <p/>
+ * <p>
  * This contains a reference to a mail folder (and also the endpoint and connector, via superclasses)
  */
 public class RetrieveMessageRequester extends AbstractMessageRequester

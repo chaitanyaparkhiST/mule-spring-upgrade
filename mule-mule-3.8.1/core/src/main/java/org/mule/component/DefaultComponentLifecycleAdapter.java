@@ -195,7 +195,7 @@ public class DefaultComponentLifecycleAdapter implements LifecycleAdapter
     /**
      * Propagates initialise() life-cycle to component object implementations if they
      * implement the mule {@link Initialisable} interface.
-     * <p/>
+     * <p>
      * <b>NOTE:</b> It is up to component implementations to ensure their implementation of
      * <code>initialise()</code> is thread-safe.
      */

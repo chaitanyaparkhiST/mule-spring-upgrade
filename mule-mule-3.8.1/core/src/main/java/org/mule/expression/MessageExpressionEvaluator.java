@@ -31,7 +31,7 @@ import org.apache.commons.logging.LogFactory;
  * <li>exception - returns the value of <code>MuleMessage.getExceptionPayload().getException()</code> or null if there is no exception payload</li>
  * </ul>
  * If no expression is set the MuleMessage itself will be returned.
- * <p/>
+ * <p>
  * If the object passed in is not a MuleMessage, the same object will be returned.
  *
  * @see ExpressionEvaluator

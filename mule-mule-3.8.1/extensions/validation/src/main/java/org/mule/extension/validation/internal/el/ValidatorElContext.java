@@ -34,15 +34,15 @@ import java.util.Locale;
  * A class which allows executing instances of
  * {@link org.mule.extension.validation.internal.validator.AbstractValidator}'s
  * from a MEL context.
- * <p/>
+ * <p>
  * Unlike regular validations which throw an exception upon failure,
  * the methods in this class will only return boolean values
  * to indicate if the validation was successful or not. Also, no message
  * is returned in either case.
- * <p/>
+ * <p>
  * Since in this case we only care about the boolean result of the validation,
  * all validations will be executed with the same {@link ValidationContext}
- * <p/>
+ * <p>
  * {@link Validator} instances are not reused. A new one is created each time
  *
  * @since 3.7.0
@@ -108,7 +108,7 @@ public final class ValidatorElContext
      * Validates that {@code time} represents a time according to the
      * given {@code pattern} an the given locale {@code locale}
      * using a {@link TimeValidator
-     * <p/>
+     * <p>
      * {@code locale} is expected to be a valid key as defined in
      * {@link Locale}
      *
@@ -187,7 +187,7 @@ public final class ValidatorElContext
     /**
      * Validates that {@code value} can be parsed into a {@link Number},
      * by the rules of a {@link NumberValidator}.
-     * <p/>
+     * <p>
      * No boundaries are checked. Default system pattern and {@link Locale} are used
      *
      * @param value      the value to test
@@ -202,7 +202,7 @@ public final class ValidatorElContext
     /**
      * Validates that {@code value} can be parsed into a {@link Number},
      * by the rules of a {@link NumberValidator}.
-     * <p/>
+     * <p>
      * Default system pattern and {@link Locale} are used
      *
      * @param value      the value to test

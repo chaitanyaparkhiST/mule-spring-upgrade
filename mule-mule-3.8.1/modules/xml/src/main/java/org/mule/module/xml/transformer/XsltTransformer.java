@@ -39,14 +39,14 @@ import org.apache.commons.pool.impl.GenericObjectPool;
 /**
  * <code>XsltTransformer</code> performs an XSLT transform on a DOM (or other XML-ish)
  * object.
- * <p/>
+ * <p>
  * This transformer maintains a pool of {@link javax.xml.transform.Transformer} objects to speed up processing of concurrent requests.
  * The pool can be configured using {@link #setMaxIdleTransformers(int)}.
- * <p/>
+ * <p>
  * Parameter can also be set as part of the transformation context and these can be mapped to content in the current message using
  * property extractors or can be fixed values.
- * <p/>
- * <p/>
+ * <p>
+ * <p>
  * For example, the current event's message has a property named "myproperty", also you want to generate a uuid as a
  * parameter. To do this you can define context properties that can provide an expression to be evaluated on the current
  * message.
@@ -54,28 +54,28 @@ import org.apache.commons.pool.impl.GenericObjectPool;
  * <p>
  * Example Configuration:
  * </p>
- * <p/>
+ * <p>
  * <pre>
  *  &lt;mxml:xslt-transformer name=&quot;MyXsltTransformer&quot; xslFile=&quot;myXslFile.xsl&quot;&amp;gt
  *      &lt;context-property name=&quot;myParameter&quot; value=&quot;#[head:myproperty]&quot;/&amp;gt
  *      &lt;context-property name=&quot;myParameter2&quot; value=&quot;#[function:uuid]&quot;/&amp;gt
  *  &lt;/mxml:xslt-transformer&amp;gt
  * </pre>
- * <p/>
+ * <p>
  * <p>
  * The 'header' expression pulls a header from the current message and 'function' can execute a set of arbitrary functions.
  * You can also pass in static values by ommitting the expression prefix '#['.
  * </p>
- * <p/>
+ * <p>
  * In addition to being able to pass in an XSLT file you can also define templates inline. For example -
- * <p/>
+ * <p>
  * <pre>
  *  &lt;mxml:xslt-transformer name=&quot;MyXsltTransformer&quot;&amp;gt
  *      &lt;mxml:xslt-text&amp;gt
  *          <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://test.com" version="2.0">
- * <p/>
+ * <p>
  *                <xsl:param name="echo"/>
- * <p/>
+ * <p>
  *               <xsl:template match="/">
  *                   <echo-value>
  *                       <xsl:value-of select="$echo"/>

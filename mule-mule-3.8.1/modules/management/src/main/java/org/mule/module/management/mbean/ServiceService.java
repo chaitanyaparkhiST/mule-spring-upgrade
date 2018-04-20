@@ -57,7 +57,7 @@ public class ServiceService extends FlowConstructService implements ServiceServi
     /**
      * Pauses event processing for theComponent. Unlike stop(), a paused service
      * will still consume messages from the underlying transport, but those messages
-     * will be queued until the service is resumed. <p/> In order to persist these
+     * will be queued until the service is resumed. <p> In order to persist these
      * queued messages you can set the 'recoverableMode' property on the
      * Muleconfiguration to true. this causes all internal queues to store their
      * state.

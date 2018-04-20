@@ -13,11 +13,11 @@ import org.mule.extension.runtime.OperationContext;
  * An implementation of {@link ReturnDelegate} intended
  * for operations which return {@link Void} and that
  * were executed with a {@link OperationContextAdapter}
- * <p/>
+ * <p>
  * It returns the {@link MuleEvent} that {@link OperationContextAdapter}
  * provides. Notices that this class will fail if used with any other type
  * of {@link OperationContext}
- * <p/>
+ * <p>
  * This class is intended to be used as a singleton, use the
  * {@link #INSTANCE} attribute to access the instance
  *

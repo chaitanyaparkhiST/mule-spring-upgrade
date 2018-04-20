@@ -15,9 +15,9 @@ package org.mule.tck.junit4.rule;
  *     &#64;Rule
  *     public DynamicPort serverPort = new DynamicPort("server_port");
  * </pre>
- * <p/>
+ * <p>
  * In order to use static dynamic ports:
- * <p/>
+ * <p>
  * <pre>
  *     &#64;ClassRule
  *     public static DynamicPort dynamicPort = new DynamicPort("server_port");

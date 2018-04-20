@@ -20,7 +20,7 @@ import org.mule.api.MuleContext;
  * multiple configuration builder create and register these artifacts only one will be used.
  * <li> Configuration of existing Mule configuration related artifacts such as <code>MuleConfiguration</code> and
  * <code>ServerNotificationManager</code>
- * <br/><br/>
+ * <br><br>
  * Which of the above takes place, depends on what the configuration source contains and the ConfgurationBuilder implementation is used.
  */
 public interface ConfigurationBuilder

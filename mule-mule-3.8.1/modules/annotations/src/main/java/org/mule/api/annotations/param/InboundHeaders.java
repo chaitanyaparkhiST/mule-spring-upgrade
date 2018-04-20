@@ -19,7 +19,7 @@ import java.lang.annotation.Target;
  * This annotation value can define a single header, a comma-separated list of header names, '*' to denote all headers, or a comma-separated list
  * of wildcard expressions such as 'MULE_*, X-*'. By default, if a named header is not present on the current message, an exception will be thrown.
  * However, if the header name is defined with the '?' post fix, it will be marked as optional.
- * <p/>
+ * <p>
  * When defining multiple header names or using wildcards, the parameter can be a {@link java.util.Map} or {@link java.util.List}. If a
  * {@link java.util.Map} is used, the header name and value is passed in. If {@link java.util.List} is used, just the header values are used.
  * If a single header name is defined, the header type can be used as the parameter type, though {@link java.util.List} or {@link java.util.Map}

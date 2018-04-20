@@ -30,11 +30,11 @@ import org.guiceyfruit.support.CloseFailedException;
  * The internal Mule interface for retreiving objects from a Guice injector.  This registry is read-only since all
  * objects should be configured by {@link com.google.inject.Module} objects.  The lifecycle of objects will be
  * managed by Mule since Guice does not provide lifecycle support.
- * <p/>
+ * <p>
  * To create modules extend the {@link org.mule.module.guice.AbstractMuleGuiceModule} since it provides hooks and helpers for
  * working with Mule configuration.  Any modules independent of Mule can just extend the Guice {@link com.google.inject.AbstractModule}
  * as normal.
- * <p/>
+ * <p>
  * Mule will discover modules on the classpath, if you need to configure a module before passing it to the Guice injector you
  * need to implement a {@link org.mule.module.guice.GuiceModuleFactory} for your module.
  *

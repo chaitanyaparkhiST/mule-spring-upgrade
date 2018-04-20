@@ -23,29 +23,29 @@ import org.codehaus.jackson.map.ObjectMapper;
  * A wrapper for the {@link org.codehaus.jackson.JsonNode} object that
  * allows for nested object keys i.e. user/name will return the name property on
  * the user object.
- * <p/>
+ * <p>
  * There is no 'xpath' for JSON yet (though I expect Jackson to do implement this at some point).  
  * This class provides a simple way to navigate a Json data structure. To select a child entry use -
  * <code>
  * person/name
  * </code>
- * <p/>
+ * <p>
  * to access array data, use square braces with an index value i.e.
  * <code>
  * person/addresses[0]/postcode
- * <p/>
+ * <p>
  * or
- * <p/>
+ * <p>
  * [0]/arrayElement
  * </code>
- * <p/>
+ * <p>
  * Also, multi-dimensional arrays can be accessed using:
  * <code>
  * filters[1]/init[1][0]
  * </code>
- * <p/>
+ * <p>
  * if a Json property name contains a '/' the name needs to be quoted with single quotes i.e.
- * <p/>
+ * <p>
  * <code>
  * results/'http://foo.com'/value
  * </code>

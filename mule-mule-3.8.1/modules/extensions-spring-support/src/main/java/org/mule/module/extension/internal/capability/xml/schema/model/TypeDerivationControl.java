@@ -22,9 +22,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for typeDerivationControl.
- * <p/>
+ * <p>
  * <p>The following schema fragment specifies the expected content contained within this class.
- * <p/>
+ * <p>
  * <pre>
  * &lt;simpleType name="typeDerivationControl">
  *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}derivationControl">

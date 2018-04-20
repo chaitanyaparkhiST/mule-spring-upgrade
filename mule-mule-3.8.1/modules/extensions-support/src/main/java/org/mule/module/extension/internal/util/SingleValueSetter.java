@@ -16,7 +16,7 @@ import org.springframework.util.ReflectionUtils;
 /**
  * An implementation of {@link ValueSetter} for assigning
  * the value of a single, non grouped {@link Parameter}
- * <p/>
+ * <p>
  * For performance reasons, it caches the setter to be used
  *
  * @since 3.7.0

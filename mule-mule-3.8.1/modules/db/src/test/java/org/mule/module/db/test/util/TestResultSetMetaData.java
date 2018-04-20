@@ -13,7 +13,7 @@ import java.util.List;
 
 /**
  * Base class for in memory implementation of {@link java.sql.ResultSetMetaData} for testing purpose.
- * <p/>
+ * <p>
  * NOTE: partial implementation to cover current test scenarios
  */
 public class TestResultSetMetaData implements ResultSetMetaData

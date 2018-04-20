@@ -119,7 +119,7 @@ public class OutputPayloadInterceptor extends AbstractOutDatabindingInterceptor
 
     /**
      * Ensures that each part's content is in the right place in the content list.
-     * <p/>
+     * <p>
      * This is required because in some scenarios there are parts that were removed from
      * the part list. In that cases, the content list contains only the values for the
      * remaining parts, but the part's indexes could be wrong. This method fixes that

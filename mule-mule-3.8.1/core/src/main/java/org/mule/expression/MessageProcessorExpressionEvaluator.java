@@ -36,7 +36,7 @@ import org.apache.commons.logging.LogFactory;
  * result of the xpath evaluation</li>
  * </ul>
  * If no expression is set the MuleMessage itself will be returned.
- * <p/>
+ * <p>
  * 
  * @see ExpressionEvaluator
  * @see DefaultExpressionManager

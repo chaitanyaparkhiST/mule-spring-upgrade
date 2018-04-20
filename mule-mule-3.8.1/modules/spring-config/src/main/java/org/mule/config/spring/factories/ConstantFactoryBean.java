@@ -21,7 +21,7 @@ import org.springframework.beans.factory.FactoryBean;
 /**
  * A {@link FactoryBean} which returns a fixed instanced obtained
  * through the constructor. {@link #isSingleton()} always returns {@code true}.
- * <p/>
+ * <p>
  * Invocations related to the {@link MuleContextAware} and {@link Lifecycle} interfaces
  * are delegated into the {@link #value} object when applies.
  *

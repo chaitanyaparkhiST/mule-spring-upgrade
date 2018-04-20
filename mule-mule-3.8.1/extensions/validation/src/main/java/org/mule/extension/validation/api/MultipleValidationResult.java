@@ -11,11 +11,11 @@ import java.util.List;
 /**
  * A specialization of {@link ValidationResult} which
  * represents a group of validations that were executed together.
- * <p/>
+ * <p>
  * This interface redefines the {@link ValidationResult} contract
  * so that the {@link #isError()} and {@link #getMessage()} methods
  * consider the results of all the validations.
- * <p/>
+ * <p>
  * Additionally, the {@link #getFailedValidationResults()} method
  * is added to give more detailed access to the validations that failed
  *

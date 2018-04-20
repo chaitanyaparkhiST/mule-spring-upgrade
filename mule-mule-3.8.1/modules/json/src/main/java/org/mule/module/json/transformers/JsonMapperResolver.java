@@ -15,7 +15,7 @@ import org.codehaus.jackson.map.ObjectMapper;
  * This resolver is used by the transform engine to inject a {@link org.codehaus.jackson.map.ObjectMapper} into a method that requires it.
  * A shared ObjectMapper context can be created for the application and stored in the registry, this will get injected
  * into any transform methods that add {@link org.codehaus.jackson.map.ObjectMapper} to the method signature.
- * <p/>
+ * <p>
  * If there is no shared Object Mapper one will be created for the transformer using the return type as the Json root element.
  *
  * @since 3.0

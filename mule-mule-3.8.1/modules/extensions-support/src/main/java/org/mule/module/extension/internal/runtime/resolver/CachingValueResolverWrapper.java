@@ -14,16 +14,16 @@ import org.mule.api.MuleException;
  * the {@link #delegate} is only invoked once and the obtained value is cached.
  * This is useful in cases in which its expensive for the {@link #delegate}
  * to resolve the value.
- * <p/>
+ * <p>
  * Care should be taken when using this class to wrap resolvers which
  * {@link #isDynamic()} method return {@code true}. Since this wrapper
  * will cache the result of the first invocation, the resolver's dynamism
  * is in effect neutralized.
- * <p/>
+ * <p>
  * This class is thread safe. Many threads can invoke the {@link #resolve(MuleEvent)}
  * method and the underlying {@link #delegate} is still guaranteed to be invoked only once
  * and the return value to be consistent with that of the thread which first got access to it.
- * <p/>
+ * <p>
  * This class can also be used without performance considerations since it's optimized to only
  * perform thread contention until a value is cached. From then on, no locks will be used while
  * remaining thread safe

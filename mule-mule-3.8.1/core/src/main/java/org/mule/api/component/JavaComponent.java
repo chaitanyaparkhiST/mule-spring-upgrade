@@ -53,7 +53,7 @@ public interface JavaComponent extends Component
     /**
      * The object factory used to obtain the component object instance. Mule core
      * provides two implementations: {@link SingletonObjectFactory} and
-     * {@link PrototypeObjectFactory}.<br/> The spring-config module provides an
+     * {@link PrototypeObjectFactory}.<br> The spring-config module provides an
      * {@link ObjectFactory} implementation that delegates to spring. There is no
      * PooledObjectFactory, the {@link PooledJavaComponent} should be used for
      * pooling.

@@ -28,11 +28,11 @@ import org.apache.commons.lang.StringUtils;
 /**
  * A {@link ValueResolver} which evaluates a MEL expressions and tries
  * to ensure that the output is always of a certain type.
- * <p/>
+ * <p>
  * If the MEL expression does not return a value of that type, then it
  * tries to locate a {@link Transformer} which can do the transformation
  * from the obtained type to the expected one.
- * <p/>
+ * <p>
  * It resolves the expressions by making use of the {@link AttributeEvaluator}
  * so that it's compatible with simple expressions and templates alike
  *

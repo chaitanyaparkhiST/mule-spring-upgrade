@@ -18,7 +18,7 @@ import java.util.Map;
 
 /**
  * Processes a {@link ResultSet} returning a list of maps.
- * <p/>
+ * <p>
  * The processed {@link ResultSet} is closed immediately after fetching its data.
  */
 public class ListResultSetHandler implements ResultSetHandler

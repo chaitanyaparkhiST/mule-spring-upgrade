@@ -6,19 +6,19 @@
 A AJAX transport allows Mule applications to send a receive events to the web browser. This connector bind to an existing
 Servlet Container that Mule is running within. For this to work, the container (which culd be any servlet container including Tomcat,
 Jetty, Resin, etc) needs to have the Mule AJAX servlet configured and mapped-
-<p/>
+<p>
 <code>
-    &lt;servlet&gt;<br/>
-        &nbsp;&nbsp;&lt;servlet-name&gt;ajax&lt;/servlet-name&gt;<br/>
-        &nbsp;&nbsp;&lt;servlet-class&gt;org.mule.transport.ajax.container.MuleAjaxServlet&lt;/servlet-class&gt;<br/>
-    &lt;/servlet&gt;<br/><br/>
+    &lt;servlet&gt;<br>
+        &nbsp;&nbsp;&lt;servlet-name&gt;ajax&lt;/servlet-name&gt;<br>
+        &nbsp;&nbsp;&lt;servlet-class&gt;org.mule.transport.ajax.container.MuleAjaxServlet&lt;/servlet-class&gt;<br>
+    &lt;/servlet&gt;<br><br>
 
-    &lt;servlet-mapping&gt;<br/>
-        &nbsp;&nbsp;&lt;servlet-name&gt;ajax&lt;/servlet-name&gt;<br/>
-        &nbsp;&nbsp;&lt;url-pattern&gt;/cometd/*&lt;/url-pattern&gt;<br/>
-    &lt;/servlet-mapping&gt;<br/>
+    &lt;servlet-mapping&gt;<br>
+        &nbsp;&nbsp;&lt;servlet-name&gt;ajax&lt;/servlet-name&gt;<br>
+        &nbsp;&nbsp;&lt;url-pattern&gt;/cometd/*&lt;/url-pattern&gt;<br>
+    &lt;/servlet-mapping&gt;<br>
 </code>
-<p/>
+<p>
 The Mule AJAX transport uses the excellent Jetty Bayeux implmentation.
 </body>
 </html>

@@ -29,7 +29,7 @@ import org.dom4j.XPath;
 
 /**
  * The JXPathExtractor is a simple transformer that evaluates an xpath expression
- * against the given bean and that returns the result. <p/> By default, a single
+ * against the given bean and that returns the result. <p> By default, a single
  * result will be returned. If multiple values are expected, set the
  * {@link #singleResult} property to <code>false</code>. In this case a
  * {@link List} of values will be returned. Note the property is currently ignored

@@ -42,7 +42,7 @@ import java.util.Set;
 
 /**
  * Extend the Apache Commons ClassUtils to provide additional functionality.
- * <p/>
+ * <p>
  * <p>This class is useful for loading resources and classes in a fault tolerant manner
  * that works across different applications servers. The resource and classloading
  * methods are SecurityManager friendly.</p>
@@ -106,7 +106,7 @@ public class ClassUtils extends org.apache.commons.lang.ClassUtils
     }
 
     /**
-     * Load a given resource. <p/> This method will try to load the resource using
+     * Load a given resource. <p> This method will try to load the resource using
      * the following methods (in order):
      * <ul>
      * <li>From
@@ -215,7 +215,7 @@ public class ClassUtils extends org.apache.commons.lang.ClassUtils
     }
 
     /**
-     * Load a class with a given name. <p/> It will try to load the class in the
+     * Load a class with a given name. <p> It will try to load the class in the
      * following order:
      * <ul>
      * <li>From
@@ -236,7 +236,7 @@ public class ClassUtils extends org.apache.commons.lang.ClassUtils
         return loadClass(className, callingClass, Object.class);
     }
     /**
-     * Load a class with a given name. <p/> It will try to load the class in the
+     * Load a class with a given name. <p> It will try to load the class in the
      * following order:
      * <ul>
      * <li>From
@@ -1094,7 +1094,7 @@ public class ClassUtils extends org.apache.commons.lang.ClassUtils
 
     /**
      * Checks that {@code value} is an instance of {@code type}.
-     * <p/>
+     * <p>
      * The value that this method adds over something like {@link Class#isInstance(Object)}
      * is that it also considers the case in which {@code type} and {@code value}
      * are evaluate by {@link #isWrapperAndPrimitivePair(Class, Class)} as {@code true}
@@ -1124,11 +1124,11 @@ public class ClassUtils extends org.apache.commons.lang.ClassUtils
     /**
      * Checks that a wrapper-primitive relationship exists between the two types, no matter which one
      * is the wrapper or which is the primitive.
-     * <p/>
+     * <p>
      * For example, this method will return {@code true} for both the {@link Double}/{@code double}
      * and the {@code double}/{@link Double} pairs. Notice that {@code false} will be returned for the pair
      * {@link Long}/{code int} since they don't represent the same data type.
-     * <p/>
+     * <p>
      * If any of the two types is neither wrappers or primitives, it will return {@code false}
      *
      * @param type1 a {@link Class} presumed to be a wrapper or primitive type related to {@code type2}

@@ -31,7 +31,7 @@ public class FilenameWildcardFilter extends WildcardFilter implements FilenameFi
     }
 
     /**
-     * Filter condition decider method. <p/> Returns
+     * Filter condition decider method. <p> Returns
      * <code>boolean</code> <code>TRUE</code> if the file conforms to an
      * acceptable pattern or <code>FALSE</code> otherwise.
      * 

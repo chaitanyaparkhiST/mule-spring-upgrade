@@ -19,8 +19,8 @@ import java.util.concurrent.ThreadFactory;
 /**
  * Partial mutability for a threading profile. A typical use case for this class is to
  * copy an existing immutable threading profile via a copying constructor, modify values and
- * reconfigure a thread pool (if the latter supports it).<p/>
- * <p/>The following parameters are copied locally and can be modified directly:
+ * reconfigure a thread pool (if the latter supports it).<p>
+ * <p>The following parameters are copied locally and can be modified directly:
  * <ul>
  *  <li>{@link #maxThreadsActive}
  *  <li>{@link #maxThreadsIdle}
@@ -30,7 +30,7 @@ import java.util.concurrent.ThreadFactory;
  *  <li>{@link #poolExhaustedAction}
  *  <li>{@link #doThreading}
  * </ul>
- * <p/>The following parameters re-use the same object reference as the original threading
+ * <p>The following parameters re-use the same object reference as the original threading
  * profile and <strong>are not deep clones</strong> of those:
  * <ul>
  *  <li>{@link #poolFactory}

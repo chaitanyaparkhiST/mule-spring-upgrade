@@ -103,11 +103,11 @@ public class NTLMScheme implements AuthScheme
 
     /**
      * Returns the authentication parameter with the given name, if available.
-     * <p/>
+     * <p>
      * There are no valid parameters for NTLM authentication so this method
-     * <p/>
+     * <p>
      * always returns <tt>null</tt>.
-     * <p/>
+     * <p>
      *
      * @param name The name of the parameter to be returned
      * @return the parameter with the given name

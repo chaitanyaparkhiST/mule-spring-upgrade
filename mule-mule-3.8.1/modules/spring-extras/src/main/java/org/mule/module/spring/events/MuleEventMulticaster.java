@@ -61,6 +61,7 @@ import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ApplicationEventMulticaster;
 import org.springframework.context.event.ContextClosedEvent;
 import org.springframework.context.event.ContextRefreshedEvent;
+import org.springframework.core.ResolvableType;
 
 /**
  * <code>MuleEventMulticaster</code> is an implementation of a Spring
@@ -80,12 +81,12 @@ import org.springframework.context.event.ContextRefreshedEvent;
  * &lt;/property&gt;
  * &lt;/bean&gt;
  * </code>
- * <p/> Endpoints are specified as a Mule Url which is used to register a listener
+ * <p> Endpoints are specified as a Mule Url which is used to register a listener
  * for the subscription In the previous version of the MuleEventMulticaster it was
  * possible to specify wildcard endpoints. This is still possible but you need to
  * tell the multicaster which specific endpoints to listen on and then your
  * subscription listeners can use wildcards. To register the specific endpoints on
- * the MuleEvent Multicaster you use the <i>subscriptions</i> property. <p/> <code>
+ * the MuleEvent Multicaster you use the <i>subscriptions</i> property. <p> <code>
  * &lt;bean id="applicationEventMulticaster" class="org.mule.module.spring.events.MuleEventMulticaster"&gt;
  * &lt;property name="subscriptions"&gt;
  * &lt;list&gt;
@@ -94,7 +95,7 @@ import org.springframework.context.event.ContextRefreshedEvent;
  * &lt;/list&gt;
  * &lt;/property&gt;
  * &lt;/bean&gt;
- * <p/>
+ * <p>
  * &lt;bean id="myListener" class="com.foo.MyListener"&gt;
  * &lt;property name="subscriptions"&gt;
  * &lt;list&gt;
@@ -102,7 +103,7 @@ import org.springframework.context.event.ContextRefreshedEvent;
  * &lt;/list&gt;
  * &lt;/property&gt;
  * &lt;/bean&gt;
- * <p/>
+ * <p>
  * </code>
  *
  * @see MuleEventListener
@@ -784,4 +785,9 @@ public class MuleEventMulticaster
             logger.error(e.getMessage(), e);
         }
     }
+
+	@Override
+	public void multicastEvent(ApplicationEvent event, ResolvableType eventType) {
+		multicastEvent(event);
+	}
 }

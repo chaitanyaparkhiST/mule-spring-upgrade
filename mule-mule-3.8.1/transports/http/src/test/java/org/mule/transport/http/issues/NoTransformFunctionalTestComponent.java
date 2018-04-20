@@ -22,7 +22,7 @@ import org.apache.commons.logging.LogFactory;
  * <code>FunctionalTestComponent</code> is a service that can be used by
  * functional tests. This service accepts an EventCallback that can be used to
  * assert the state of the current event.
- * <p/>
+ * <p>
  * Also, this service fires {@link org.mule.tck.functional.FunctionalTestNotification} via Mule for every message received.
  * Tests can register with Mule to receive these events by implementing
  * {@link org.mule.tck.functional.FunctionalTestNotificationListener}.
@@ -150,7 +150,7 @@ public class NoTransformFunctionalTestComponent implements Callable
      * on the current message being received.
      * Note that the FunctionalTestComponent should be made a singleton
      * when using MuleEvent callbacks
-     * <p/>
+     * <p>
      * Another option is to register a {@link org.mule.tck.functional.FunctionalTestNotificationListener} with Mule and this
      * will deleiver a {@link org.mule.tck.functional.FunctionalTestNotification} for every message received by this service
      *
@@ -169,7 +169,7 @@ public class NoTransformFunctionalTestComponent implements Callable
      * on the current message being received.
      * Note that the FunctionalTestComponent should be made a singleton
      * when using MuleEvent callbacks
-     * <p/>
+     * <p>
      * Another option is to register a {@link org.mule.tck.functional.FunctionalTestNotificationListener} with Mule and this
      * will deleiver a {@link org.mule.tck.functional.FunctionalTestNotification} for every message received by this service
      *

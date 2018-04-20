@@ -32,12 +32,12 @@ public final class ValidationStrategies
     /**
      * Perform a list of nested validation operations and informs only one {@link MultipleValidationResult}
      * which summarizes all of the found errors (if any).
-     * <p/>
+     * <p>
      * If {@code throwsException} is {@code true}, then the {@link ValidationResult}
      * is communicated by throwing a {@link ValidationException}. On the other hand,
      * if {@code throwsException} is {@code false}, then the {@link ValidationResult}
      * is set as the message payload.
-     * <p/>
+     * <p>
      * When configured through XML, all the {@code validations} must include
      * the All the child processors must contain the {@code validator-message-processor}
      * substitution group.

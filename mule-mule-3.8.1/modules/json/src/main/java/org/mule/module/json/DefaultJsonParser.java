@@ -58,17 +58,17 @@ public final class DefaultJsonParser implements JsonParser
      * <ul>{@link JsonNode}</ul>
      * <ul>{@link JsonData}</ul>
      * </li>
-     * <p/>
+     * <p>
      * If {@code input} is not of any of those types, then this parser
      * will try to locate a {@link Transformer} capable of transforming
      * it into any of the following types (in the listed order):
-     * <p/>
+     * <p>
      * <li>
      * <ul>{@link JsonData}</ul>
      * <ul>{@link JsonNode}</ul>
      * <ul>{@link String}</ul>
      * </li>
-     * <p/>
+     * <p>
      * If no {@link Transformer} is found, then {@code null} is returned.
      */
     @Override

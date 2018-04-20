@@ -25,7 +25,7 @@ import javax.inject.Inject;
  * A very simple implementation of {@link LifecycleRegistry}. Useful for starting really lightweight
  * contexts which don't depend on heavier object containers such as Spring or Guice (testing being
  * the best example).
- * <p/>
+ * <p>
  * The {@link #inject(Object)} operation will only consider fields annotated with {@link Inject} and will perform
  * the injection using simple, not-cached reflection. Also, initialisation lifecycle will be performed
  * in pseudo-random order, no analysis will be done to ensure that dependencies of a given object

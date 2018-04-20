@@ -13,7 +13,7 @@ import org.mule.api.transformer.Transformer;
  * A TransformResolver is used to find transformers that match a certain criteria in the registry.
  * Implementations of this interface will use some or all of the information passed in to discover
  * a matching transformer.
- * <p/>
+ * <p>
  * Any implementations of this interface must be registered with the registry before it will get
  * picked up. Typically this is done using the <code>registry-bootstrap.properties</code>.
  *

@@ -131,7 +131,7 @@ public class NameUtils
 
     /**
      * Transforms a hyphenized value into a camel case one.
-     * <p/>
+     * <p>
      * For example:
      * {@code message-processor} would be transformed to {@code messageProcessor}
      *
@@ -153,7 +153,7 @@ public class NameUtils
 
     /**
      * Transforms a camel case value into a hyphenizedone.
-     * <p/>
+     * <p>
      * For example:
      * {@code messageProcessor} would be transformed to {@code message-processor}
      *
@@ -252,7 +252,7 @@ public class NameUtils
 
     /**
      * Returns the name of the give top level {@code type}.
-     * <p/>
+     * <p>
      * If the {@code type}'s {@link DataType#getRawType()} contains the {@link Alias}
      * annotation, then the {@link Alias#value()} is returned. Otherwise, the raw
      * type's {@link Class#getName()} is returned

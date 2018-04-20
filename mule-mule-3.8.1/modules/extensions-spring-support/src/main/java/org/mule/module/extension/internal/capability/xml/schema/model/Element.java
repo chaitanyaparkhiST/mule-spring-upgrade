@@ -39,11 +39,11 @@ import javax.xml.namespace.QName;
  * or within a content model to either reference a globally-defined
  * element or type or declare an element-type binding locally.
  * The ref form is not allowed at the top level.
- * <p/>
+ * <p>
  * <p>Java class for element complex type.
- * <p/>
+ * <p>
  * <p>The following schema fragment specifies the expected content contained within this class.
- * <p/>
+ * <p>
  * <pre>
  * &lt;complexType name="element">
  *   &lt;complexContent>
@@ -173,21 +173,21 @@ public abstract class Element
 
     /**
      * Gets the value of the identityConstraint property.
-     * <p/>
-     * <p/>
+     * <p>
+     * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the identityConstraint property.
-     * <p/>
-     * <p/>
+     * <p>
+     * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getIdentityConstraint().add(newItem);
      * </pre>
-     * <p/>
-     * <p/>
-     * <p/>
+     * <p>
+     * <p>
+     * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link Keyref }
      * {@link JAXBElement }{@code <}{@link Keybase }{@code >}
@@ -350,21 +350,21 @@ public abstract class Element
 
     /**
      * Gets the value of the final property.
-     * <p/>
-     * <p/>
+     * <p>
+     * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the final property.
-     * <p/>
-     * <p/>
+     * <p>
+     * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getFinal().add(newItem);
      * </pre>
-     * <p/>
-     * <p/>
-     * <p/>
+     * <p>
+     * <p>
+     * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link String }
      */
@@ -379,21 +379,21 @@ public abstract class Element
 
     /**
      * Gets the value of the block property.
-     * <p/>
-     * <p/>
+     * <p>
+     * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the block property.
-     * <p/>
-     * <p/>
+     * <p>
+     * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getBlock().add(newItem);
      * </pre>
-     * <p/>
-     * <p/>
-     * <p/>
+     * <p>
+     * <p>
+     * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link String }
      */

@@ -109,7 +109,7 @@ public class PooledJavaComponent extends AbstractJavaComponent
      * {@link ObjectFactory}. The LifeCycleAdaptorFactory <code>getInstance()</code> method
      * creates a new {@link LifecycleAdapter} wrapping the object instance obtained
      * for the component instance {@link ObjectFactory} set on the {@link Component}.
-     * <br/>
+     * <br>
      * This allows us to keep {@link LifecycleAdapter} creation in the Component and
      * out of the {@link DefaultLifecycleEnabledObjectPool} and to use the generic
      * {@link ObjectPool} interface.

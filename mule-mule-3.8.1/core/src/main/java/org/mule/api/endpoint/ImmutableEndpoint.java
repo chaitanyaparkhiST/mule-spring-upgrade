@@ -41,7 +41,7 @@ public interface ImmutableEndpoint extends Serializable, NamedObject
      * <li>jms -&gt; shipping.orders.topic</li>
      * <li>sms -&gt; +447910010010</li>
      * </ul>
-     * <p/> if an endpointUri is not specifed it will be assumed that it will be
+     * <p> if an endpointUri is not specifed it will be assumed that it will be
      * determined at run-time by the calling application. The endpointUri can be
      * aliteral endpointUri such as an email address or it can be a logical name for
      * an endpointUri as long as it is declared in a <i>message-endpointUri</i>

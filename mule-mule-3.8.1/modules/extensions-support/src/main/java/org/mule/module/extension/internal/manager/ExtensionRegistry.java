@@ -20,7 +20,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Hold the state related to registered {@link Extension}s and their instances.
- * <p/>
+ * <p>
  * It also provides utility methods and caches to easily locate pieces of such state.
  *
  * @since 3.7.0

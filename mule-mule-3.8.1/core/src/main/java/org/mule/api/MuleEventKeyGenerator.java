@@ -19,7 +19,7 @@ public interface MuleEventKeyGenerator
 
     /**
      * Generates a key for an event.
-     * <p/>
+     * <p>
      * The generation algorithm should return the same key value for all the
      * events that are considered equals.
      *

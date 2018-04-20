@@ -41,7 +41,7 @@ import org.apache.commons.collections.Predicate;
  * Utility class that picks a {@link Declaration}
  * on which a {@link Extension} has already been described
  * and enriches such description with the javadocs extracted from the extension's acting classes.
- * <p/>
+ * <p>
  * This is necessary because such documentation is not available on runtime, thus this class
  * uses the annotation processor's AST access to extract it
  *

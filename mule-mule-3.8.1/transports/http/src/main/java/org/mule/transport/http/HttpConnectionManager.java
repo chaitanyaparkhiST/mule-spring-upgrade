@@ -19,7 +19,7 @@ import org.apache.commons.logging.LogFactory;
 
 /**
  * Manager {@link HttpRequestDispatcher} connections and disconnections to {@link EndpointURI}.
- * <p/>
+ * <p>
  * Starts listening for HTTP request when at least one endpoint is associated to a given port are connected and
  * stops listening for HTTP request when all endpoints associated to a given port are disconnected.
  */

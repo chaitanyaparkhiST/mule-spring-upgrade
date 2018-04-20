@@ -38,7 +38,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Receives Http requests via a Servlet and routes them to listeners with servlet://
  * endpoints
- * <p/>
+ * <p>
  */
 public class MuleReceiverServlet extends AbstractReceiverServlet
 {

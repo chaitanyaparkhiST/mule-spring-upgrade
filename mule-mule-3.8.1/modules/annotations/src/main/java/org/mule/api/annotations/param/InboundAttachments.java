@@ -20,7 +20,7 @@ import java.lang.annotation.Target;
  * This annotation can define a single attachment, a comma-separated list of attachment names, or '*' to denote all headers. By default,
  * if a named header is not present, an exception will be thrown. However, if the header name is defined with the '?' post fix, it
  * will be marked as optional.
- * <p/>
+ * <p>
  * When defining multiple attachment names i.e. InboundAttachments("shipping-slip.pdf, customer-record.xml") or using the '*' wildcard to denote all attachments,
  * or wildcard expressions can be used, such as '*.pdf' or multiple patterns such as '*.pdf, *.xml'.
  * the parameter can be a {@link java.util.Map} or {@link java.util.List}. If a {@link java.util.Map} is used, the header name and value is passed in.

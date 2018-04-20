@@ -31,7 +31,7 @@ import org.slf4j.LoggerFactory;
  * {@link #executorDelegate} and a reference to one of its {@link Method}s.
  * When {@link #execute(OperationContext)} is invoked, the {@link #operationMethod}
  * is invoked over the {@link #executorDelegate}.
- * <p/>
+ * <p>
  * All the {@link Lifecycle} events that {@code this} instance receives are propagated
  * to the {@link #executorDelegate}
  *

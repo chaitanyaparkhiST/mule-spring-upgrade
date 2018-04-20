@@ -19,14 +19,14 @@ import java.io.Writer;
 
 /**
  * Validate a JSON string against an XML schema.
- * <p/>
+ * <p>
  * Note:
  * Ideally, this would call the Validator using STAX.  Unfortunately,
  * 1. xalan.jar is needed to avoid bugs in the version of Xalan built into the JRE
  * 2. Xalan does not work with STAX
  * 3. Having Xalan in the classpath overrides the default (STAX-compliant) factories for transformations, validators,
  * etc with ones that aren't STAX-compliant
- * <p/>
+ * <p>
  * The result is that, while the ideal would be to implement this class by validating a STAXSource, that won't be
  * possible until either we can assume a JRE with bith STAX and a working Xalan fork, or there';s a xalan.jar
  * that supports StAX.

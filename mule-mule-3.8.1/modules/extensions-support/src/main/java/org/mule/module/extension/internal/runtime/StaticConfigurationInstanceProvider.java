@@ -28,7 +28,7 @@ public final class StaticConfigurationInstanceProvider<T> implements Configurati
 
     /**
      * Returns {@link #configurationInstance}.
-     * <p/>
+     * <p>
      * The first time this method is invoked, the instance
      * is registered on the {@code registrationCallback}
      *

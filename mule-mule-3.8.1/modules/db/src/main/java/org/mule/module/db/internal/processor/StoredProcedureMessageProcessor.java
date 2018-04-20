@@ -24,7 +24,7 @@ import java.util.List;
 
 /**
  * Executes an stored procedure query on a database.
- * <p/>
+ * <p>
  * Both database and queries are resolved, if required, using the {@link org.mule.api.MuleEvent} being processed.
  */
 

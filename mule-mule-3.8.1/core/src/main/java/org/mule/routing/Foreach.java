@@ -42,13 +42,13 @@ import org.w3c.dom.Document;
 /**
  * ` * The <code>Foreach</code> MessageProcessor allows iterating over a collection payload, or any collection
  * obtained by an expression, generating a message for each element.
- * <p/>
+ * <p>
  * The number of the message being processed is stored in <code>#[variable:counter]</code> and the root
  * message is store in <code>#[variable:rootMessage]</code>. Both variables may be renamed by means of
  * {@link #setCounterVariableName(String)} and {@link #setRootMessageVariableName(String)}.
- * <p/>
+ * <p>
  * Defining a groupSize greater than one, allows iterating over collections of elements of the specified size.
- * <p/>
+ * <p>
  * The {@link MuleEvent} sent to the next message processor is the same that arrived to foreach.
  */
 public class Foreach extends AbstractMessageProcessorOwner implements Initialisable, MessageProcessor, NonBlockingSupported

@@ -23,7 +23,7 @@ public abstract class AbstractJmxSupport implements JmxSupport
      * 'Mule.TradeProcessor' is already registered with the accessible MBeanServer, will return
      * 'Mule.TradeProcessor.1'. If the latter one is already registered, will return
      * 'Mule.TradeProcessor.2' and so on.
-     * <p/>
+     * <p>
      * If no clash detected, returns the domain name unmodified.
      * @param domain domain name causing a conflict
      * @return resolved non-conflicting domain name

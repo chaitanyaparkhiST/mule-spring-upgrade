@@ -105,7 +105,7 @@ public abstract class AbstractMessageSplitter extends FilteringOutboundRouter
      * each part can associate an endpoint.
      * Note that No state should be stored on the router itself. The {@link SplitMessage} provides the parts and
      * endpoint mapping info in order for the correct dispatching to occur.
-     * <p/>
+     * <p>
      * If users do not want to associate a message part with an endpoint, but just dispatch parts over the targets in
      * a round-robin way, they should use the {@link org.mule.routing.outbound.AbstractRoundRobinMessageSplitter} instead.
      *

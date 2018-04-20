@@ -22,11 +22,11 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * restricted max/min
- * <p/>
+ * <p>
  * <p>Java class for narrowMaxMin complex type.
- * <p/>
+ * <p>
  * <p>The following schema fragment specifies the expected content contained within this class.
- * <p/>
+ * <p>
  * <pre>
  * &lt;complexType name="narrowMaxMin">
  *   &lt;complexContent>

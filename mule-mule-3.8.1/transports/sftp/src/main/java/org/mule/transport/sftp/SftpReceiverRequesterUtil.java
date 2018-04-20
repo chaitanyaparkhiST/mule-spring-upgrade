@@ -326,7 +326,7 @@ public class SftpReceiverRequesterUtil
 
     /**
      * Checks if the file has been changed.
-     * <p/>
+     * <p>
      * Note! This assumes that the time on both servers are synchronized!
      * 
      * @param fileName The file to check

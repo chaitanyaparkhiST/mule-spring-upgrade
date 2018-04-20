@@ -325,7 +325,7 @@ public abstract class AbstractMuleTestCase
 
     /**
      * Indicates whether the test should fail when a timeout is reached.
-     * <p/>
+     * <p>
      * This feature was added to support old test cases that depend on 3rd-party
      * resources such as a public web service. In such cases it may be desirable
      * to not fail the test upon timeout but rather to simply log a warning.

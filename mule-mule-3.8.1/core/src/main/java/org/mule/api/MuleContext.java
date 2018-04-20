@@ -104,7 +104,7 @@ public interface MuleContext extends Lifecycle
      * an event in the same sense as an MuleEvent (although there is nothing
      * stopping the implementation of this class triggering listeners when a
      * MuleEvent is received).
-     * <p/>
+     * <p>
      * The types of notifications fired is entirely defined by the implementation of
      * this class
      *
@@ -118,7 +118,7 @@ public interface MuleContext extends Lifecycle
      * an event in the same sense as an MuleEvent (although there is nothing
      * stopping the implementation of this class triggering listeners when a
      * MuleEvent is received).
-     * <p/>
+     * <p>
      * The types of notifications fired is entirely defined by the implementation of
      * this class
      *

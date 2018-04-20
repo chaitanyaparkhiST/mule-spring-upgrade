@@ -43,7 +43,7 @@ public class ObjectUtils extends org.apache.commons.lang.ObjectUtils
 
     /**
      * Gets a String from a value in a null-safe manner.
-     * <p/>
+     * <p>
      *
      * @param answer       the object value
      * @param defaultValue the default to use if null or of incorrect type
@@ -63,7 +63,7 @@ public class ObjectUtils extends org.apache.commons.lang.ObjectUtils
 
     /**
      * Gets a boolean from a value in a null-safe manner.
-     * <p/>
+     * <p>
      *
      * @param answer       the object value
      * @param defaultValue the default to use if null or of incorrect type
@@ -103,7 +103,7 @@ public class ObjectUtils extends org.apache.commons.lang.ObjectUtils
 
     /**
      * Gets a byte from a value in a null-safe manner.
-     * <p/>
+     * <p>
      *
      * @param answer       the object value
      * @param defaultValue the default to use if null or of incorrect type
@@ -140,7 +140,7 @@ public class ObjectUtils extends org.apache.commons.lang.ObjectUtils
 
     /**
      * Gets a short from a value in a null-safe manner.
-     * <p/>
+     * <p>
      *
      * @param answer       the object value
      * @param defaultValue the default to use if null or of incorrect type
@@ -177,7 +177,7 @@ public class ObjectUtils extends org.apache.commons.lang.ObjectUtils
 
     /**
      * Gets a int from a value in a null-safe manner.
-     * <p/>
+     * <p>
      *
      * @param answer       the object value
      * @param defaultValue the default to use if null or of incorrect type
@@ -214,7 +214,7 @@ public class ObjectUtils extends org.apache.commons.lang.ObjectUtils
 
     /**
      * Gets a long from a value in a null-safe manner.
-     * <p/>
+     * <p>
      *
      * @param answer       the object value
      * @param defaultValue the default to use if null or of incorrect type
@@ -252,7 +252,7 @@ public class ObjectUtils extends org.apache.commons.lang.ObjectUtils
 
     /**
      * Gets a float from a value in a null-safe manner.
-     * <p/>
+     * <p>
      *
      * @param answer       the object value
      * @param defaultValue the default to use if null or of incorrect type
@@ -290,7 +290,7 @@ public class ObjectUtils extends org.apache.commons.lang.ObjectUtils
 
     /**
      * Gets a double from a value in a null-safe manner.
-     * <p/>
+     * <p>
      *
      * @param answer       the object value
      * @param defaultValue the default to use if null or of incorrect type

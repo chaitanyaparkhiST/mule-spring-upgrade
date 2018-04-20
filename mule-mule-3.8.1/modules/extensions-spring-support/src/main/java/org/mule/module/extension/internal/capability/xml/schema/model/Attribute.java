@@ -28,9 +28,9 @@ import javax.xml.namespace.QName;
 
 /**
  * <p>Java class for attribute complex type.
- * <p/>
+ * <p>
  * <p>The following schema fragment specifies the expected content contained within this class.
- * <p/>
+ * <p>
  * <pre>
  * &lt;complexType name="attribute">
  *   &lt;complexContent>

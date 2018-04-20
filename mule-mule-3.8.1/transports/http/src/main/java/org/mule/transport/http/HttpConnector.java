@@ -64,7 +64,7 @@ import org.slf4j.LoggerFactory;
  * <code>HttpConnector</code> provides a way of receiving and sending http requests
  * and responses. The Connector itself handles dispatching http requests. The
  * <code>HttpMessageReceiver</code> handles the receiving requests and processing
- * of headers This endpoint recognises the following properties - <p/>
+ * of headers This endpoint recognises the following properties - <p>
  * <ul>
  * <li>hostname - The hostname to send and receive http requests</li>
  * <li>port - The port to listen on. The industry standard is 80 and if this propert

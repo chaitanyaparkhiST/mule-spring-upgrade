@@ -17,11 +17,11 @@ import org.w3c.dom.Node;
  * A simple component of evaluation XPath expressions in full conformance of the XPath 2.0 spec
  * and basic conformance of the XPath 3.0 (everything except features which require schema awareness
  * and high order functions).
- * <p/>
+ * <p>
  * All implementations are require to support the ability to pass parameters into the query. For that reason,
  * all the evaluation methods will require the current {@link MuleEvent} to be passed on, in order to
  * resolve those parameters against the flow variables.
- * <p/>
+ * <p>
  * All implementations are required to be thread-safe
  *
  * @since 3.6.0
@@ -32,7 +32,7 @@ public interface XPathEvaluator
     /**
      * Evaluates the {@code xpathExpression} over the {@code input}
      * and returns the evaluation as a {@link String}.
-     * <p/>
+     * <p>
      * If {@code xpathExpression} contains parameters, they will be resolved
      * against the flow variables in {@code event}
      *
@@ -46,7 +46,7 @@ public interface XPathEvaluator
     /**
      * Evaluates the {@code xpathExpression} over the {@code input}
      * and returns the evaluation as a type in concordance with {@code returnType}.
-     * <p/>
+     * <p>
      * If {@code xpathExpression} contains parameters, they will be resolved
      * against the flow variables in {@code event}
      *

@@ -14,7 +14,7 @@ import org.slf4j.LoggerFactory;
  * for cases in which the {@link #isSatisfied()} method can throw
  * exceptions or will perform JUnit/Hamcrest assertions, which result
  * in {@link java.lang.AssertionError}
- * <p/>
+ * <p>
  * This implementation automatically takes care of catching those exceptions/errors
  * and returning <code>false</code> in that case
  */

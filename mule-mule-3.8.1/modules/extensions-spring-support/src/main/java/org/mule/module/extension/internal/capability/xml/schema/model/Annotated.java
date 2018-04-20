@@ -29,12 +29,12 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 /**
  * This type is extended by all types which allow annotation
  * other than <schema> itself
- * <p/>
- * <p/>
+ * <p>
+ * <p>
  * <p>Java class for annotated complex type.
- * <p/>
+ * <p>
  * <p>The following schema fragment specifies the expected content contained within this class.
- * <p/>
+ * <p>
  * <pre>
  * &lt;complexType name="annotated">
  *   &lt;complexContent>

@@ -145,7 +145,7 @@ public class CopyOnWriteCaseInsensitiveMap<K, V> implements Map<K, V>, Serializa
      * Returns a copy of {@code this} map
      * which is case insensitive but doesn't
      * have the copy-on-write functionality.
-     * <p/>
+     * <p>
      * This method is useful in which you need
      * a copy of this map in which the assumption
      * of reads vastly outnumbering writes is

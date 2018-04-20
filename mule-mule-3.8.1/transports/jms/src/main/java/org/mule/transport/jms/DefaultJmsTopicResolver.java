@@ -59,7 +59,7 @@ public class DefaultJmsTopicResolver implements JmsTopicResolver
      * as in {@code jms://topic:trade.PriceUpdatesTopic}. This
      * method will call {@link #isTopic(org.mule.api.endpoint.ImmutableEndpoint, boolean)}
      * with fallback flag set to <strong>true</false>.
-     * <p/>
+     * <p>
      * <strong>NOTE:</strong> When using topics, use the '.' (dot) symbol for subcontext separation,
      * as opposed to '/'. Otherwise the resource info may not get properly translated for the
      * topic endpoint due to the way URI's are parsed. 

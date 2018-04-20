@@ -17,7 +17,7 @@ import java.math.BigInteger;
 
 /**
  * Provides access to a RandomAccessFile for queue data.
- * <p/>
+ * <p>
  * Sanitizes the queue file names in case they are invalid.
  */
 public class QueueFileProvider

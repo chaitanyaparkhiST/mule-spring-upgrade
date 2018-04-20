@@ -22,7 +22,7 @@ import java.util.Map;
 /**
  * Routing strategy that divides the messages it receives among its target routes in round-robin
  * fashion. The set of routes is obtained dynamically using a {@link org.mule.routing.DynamicRouteResolver}.
- * <p/>
+ * <p>
  * This includes messages received on all threads, so there is no guarantee
  * that messages received from a splitter are sent to consecutively numbered targets.
  */

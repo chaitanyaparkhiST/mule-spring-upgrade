@@ -460,7 +460,7 @@
 
     <xsl:template name="attribution">
         <xsl:param name="text"/>
-        <!-- <br/><small><em><xsl:value-of select="$text"/></em></small> -->
+        <!-- <br><small><em><xsl:value-of select="$text"/></em></small> -->
     </xsl:template>
 
 

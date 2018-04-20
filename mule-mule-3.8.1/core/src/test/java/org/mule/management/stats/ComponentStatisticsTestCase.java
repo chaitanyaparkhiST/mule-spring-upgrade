@@ -73,7 +73,7 @@ public class ComponentStatisticsTestCase extends AbstractMuleTestCase
     /**
      * New behavior under the fix to MULE-6417 - no longer throws a divide-by-zero error. Instead, the remainder of the
      * fragmented event is ignored until a new event is started.
-     * <p/>
+     * <p>
      * Note that this is a partial solution - if multiple components are active at the same time, collection can be
      * 're-enabled' for an already-started event. The established API does not allow for a solution, so for now this
      * quirk must be accepted.

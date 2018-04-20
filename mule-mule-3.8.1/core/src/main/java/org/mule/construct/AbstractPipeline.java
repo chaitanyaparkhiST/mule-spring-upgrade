@@ -58,7 +58,7 @@ import java.util.List;
  * Abstract implementation of {@link AbstractFlowConstruct} that allows a list of {@link MessageProcessor}s
  * that will be used to process messages to be configured. These MessageProcessors are chained together using
  * the {@link DefaultMessageProcessorChainBuilder}.
- * <p/>
+ * <p>
  * If no message processors are configured then the source message is simply returned.
  */
 public abstract class AbstractPipeline extends AbstractFlowConstruct implements Pipeline

@@ -14,10 +14,10 @@ import org.mule.extension.introspection.declaration.fluent.DeclarationDescriptor
 /**
  * A component capable of extracting one specific capability
  * out of a {@link Class} that composes a {@link Capable}
- * <p/>
+ * <p>
  * Because actual capabilities might be defined across several modules (or even extensions!)
  * the actual extractors are fetched through SPI, using a {@link ServiceRegistry}.
- * <p/>
+ * <p>
  * Each implementation of this class has to aim to one and only one specific capability type. It's
  * this extractor's responsibility to ignore the capabilities which are outside of its domain
  * and to ignore any extension types which don't support the given capability

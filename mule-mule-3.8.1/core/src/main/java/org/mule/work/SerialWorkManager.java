@@ -19,7 +19,7 @@ import javax.resource.spi.work.WorkListener;
  * A simple implementation of {@link WorkManager} which
  * executes tasks on the invoking thread. As a result, every operation
  * on this class is blocking.
- * <p/>
+ * <p>
  * This class is useful in components configured through a
  * {@link ThreadingProfile} in which {@link ThreadingProfile#isDoThreading()}
  * is {@code false}.

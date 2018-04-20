@@ -17,7 +17,7 @@ import org.apache.commons.logging.LogFactory;
 
 /**
  * Control information for queues.
- * <p/>
+ * <p>
  * Provides information about the current write and read file that were used
  * at the moment of the shutdown.
  */

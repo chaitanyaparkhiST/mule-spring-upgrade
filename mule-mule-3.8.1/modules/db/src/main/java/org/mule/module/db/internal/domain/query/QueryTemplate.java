@@ -171,7 +171,7 @@ public class QueryTemplate
 
     /**
      * Indicates whether or not the query is dynamic.
-     * <p/>
+     * <p>
      * A query is dynamic when the effective SQL text that will be used to execute it will
      * be resolved on runtime depending on external information.
      */

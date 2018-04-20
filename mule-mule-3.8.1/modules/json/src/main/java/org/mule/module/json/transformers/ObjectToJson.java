@@ -26,7 +26,7 @@ import java.util.Map;
 /**
  * Converts a java object to a JSON encoded object that can be consumed by other languages such as
  * Javascript or Ruby.
- * <p/>
+ * <p>
  * The returnClass for this transformer is always java.lang.String, there is no need to set this.
  */
 public class ObjectToJson extends AbstractJsonTransformer

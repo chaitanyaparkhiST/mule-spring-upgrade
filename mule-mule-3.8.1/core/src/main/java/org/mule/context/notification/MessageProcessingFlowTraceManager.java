@@ -107,7 +107,7 @@ public class MessageProcessingFlowTraceManager extends LocationExecutionContextP
 
     /**
      * Callback method for when a message processor is about to be invoked.
-     * <p/>
+     * <p>
      * Updates the internal state of the event's {@link ProcessorsTrace} and {@link FlowCallStack} accordingly.
      * 
      * @see DefaultProcessorsTrace#addExecutedProcessors(String)

@@ -44,7 +44,7 @@ public class ComponentStatistics implements Statistics
      * The constructor added to initialize the interval time in ms that stats are measured for from the property
      * statIntervalTime. If the property is not set or cannot be parsed, disable interval time and just compute stats
      * from start of mule.
-     * <p/>
+     * <p>
      * TODO: The code to create and use an interval time for measuring average execution time could be removed once a
      * complete solution is available in MuleHQ to monitor this
      */
@@ -73,7 +73,7 @@ public class ComponentStatistics implements Statistics
 
     /**
      * Resets the state of this component statistics collector.
-     * <p/>
+     * <p>
      * If called while a branch is being executed, then statistics may be slightly erroneous.
      */
     public void clear()
@@ -87,7 +87,7 @@ public class ComponentStatistics implements Statistics
 
     /**
      * Returns true if this stats collector is enabled.
-     * <p/>
+     * <p>
      * This value does not affect statistics tabulation directly - it is up to the component to enable/disable
      * collection based on the value of this method.
      * 
@@ -111,7 +111,7 @@ public class ComponentStatistics implements Statistics
 
     /**
      * Tags this stats collector as enabled or disabled.
-     * <p/>
+     * <p>
      * Does not affect stats calculation - it is up to the caller to check this flag.
      * 
      * @param enabled {@code true} if stats should be enabled, otherwise false.
@@ -154,7 +154,7 @@ public class ComponentStatistics implements Statistics
 
     /**
      * Then number of events executed since last cleared.
-     * <p/>
+     * <p>
      * NOTE: When branch times are recorded, an event will typically be recorded as 'executed' on the first branch
      * event. See {@link #addExecutionBranchTime(boolean, long, long)}.
      * 
@@ -212,7 +212,7 @@ public class ComponentStatistics implements Statistics
 
     /**
      * Add the complete execution time for a flow that also reports branch execution times.
-     * <p/>
+     * <p>
      * Use in conjunction with {@link #addExecutionBranchTime(boolean, long, long)}.
      * 
      * @param time the total time required to process this event
@@ -231,7 +231,7 @@ public class ComponentStatistics implements Statistics
 
     /**
      * Add a new execution-time measurement for processing an event.
-     * <p/>
+     * <p>
      * Do not use when reporting branch execution times; instead see {@link #addCompleteExecutionTime(long)}.
      *
      * @param time The total event time to be logged/recorded.

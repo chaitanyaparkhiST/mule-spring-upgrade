@@ -17,13 +17,13 @@ import java.util.List;
  * A metadata capability to specify that a certain group of {@link Parameter}s
  * are grouped. This grouping is transparent and is not reflected on the introspection
  * model because it's implementation specific.
- * <p/>
+ * <p>
  * This capability provides the necessary metadata for the runtime to handle
  * those parameters accordingly.
- * <p/>
+ * <p>
  * This capability gives access to a list of {@link ParameterGroup} instances through the
  * {@link #getGroups()} method.
- * <p/>
+ * <p>
  * This class is immutable
  *
  * @since 3.7.0

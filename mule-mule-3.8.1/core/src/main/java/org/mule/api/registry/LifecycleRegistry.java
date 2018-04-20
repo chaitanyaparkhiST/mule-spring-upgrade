@@ -42,7 +42,7 @@ public interface LifecycleRegistry extends Registry
 
     /**
      * Look up a single object by name.
-     * <p/>
+     * <p>
      * Because {@link #lookupObject(String)} will
      * return objects which had lifecycle phases
      * applied,this method exists for cases in which

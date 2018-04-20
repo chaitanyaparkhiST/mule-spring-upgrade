@@ -20,11 +20,11 @@ import java.util.NoSuchElementException;
 /**
  * This class represents the outcome of the evaluation of a {@link ResolverSet}.
  * This class maps a set of {@link Parameter} to a set of result {@link Object}s.
- * <p/>
+ * <p>
  * This classes {@link #equals(Object)} and {@link #hashCode()} methods have been redefined
  * to be consistent with the result objects. This is so that given two instances of this class
  * you can determine if the evaluations they represent have an equivalent outcome
- * <p/>
+ * <p>
  * Instances of this class can only be created through a {@link Builder}
  * obtained via {@link #newBuilder()}
  *
@@ -148,7 +148,7 @@ public class ResolverSetResult
      * registered {@link Parameter}. Values will be tested for equality using
      * their own implementation of {@link Object#equals(Object)}. For the case of a
      * {@code null} value, equality requires the other one to be {@code null} as well.
-     * <p/>
+     * <p>
      * This implementation fails fast. Evaluation is finished at the first non equal
      * value, returning {@code false}
      *

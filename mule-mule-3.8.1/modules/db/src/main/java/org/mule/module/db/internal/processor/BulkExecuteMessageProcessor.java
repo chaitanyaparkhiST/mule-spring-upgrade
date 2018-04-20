@@ -30,9 +30,9 @@ import java.util.List;
 
 /**
  * Executes an queries in bulk mode on a database
- * * <p/>
+ * * <p>
  * Accepted queries are any query with no parameters and returning an update count as result.
- * <p/>
+ * <p>
  * Both database and bulk query are resolved, if required, using the {@link org.mule.api.MuleEvent}
  * being processed.
  */

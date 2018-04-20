@@ -39,11 +39,11 @@ public class SerializationUtils extends org.apache.commons.lang.SerializationUti
     
     /**
      * <p>Deserializes an <code>Object</code> from the specified stream.</p>
-     * <p/>
+     * <p>
      * <p>The stream will be closed once the object is written. This
      * avoids the need for a finally clause, and maybe also exception
      * handling, in the application code.</p>
-     * <p/>
+     * <p>
      * <p>The stream passed in is not buffered internally within this method.
      * This is the responsibility of your application if desired.</p>
      *

@@ -14,9 +14,9 @@ import java.sql.SQLException;
 
 /**
  * Returns an unprocessed {@link ResultSet}.
- * <p/>
+ * <p>
  * <b>Warning!</b>
- * <p/>
+ * <p>
  * The consumer of the returned {@link ResultSet} will be responsible of closing it.
  */
 public class NullResultSetHandler implements ResultSetHandler

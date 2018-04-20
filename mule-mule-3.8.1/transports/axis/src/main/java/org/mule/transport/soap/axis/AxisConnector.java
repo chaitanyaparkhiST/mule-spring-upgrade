@@ -69,7 +69,7 @@ import org.apache.axis.wsdl.fromJava.Types;
 /**
  * <code>AxisConnector</code> is used to maintain one or more Services for Axis
  * server instance.
- * <p/>
+ * <p>
  * Some of the Axis specific service initialisation code was adapted from the Ivory
  * project (http://ivory.codehaus.org). Thanks guys :)
  */

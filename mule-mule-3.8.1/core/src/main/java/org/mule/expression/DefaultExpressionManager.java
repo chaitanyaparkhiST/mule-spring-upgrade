@@ -39,7 +39,7 @@ import org.apache.commons.logging.LogFactory;
 /**
  * Provides universal access for evaluating expressions embedded in Mule configurations, such as Xml, Java,
  * scripting and annotations.
- * <p/>
+ * <p>
  * Users can register or unregister {@link ExpressionEvaluator} through this interface.
  */
 public class DefaultExpressionManager implements ExpressionManager, MuleContextAware, Initialisable

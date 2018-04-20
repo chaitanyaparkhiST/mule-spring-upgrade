@@ -571,7 +571,7 @@ public class DefaultMuleContext implements MuleContext
      * schedule work. This work Manager must <b>never</b> be used by provider
      * implementations as they have their own workManager accible on the
      * connector.
-     * <p/>
+     * <p>
      * If a workManager has not been set by the time the
      * <code>initialise()</code> method has been called a default
      * <code>MuleWorkManager</code> will be created using the

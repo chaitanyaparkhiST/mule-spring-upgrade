@@ -24,15 +24,15 @@ import org.slf4j.LoggerFactory;
  * Implementation of {@link DescriberPostProcessor}
  * that's only applicable when invoked in the context of an
  * annotations {@link javax.annotation.processing.Processor}.
- * <p/>
+ * <p>
  * This post processor uses the APT API to access the AST tree and extract the extensions
  * javadocs which are used to enrich the extension's descriptions.
- * <p/>
+ * <p>
  * For this to be possible, the context should have as custom parameters a {@link ProcessingEnvironment}
  * and the corresponding {@link TypeElement}, which will be fetched in the
  * provided context under the keys {@link ExtensionResourcesGeneratorAnnotationProcessor#PROCESSING_ENVIRONMENT} and
  * {@link ExtensionResourcesGeneratorAnnotationProcessor#EXTENSION_ELEMENT}.
- * <p/>
+ * <p>
  * If any of the above requirements is not met, then the post processor will skip the extension
  *
  * @since 3.7.0

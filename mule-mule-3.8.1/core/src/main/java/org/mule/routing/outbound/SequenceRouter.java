@@ -13,7 +13,7 @@ import org.mule.api.MuleMessage;
  * Defines a {@link AbstractSequenceRouter} that stops the routing of a given
  * message when a synchronous endpoint has returned a null or an exception
  * message.
- * <p/>
+ * <p>
  * Asynchronous endpoints are managed as in the {@link AbstractSequenceRouter}.
  *
  * Deprecated from 3.6.0.  This functionality is specific to Services.

@@ -495,7 +495,7 @@ public class HttpServerConnection implements HandshakeCompletedListener
 
     /**
      * Clean up cached values.
-     * <p/>
+     * <p>
      * Must be called if a new request from the same socket associated with the instance is going to be processed.
      */
     public void reset() throws IOException

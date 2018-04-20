@@ -21,7 +21,7 @@ import java.util.List;
 
 /**
  * Composes many converters to behave as a single one.
- * <p/>
+ * <p>
  * When {@link #transform(Object)} is called each converter in the same order
  * they are included in the composition.
  * The output of a given converter is the input of the next composed converter.

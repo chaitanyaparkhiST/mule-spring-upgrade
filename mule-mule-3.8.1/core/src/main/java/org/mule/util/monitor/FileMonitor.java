@@ -61,7 +61,7 @@ public class FileMonitor
     /**
      * Add file to listen for. File may be any java.io.File (including a directory)
      * and may well be a non-existing file in the case where the creating of the file
-     * is to be trepped. <p/> More than one file can be listened for. When the
+     * is to be trepped. <p> More than one file can be listened for. When the
      * specified file is created, modified or deleted, listeners are notified.
      * 
      * @param file File to listen for.

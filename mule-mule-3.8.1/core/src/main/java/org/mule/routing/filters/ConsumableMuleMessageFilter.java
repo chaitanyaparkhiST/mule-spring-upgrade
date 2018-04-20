@@ -14,7 +14,7 @@ import org.mule.api.routing.filter.Filter;
 
 /**
  * Filters messages that have a consumable payload.
- * <p/>
+ * <p>
  * The filter accepts only {@link DefaultMuleMessage} instances that
  * have a no consumable payload. Check is done using
  * {@link org.mule.DefaultMuleMessage#isConsumable()} method.

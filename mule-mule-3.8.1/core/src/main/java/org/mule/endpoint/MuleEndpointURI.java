@@ -36,7 +36,7 @@ import org.apache.commons.logging.LogFactory;
  * use when dispatching the event. Mule urls take the form of -
  * protocol://[host]:[port]/[provider]/endpointUri or
  * protocol://[host]:[port]/endpointUri i.e. vm:///my.object
- * <br/>
+ * <br>
  * The protocol can be any of any connector registered with Mule. The endpoint name if specified
  * must be the name of a registered global endpoint. The endpointUri can be any endpointUri
  * recognized by the endpoint type.
@@ -604,13 +604,13 @@ public class MuleEndpointURI implements EndpointURI
 
     /**
      * Checks whether or not params are equals to another instance's params.
-     * <p/>
+     * <p>
      * The reason of this method is because {code}params{code} is a {@link Properties} which
      * extends from {@link java.util.Hashtable}. This last class has  a synchronized {@link java.util.Hashtable#equals(Object)}
      * which calls the synchronized {@link Hashtable#size()} on the compared object.
      * This implies that doing {@code A.equals(B)} and {@code B.equals(A)} can cause a deadlock
      * depending on the invocation order.
-     * <p/>
+     * <p>
      * As the detected problem occurs when {@link MuleEndpointURI} instances are compared, the workaround consist
      * in compare both instances's params using always the same order. The order is determine by the identity
      * hashcode of each {@code params} instance.

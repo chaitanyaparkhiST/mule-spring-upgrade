@@ -35,7 +35,7 @@ import org.slf4j.LoggerFactory;
  * module or transport to load stateless transformers into the registry.
  * For this file to be located it must be present in the modules META-INF directory under
  * <pre>META-INF/services/org/mule/config/</pre>
- * <p/>
+ * <p>
  * The format of this file is a simple key / value pair. i.e.
  * <pre>
  * myobject=org.foo.MyObject
@@ -68,7 +68,7 @@ import org.slf4j.LoggerFactory;
  * Note that the key used for transformers must be 'transformer.x' where 'x' is a sequential number.  The transformer name will be
  * automatically generated as JMSMessageToXXX where XXX is the return class name i.e. JMSMessageToString unless a 'name'
  * parameter is specified. If no 'returnClass' is specified the default in the transformer will be used.
- * <p/>
+ * <p>
  * Note that all objects defined have to have a default constructor. They can implement injection interfaces such as
  * {@link org.mule.api.context.MuleContextAware} and lifecycle interfaces such as {@link org.mule.api.lifecycle.Initialisable}.
  *

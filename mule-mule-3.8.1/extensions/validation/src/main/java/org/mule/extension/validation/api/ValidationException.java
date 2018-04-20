@@ -17,7 +17,7 @@ import org.mule.config.i18n.Message;
  * fails. It's a pretty simple {@link MuleException}
  * with the added ability to provide the {@link ValidationResult}
  * which failed.
- * <p/>
+ * <p>
  * The exception message is set to match the one in
  * {@link ValidationResult#getMessage()}
  *

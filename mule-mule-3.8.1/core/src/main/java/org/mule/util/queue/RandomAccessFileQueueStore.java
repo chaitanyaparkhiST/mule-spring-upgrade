@@ -236,7 +236,7 @@ class RandomAccessFileQueueStore
 
     /**
      * Free all resources held for the queue.
-     * <p/>
+     * <p>
      * Do not removes elements from the queue.
      */
     public synchronized void close()

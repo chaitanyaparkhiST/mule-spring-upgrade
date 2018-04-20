@@ -27,8 +27,8 @@ import org.w3c.dom.Node;
  * {@link org.mule.component.simple.LogComponent}. This allows shortcuts like
  * for example <i>&lt;mule:bridge-service/&gt;</i> to be used instead of having to
  * use the <i>&lt;mule:service/&gt;</i> element and specify the class name (and
- * scope) for built-in components that don't require configuration. <p/> <b>This
- * DefinitionParser should only be used for state-less components.</b> <p/> In order
+ * scope) for built-in components that don't require configuration. <p> <b>This
+ * DefinitionParser should only be used for state-less components.</b> <p> In order
  * to further customize components and use serviceFactory properties the
  * &lt;mule:service/&gt; element should be used.
  */

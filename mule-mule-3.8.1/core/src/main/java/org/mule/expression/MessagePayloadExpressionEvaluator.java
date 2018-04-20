@@ -25,17 +25,17 @@ import org.apache.commons.logging.LogFactory;
 /**
  * Returns the message payload.  If the expression is set to a class name then Mule will attempt to transform the payload by
  * discovering the correct transformer(s) in the registry. This is only suited for simple transformations between common types.
- * <p/>
+ * <p>
  * <code>
  * #[payload:byte[]]
  * </code>
- * <p/>
+ * <p>
  * or
- * <p/>
+ * <p>
  * <code>
  * #[payload:org.mule.api.OutputHandler]
  * </code>
- * <p/>
+ * <p>
  * If the object passed in is not a MuleMessage, the same object will be returned.
  *
  * @see org.mule.api.expression.ExpressionEvaluator

@@ -14,7 +14,7 @@ import org.mule.api.el.ExpressionLanguageExtension;
  * A {@link ExpressionLanguageExtension} which adds a
  * {@link ValidatorElContext} to the {@link ExpressionLanguageContext}
  * as a variable named {@code validator}.
- * <p/>
+ * <p>
  * The {@code validator} variable is actually an alias which
  * creates a new {@link ValidatorElContext} each time a
  * {@link ExpressionLanguageContext} is configured. This is necessary

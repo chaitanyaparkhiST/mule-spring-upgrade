@@ -27,7 +27,7 @@ import java.util.Properties;
 
 /**
  * Defines a builder to create files for mule artifacts.
- * <p/>
+ * <p>
  * Instances can be configured using the methods that follow the builder pattern until the artifact file
  * is accessed. After that point, builder methods will fail to update the builder state.
  *

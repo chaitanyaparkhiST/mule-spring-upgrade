@@ -25,7 +25,7 @@ import javax.management.ReflectionException;
 /**
  * <code>JdmkAgent</code> configures an Jdmk Http Adaptor for Jmx management,
  * statistics and configuration viewing of a Mule instance.
-* <p/>
+* <p>
  * TODO MULE-1353 
  */
 public class JdmkAgent extends AbstractAgent

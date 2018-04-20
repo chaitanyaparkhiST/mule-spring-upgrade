@@ -31,7 +31,7 @@ import java.util.List;
  * endpoint by name and then by address.
  * The targets to use can be set on the router itself or be global endpoint definitions.
  * <pre>
- * <p/>
+ * <p>
  * &lt;outbound&gt;
  *      &lt;endpoint-selector-router evaluator="xpath" expression="/MSG/HEADER/NEXT-ADDRESS"&gt;
  *          &lt;endpoint name="dest1" address="jms://queue1" /&gt;
@@ -39,7 +39,7 @@ import java.util.List;
  *          &lt;endpoint name="dest3" address="jms://queue3" /&gt;
  *      &lt;/endpoint-selector-router&gt;
  * &lt;/outbound&gt;
- * <p/>
+ * <p>
  * </pre>
  *
  * Deprecated from 3.6.0.  This functionality is specific to Services.

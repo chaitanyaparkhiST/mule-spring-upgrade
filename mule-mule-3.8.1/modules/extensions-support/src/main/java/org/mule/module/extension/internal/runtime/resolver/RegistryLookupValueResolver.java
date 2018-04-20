@@ -16,13 +16,13 @@ import org.apache.commons.lang.StringUtils;
 /**
  * Implementation of {@link ValueResolver} which accesses the mule registry
  * and returns the value associated with {@link #key}.
- * <p/>
+ * <p>
  * Because the registry is mutable, {@link #isDynamic()} will always return
  * {@code true} even though the odds are that the same value will always be returned.
  * In case you want to prevent accessing the registry every time (this requires
  * some confidence on your end about the registry value not changing) you could use
  * this resolver in conjunction with {@link CachingValueResolverWrapper}
- * <p/>
+ * <p>
  * The registry is accessed through the {@link MuleContext} that is exposed in
  * the {@link MuleEvent} that is passed to the {@link #resolve(MuleEvent)} method
  *

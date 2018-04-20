@@ -480,7 +480,7 @@ public class JmsMessageUtils
      * {@link StreamMessage#writeObject(Object)} accepts only primitives (and wrappers), String and byte[].
      * An attempt to write anything else must fail with a MessageFormatException as per
      * JMS 1.1 spec, Section 7.3 Standard Exceptions, page 89, 1st paragraph.
-     * <p/>
+     * <p>
      * Unfortunately, some JMS vendors are not compliant in this area, enforce here for consistent behavior.
      *
      * @param candidate object to validate
@@ -509,7 +509,7 @@ public class JmsMessageUtils
      * <code>MapMessage#writeObject(Object)</code> accepts only primitives (and wrappers), String and byte[].
      * An attempt to write anything else must fail with a MessageFormatException as per
      * JMS 1.1 spec, Section 7.3 Standard Exceptions, page 89, 1st paragraph.
-     * <p/>
+     * <p>
      * Unfortunately, some JMS vendors are not compliant in this area, enforce here for consistent behavior.
      * Here we handle non-primitive maps as {@link ObjectMessage} rather than creating a {@link MapMessage}
      *

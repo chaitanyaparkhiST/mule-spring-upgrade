@@ -15,7 +15,7 @@ import org.mule.transaction.TransactionCoordination;
 
 /**
  * Commits any pending transaction.
- * <p/>
+ * <p>
  * This interceptor must be executed before the error handling interceptor so if
  * there is any failure doing commit, the error handler gets executed.
  */

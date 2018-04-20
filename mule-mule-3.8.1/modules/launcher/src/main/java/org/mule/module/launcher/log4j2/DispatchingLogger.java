@@ -34,12 +34,12 @@ import org.apache.logging.log4j.spi.ExtendedLogger;
  * holds a static reference to a logger L, then all the log events
  * are going to be added into the context {@link org.apache.logging.log4j.core.LoggerContext}
  * on which L fast first initialized, regardless of which application generated the event.
- * <p/>
+ * <p>
  * This class is a wrapper for {@link org.apache.logging.log4j.core.Logger} class
  * which is capable of detecting that the log event is being generated from an application
  * which {@link org.apache.logging.log4j.core.LoggerContext} is different than L's, and thus
  * forward the event to the correct context.
- * <p/>
+ * <p>
  * Because this class is a fix for issues in static loggers,
  * it must not hold any reference to any {@link java.lang.ClassLoader} since otherwise
  * that class loader would be GC unreachable. For that reason, it uses {@link #ownerClassLoaderHash}

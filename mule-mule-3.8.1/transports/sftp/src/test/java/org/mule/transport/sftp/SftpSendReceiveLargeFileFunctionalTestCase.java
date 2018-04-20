@@ -16,7 +16,7 @@ import org.junit.runners.Parameterized.Parameters;
 
 /**
  * Test sending and receiving a very large message.
- * <p/>
+ * <p>
  * This test will probably fail due to the standard timeout. According to
  * http://www.mulesource.org/display/MULE2USER/Functional+Testing the only way to
  * change the timeout is "add -Dmule.test.timeoutSecs=XX either to the mvn command

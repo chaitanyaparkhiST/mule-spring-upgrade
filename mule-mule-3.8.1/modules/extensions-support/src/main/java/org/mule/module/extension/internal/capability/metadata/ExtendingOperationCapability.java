@@ -14,7 +14,7 @@ import org.mule.extension.annotations.Extension;
  * A metadata capability which marks that an operation is augmenting
  * the functionality of an {@link Extension} which is defined in a type
  * annotated with {@link Extensible}.
- * <p/>
+ * <p>
  * The runtime consequences of this capabilities depend on the runtime.
  * This class constructor throws {@link IllegalArgumentException} if
  * {@link #type} is not annotated with {@link Extensible}

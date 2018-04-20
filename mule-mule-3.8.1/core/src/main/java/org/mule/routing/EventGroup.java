@@ -507,7 +507,7 @@ public class EventGroup implements Comparable<EventGroup>, Serializable, Deseria
 
     /**
      * Finds the last stored event key on the event group.
-     * <p/>
+     * <p>
      * Event group uses {@code lastStoredEventKey} internally to differentiate the last event
      * added to the group. When the event group is stored in an {@link org.mule.api.store.ObjectStore}
      * that serializes/deserializes the instances, the eventGroup state is not keep updated.

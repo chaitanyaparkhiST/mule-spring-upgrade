@@ -35,7 +35,7 @@ import java.util.Map;
 
 /**
  * Validates json payloads against json schemas compliant with drafts v3 and v4.
- * <p/>
+ * <p>
  * Instances are immutable and thread-safe. Correct way of instantiating this class
  * is by invoking {@link #builder()} to obtain a {@link Builder}
  *
@@ -247,9 +247,9 @@ public class JsonSchemaValidator
      * Parses the {@code event}'s payload as a Json by the rules of
      * {@link DefaultJsonParser#asJsonNode(Object)}. Then it validates it
      * against the given schema.
-     * <p/>
+     * <p>
      * If the validation fails, a {@link JsonSchemaValidationException} is thrown.
-     * <p/>
+     * <p>
      * Notice that if the message payload is a {@link Reader} or {@link InputStream}
      * then it will be consumed in order to perform the validation. As a result,
      * the message payload will be changed to the {@link String} representation

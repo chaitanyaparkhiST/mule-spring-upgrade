@@ -22,7 +22,7 @@ import org.springframework.beans.factory.support.RootBeanDefinition;
  * cannot be instantiated, as long as such bean has been marked as optional
  * in a {@link OptionalObjectsController}. In such case, the object
  * is marked as discarded with the controller and a placeholder object is returned.
- * <p/>
+ * <p>
  * This object delegates actual instantiation into a {@code delegate} which
  * it wraps
  *

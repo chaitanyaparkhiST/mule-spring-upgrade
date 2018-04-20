@@ -17,7 +17,7 @@ import java.util.ListIterator;
 /**
  * Adapted version of a groovy.util.ObservableList. List decorator that will trigger
  * PropertyChangeEvents when a value changes.<br>
- * <p/>
+ * <p>
  * The current implementation will trigger specialized events in the following
  * scenarios, you need not register a different listener as those events extend from
  * PropertyChangeEvent

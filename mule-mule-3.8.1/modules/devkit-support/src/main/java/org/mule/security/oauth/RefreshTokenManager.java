@@ -33,7 +33,7 @@ public interface RefreshTokenManager
 
     /**
      * Sets the {@link ObjectStore} to use for the tokens refresh state.
-     * <p/>
+     * <p>
      * This can only be set during initialization. If this is set, the value given to
      * {@link #setMinRefreshIntervalInMillis(int)} will be ignored.
      * 

@@ -57,7 +57,7 @@ import org.apache.commons.logging.LogFactory;
 /**
  * <code>DefaultMuleEvent</code> represents any data event occurring in the Mule environment. All data sent or
  * received within the Mule environment will be passed between components as an MuleEvent.
- * <p/>
+ * <p>
  * The MuleEvent holds some data and provides helper methods for obtaining the data in a format that the
  * receiving Mule component understands. The event can also maintain any number of flowVariables that can be
  * set and retrieved by Mule components.

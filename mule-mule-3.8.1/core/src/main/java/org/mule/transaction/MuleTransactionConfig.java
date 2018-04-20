@@ -20,7 +20,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 /**
- * <p/> <code>MuleTransactionConfig</code> defines transaction configuration for a
+ * <p> <code>MuleTransactionConfig</code> defines transaction configuration for a
  * transactional endpoint.
  */
 public class MuleTransactionConfig implements TransactionConfig, MuleContextAware

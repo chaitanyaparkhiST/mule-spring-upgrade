@@ -25,7 +25,7 @@ import java.util.Set;
  * of {@link SpringRegistry}. For each object in which a {@link Lifecycle} phase
  * is going to be applied, it detects all the dependencies for that object
  * and applies the same phase on those dependencies first (recursively).
- * <p/>
+ * <p>
  * This guarantees that if object A depends on object B and C, necessary lifecycle phases will have
  * been applied on B and C before it is applied to A
  *

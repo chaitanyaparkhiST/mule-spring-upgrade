@@ -12,8 +12,11 @@ import static org.springframework.context.annotation.AnnotationConfigUtils.AUTOW
 import static org.springframework.context.annotation.AnnotationConfigUtils.CONFIGURATION_ANNOTATION_PROCESSOR_BEAN_NAME;
 import static org.springframework.context.annotation.AnnotationConfigUtils.REQUIRED_ANNOTATION_PROCESSOR_BEAN_NAME;
 
+import java.io.IOException;
+
 import org.mule.api.MuleContext;
 import org.mule.config.ConfigResource;
+import org.mule.config.spring.beans.factory.support.MuleDefaultListableBeanFactory;
 import org.mule.config.spring.editors.MulePropertyEditorRegistrar;
 import org.mule.config.spring.processors.AnnotatedTransformerObjectPostProcessor;
 import org.mule.config.spring.processors.DiscardedOptionalBeanPostProcessor;
@@ -24,9 +27,6 @@ import org.mule.config.spring.processors.PostRegistrationActionsPostProcessor;
 import org.mule.config.spring.util.LaxInstantiationStrategyWrapper;
 import org.mule.registry.MuleRegistryHelper;
 import org.mule.util.IOUtils;
-
-import java.io.IOException;
-
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor;
 import org.springframework.beans.factory.config.BeanDefinition;
@@ -128,7 +128,7 @@ public class MuleArtifactContext extends AbstractXmlApplicationContext
                               new ExpressionEnricherPostProcessor(muleContext),
                               new AnnotatedTransformerObjectPostProcessor(muleContext),
                               new PostRegistrationActionsPostProcessor(this, (MuleRegistryHelper) muleContext.getRegistry()),
-                              new DiscardedOptionalBeanPostProcessor(optionalObjectsController, (DefaultListableBeanFactory) beanFactory),
+                              new DiscardedOptionalBeanPostProcessor(optionalObjectsController, (MuleDefaultListableBeanFactory) beanFactory),
                               new LifecycleStatePostProcessor(muleContext.getLifecycleManager().getState())
         );
 
@@ -184,7 +184,7 @@ public class MuleArtifactContext extends AbstractXmlApplicationContext
     @Override
     protected void loadBeanDefinitions(DefaultListableBeanFactory beanFactory) throws IOException
     {
-        BeanDefinitionReader beanDefinitionReader = createBeanDefinitionReader(beanFactory);
+        BeanDefinitionReader beanDefinitionReader = createBeanDefinitionReader((MuleDefaultListableBeanFactory) beanFactory);
         // Communicate mule context to parsers
         try
         {
@@ -197,7 +197,7 @@ public class MuleArtifactContext extends AbstractXmlApplicationContext
         }
     }
 
-    protected BeanDefinitionReader createBeanDefinitionReader(DefaultListableBeanFactory beanFactory)
+    protected BeanDefinitionReader createBeanDefinitionReader(MuleDefaultListableBeanFactory beanFactory)
     {
         XmlBeanDefinitionReader beanDefinitionReader = new XmlBeanDefinitionReader(beanFactory);
         // annotate parsed elements with metadata
@@ -250,7 +250,7 @@ public class MuleArtifactContext extends AbstractXmlApplicationContext
     protected DefaultListableBeanFactory createBeanFactory()
     {
         //Copy all postProcessors defined in the defaultMuleConfig so that they get applied to the child container
-        DefaultListableBeanFactory beanFactory = new DefaultListableBeanFactory(getInternalParentBeanFactory());
+        MuleDefaultListableBeanFactory beanFactory = new MuleDefaultListableBeanFactory(getInternalParentBeanFactory());
         beanFactory.setAutowireCandidateResolver(new ContextAnnotationAutowireCandidateResolver());
         beanFactory.setInstantiationStrategy(new LaxInstantiationStrategyWrapper(new CglibSubclassingInstantiationStrategy(), optionalObjectsController));
 

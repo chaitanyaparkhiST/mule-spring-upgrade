@@ -43,10 +43,10 @@ import org.apache.commons.logging.LogFactory;
 
 /**
  * Until successful asynchronous processing strategy.
- * <p/>
+ * <p>
  * It will return successfully to the flow executing the router once it was able to
  * store the message in the object store.
- * <p/>
+ * <p>
  * After that it will asynchronously try to process the message through the internal route.
  * If route was not successfully executed after the configured retry count then the message
  * will be routed to the defined dead letter queue route or in case there is no dead letter
