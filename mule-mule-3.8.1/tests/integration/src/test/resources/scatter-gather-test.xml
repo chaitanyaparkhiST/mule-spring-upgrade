@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:test="http://www.mulesoft.org/schema/mule/test"
+      xmlns:spring="http://www.springframework.org/schema/beans"
+      xmlns:vm="http://www.mulesoft.org/schema/mule/vm"
+      xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+      xmlns="http://www.mulesoft.org/schema/mule/core"
+      xsi:schemaLocation="
+               http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+               http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+               http://www.mulesoft.org/schema/mule/vm http://www.mulesoft.org/schema/mule/vm/current/mule-vm.xsd
+               http://www.mulesoft.org/schema/mule/test http://www.mulesoft.org/schema/mule/test/current/mule-test.xsd">
+
+    <spring:bean id="testMergeStrategy"
+                 class="org.mule.test.routing.ScatterGatherRouterTestCase$TestAggregationStrategy"/>
+
+    <flow name="minimalConfig">
+        <scatter-gather>
+            <set-payload value="apple"/>
+            <set-payload value="banana"/>
+            <set-payload value="orange"/>
+        </scatter-gather>
+
+        <flow-ref name="testRoutes"/>
+    </flow>
+
+    <flow name="timeout">
+        <scatter-gather timeout="1000">
+            <set-payload value="apple"/>
+            <set-payload value="banana"/>
+            <expression-component>java.lang.Thread.sleep(10000)</expression-component>
+        </scatter-gather>
+    </flow>
+
+    <flow name="routeWithException">
+        <scatter-gather timeout="1000">
+            <set-payload value="apple"/>
+            <test:component throwException="true"/>
+            <set-payload value="orange"/>
+        </scatter-gather>
+    </flow>
+
+    <flow name="routeWithExceptionWithMessage">
+        <scatter-gather timeout="1000">
+            <set-payload value="apple"/>
+            <test:component throwException="true" exceptionText="I'm a message"/>
+            <set-payload value="orange"/>
+        </scatter-gather>
+    </flow>
+
+    <flow name="routeWithNonMuleException">
+        <scatter-gather timeout="1000">
+            <set-payload value="apple"/>
+            <test:component throwException="true" exceptionToThrow="java.lang.NullPointerException" exceptionText="nonMule"/>
+            <set-payload value="orange"/>
+        </scatter-gather>
+    </flow>
+
+    <flow name="routeWithMelException">
+        <scatter-gather timeout="1000">
+            <set-payload value="apple"/>
+            <set-payload value="#[invalidExpr]"/>
+            <set-payload value="orange"/>
+        </scatter-gather>
+    </flow>
+
+    <flow name="routeWithExceptionInSequentialProcessing">
+        <scatter-gather>
+            <threading-profile doThreading="false" />
+            <set-payload value="apple"/>
+            <test:component throwException="true"/>
+            <set-payload value="orange"/>
+        </scatter-gather>
+    </flow>
+
+    <flow name="customMergeStrategyByRef">
+        <scatter-gather>
+            <custom-aggregation-strategy ref="testMergeStrategy" doc:name="aggregation strategy"/>
+
+            <set-payload value="apple"/>
+            <set-payload value="banana"/>
+            <set-payload value="orange"/>
+        </scatter-gather>
+        <flow-ref name="testAggregationStrategy"/>
+    </flow>
+
+    <flow name="customMergeStrategyByName">
+        <scatter-gather>
+            <custom-aggregation-strategy
+                    class="org.mule.test.routing.ScatterGatherRouterTestCase$TestAggregationStrategy"/>
+
+            <set-payload value="apple"/>
+            <set-payload value="banana"/>
+            <set-payload value="orange"/>
+        </scatter-gather>
+        <flow-ref name="testAggregationStrategy"/>
+    </flow>
+
+    <flow name="sequentialProcessing">
+        <scatter-gather>
+            <threading-profile doThreading="false"/>
+
+            <processor-chain>
+                <set-payload value="apple"/>
+                <custom-processor class="org.mule.test.routing.ScatterGatherRouterTestCase$ThreadCaptor" />
+            </processor-chain>
+            <processor-chain>
+                <set-payload value="banana"/>
+                <custom-processor class="org.mule.test.routing.ScatterGatherRouterTestCase$ThreadCaptor" />
+            </processor-chain>
+            <processor-chain>
+                <set-payload value="orange"/>
+                <custom-processor class="org.mule.test.routing.ScatterGatherRouterTestCase$ThreadCaptor" />
+            </processor-chain>
+        </scatter-gather>
+
+        <flow-ref name="testRoutes"/>
+    </flow>
+
+    <flow name="exceptionStrategy">
+        <scatter-gather timeout="1000">
+            <set-payload value="apple"/>
+            <test:component throwException="true"/>
+            <test:component throwException="true"/>
+        </scatter-gather>
+
+        <catch-exception-strategy>
+            <test:assert expression="#[exception is org.mule.routing.CompositeRoutingException]"/>
+            <test:assert expression="#[exception.getExceptionForRouteIndex(0) == null]"/>
+            <test:assert expression="#[exception.getExceptionForRouteIndex(1) != null]"/>
+            <test:assert expression="#[exception.getExceptionForRouteIndex(2) != null]"/>
+        </catch-exception-strategy>
+    </flow>
+
+    <flow name="failedEventInAggregationStrategy">
+        <scatter-gather>
+            <custom-aggregation-strategy class="org.mule.test.routing.ScatterGatherRouterTestCase$FlatteningTestAggregationStrategy" />
+
+            <set-payload value="apple" />
+            <processor-chain>
+                <flow-ref name="setEventVariables" />
+                <set-payload value="banana" />
+                <test:component throwException="true"/>
+            </processor-chain>
+        </scatter-gather>
+
+        <test:assert expression="#[payload[0].getMessage().getPayload().equals('apple')]" />
+        <test:assert expression="#[payload[1].getMessage().getPayload().equals('banana')]" />
+        <test:assert expression="#[payload[1].getFlowVariable('flow').equals('var')]" />
+        <test:assert expression="#[payload[1].getSessionVariable('session').equals('sessionvar')]" />
+    </flow>
+
+    <flow name="failingMergeStrategy">
+        <scatter-gather>
+            <custom-aggregation-strategy
+                    class="org.mule.test.routing.ScatterGatherRouterTestCase$FailingAggregationStrategy"/>
+
+            <set-payload value="apple"/>
+            <set-payload value="banana"/>
+            <set-payload value="orange"/>
+        </scatter-gather>
+    </flow>
+
+    <flow name="messageProperties">
+        <flow-ref name="setEventVariables" />
+
+        <flow-ref name="minimalConfig"/>
+
+        <test:assert expression="#[flowVars['flow'] == 'var']"/>
+        <test:assert expression="#[sessionVars['session'] == 'sessionvar']"/>
+    </flow>
+
+    <flow name="requestResponseInboundEndpoint">
+        <vm:inbound-endpoint path="requestResponseInboundEndpoint" exchange-pattern="request-response"/>
+        <scatter-gather>
+            <set-payload value="apple"/>
+            <set-payload value="banana"/>
+            <set-payload value="orange"/>
+        </scatter-gather>
+
+        <flow-ref name="testRoutes"/>
+    </flow>
+
+    <flow name="oneWayInboundEndpoint">
+        <vm:inbound-endpoint path="oneWayInboundEndpoint" exchange-pattern="one-way"/>
+        <scatter-gather>
+            <set-payload value="apple"/>
+            <set-payload value="banana"/>
+            <set-payload value="orange"/>
+        </scatter-gather>
+
+        <flow-ref name="testRoutes"/>
+    </flow>
+
+    <flow name="routesWithForeachAndInboundEndpoint">
+        <vm:inbound-endpoint path="routesWithForeachAndInboundEndpoint" exchange-pattern="request-response"/>
+        <scatter-gather>
+            <foreach>
+                <set-property propertyName="timeStamp" value="#[server.dateTime]"/>
+            </foreach>
+            <foreach>
+                <set-property propertyName="timeStamp" value="#[server.dateTime]"/>
+            </foreach>
+            <foreach>
+                <set-property propertyName="timeStamp" value="#[server.dateTime]"/>
+            </foreach>
+        </scatter-gather>
+
+        <flow-ref name="testRoutes"/>
+    </flow>
+
+    <flow name="oneWayRouteWithSingleResponse">
+        <vm:inbound-endpoint exchange-pattern="request-response" path="oneWayRouteWithSingleResponse"/>
+        <set-session-variable variableName="stuff" value="apple"/>
+        <scatter-gather>
+            <vm:outbound-endpoint exchange-pattern="one-way" path="propertyToPayload"/>
+            <vm:outbound-endpoint exchange-pattern="request-response" path="propertyToPayload"/>
+        </scatter-gather>
+
+        <test:assert expression="#[payload == 'apple']"/>
+    </flow>
+
+    <flow name="oneWayRouteWithMultipleResponses">
+        <vm:inbound-endpoint exchange-pattern="request-response" path="oneWayRouteWithMultipleResponses"/>
+
+        <scatter-gather>
+            <set-payload value="apple"/>
+            <set-payload value="banana"/>
+            <set-payload value="orange"/>
+            <vm:outbound-endpoint exchange-pattern="one-way" path="log"/>
+        </scatter-gather>
+
+        <flow-ref name="testRoutes"/>
+        <test:assert expression="#[payload.size() == 3]"/>
+    </flow>
+
+    <flow name="oneWayRoutesOnly">
+        <vm:inbound-endpoint exchange-pattern="request-response" path="oneWayRoutesOnly"/>
+        <set-payload value="apple" />
+
+        <scatter-gather>
+            <vm:outbound-endpoint exchange-pattern="one-way" path="log"/>
+            <vm:outbound-endpoint exchange-pattern="one-way" path="log"/>
+        </scatter-gather>
+
+        <test:assert expression="#[payload == 'apple']"/>
+    </flow>
+
+    <flow name="expressionFilterRoute">
+        <vm:inbound-endpoint exchange-pattern="request-response" path="expressionFilterRoute"/>
+        <set-payload value="apple" />
+
+        <scatter-gather>
+            <processor-chain>
+                <expression-filter expression="#[1 == 0 ]"/>
+                <set-payload value="kiwi" />
+            </processor-chain>
+            <set-payload value="banana"/>
+            <set-payload value="orange"/>
+        </scatter-gather>
+
+        <test:assert expression="#[payload.size() == 2]"/>
+        <test:assert expression="#[payload[0] == 'banana']"/>
+        <test:assert expression="#[payload[1] == 'orange']"/>
+    </flow>
+
+    <flow name="propertyToPayload">
+        <vm:inbound-endpoint exchange-pattern="request-response" path="propertyToPayload"/>
+        <set-payload value="#[sessionVars.stuff]"/>
+    </flow>
+
+    <flow name="doesThreading">
+
+        <scatter-gather>
+            <flow-ref name="captureThreadAndWait" />
+            <flow-ref name="captureThreadAndWait" />
+            <flow-ref name="captureThreadAndWait" />
+        </scatter-gather>
+
+    </flow>
+
+    <flow name="setsVariablesAfterRouting">
+        <scatter-gather>
+            <set-payload value="data 1"/>
+            <set-payload value="data 2"/>
+        </scatter-gather>
+        <set-variable variableName="foo" value="bar" />
+
+        <flow-ref name="assertFlowVars" />
+
+        <foreach collection="#[payload]">
+            <test:assert expression="#[flowVars.foo.equals('bar')]" count="2" />
+        </foreach>
+
+        <flow-ref name="assertFlowVars" />
+    </flow>
+
+    <flow name="dataType">
+        <scatter-gather>
+            <set-payload value="apple" mimeType="text/plain"/>
+            <set-payload value="banana"/>
+            <set-payload value="orange"/>
+        </scatter-gather>
+    </flow>
+
+    <sub-flow name="assertFlowVars">
+        <test:assert expression="#[flowVars.foo.equals('bar')]" />
+    </sub-flow>
+
+    <flow name="log">
+        <vm:inbound-endpoint exchange-pattern="one-way" path="log"/>
+        <logger level="INFO" message="one-way vm"/>
+    </flow>
+
+    <sub-flow name="testAggregationStrategy">
+        <test:assert expression="#[payload == 'apple banana orange']"/>
+    </sub-flow>
+
+    <sub-flow name="captureThreadAndWait">
+        <custom-processor class="org.mule.test.routing.ScatterGatherRouterTestCase$ThreadCaptor" />
+        <expression-component>flowVars['latch'].await()</expression-component>
+    </sub-flow>
+
+    <sub-flow name="testRoutes">
+        <combine-collections-transformer/>
+        <test:assert expression="#[payload[0] == 'apple']"/>
+        <test:assert expression="#[payload[1] == 'banana']"/>
+        <test:assert expression="#[payload[2] == 'orange']"/>
+    </sub-flow>
+
+    <sub-flow name="setEventVariables">
+        <set-variable variableName="flow" value="var"/>
+        <set-session-variable variableName="session" value="sessionvar"/>
+    </sub-flow>
+
+</mule>
