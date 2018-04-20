@@ -1,3 +1,3 @@
 # mule-spring-upgrade
 
-mvn clean -Pdistributions,release -DskipGpg=true -DskipTests -Dmaven.javadoc.skip=true
+mvn clean package -Pdistributions,release -DskipGpg=true -DskipTests -Dmaven.javadoc.skip=true
